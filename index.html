@@ -4,16 +4,24 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Portfolio | Zosia Czerska</title>
 	<meta name="description" content="Portfolio projects of Zosia Czerska">
+	<title>Portfolio | Zosia Czerska</title>
 	<meta name="author" content="Zosia Czerska">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Cabin|Cabin+Sketch|Nunito&display=swap" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Cabin+Sketch' rel='stylesheet'> 
+	<link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
 </head>
 
 <body>
 	<nav>
+		<!--left-->
+		<div> 
+			<img src="Images/Logo.svg" alt="logo">
+			<p>UX Research &amp; Design</p>
+		</div>
+		<!--right-->
 		<ul>
 			<li>
 				<a href="index.html">Home</a>
@@ -38,77 +46,81 @@
 				<h1>Hello.</h1>
 				<h4>My name is Zosia.</h4>
 				<p>I am a UX researcher and designer based in the Washington DC Metro Area. I explore human behavior and needs in order to  create a solution. I believe the best design comes from the user.</p>
-				<button>
-					<a href="index.html#Work">My Work</a>	
-				</button>
-				<button>
-					<a href="resume/resume.pdf">Resume</a>
-				</button>
+				<a href="index.html#Work">My Work</a>	
+				<a href="resume/resume.pdf">Resume</a>
 			</div>
-			<img src="">
+			<img src="Images/Home/Coffee3.png" alt="Me in a coffeehouse">
 		</header>
 		<section>
-			<h4>About Me</h4>
-			<p>Get to know a bit about me..</p>
-			<img src="">
+			<div><!--top, section heading-->
+				<h4>My Work</h4>
+				<p>A few things I've been up to lately</p>
+			</div>
+			<article>
+				<img src="Images/Home/MacbookwScreen.png" alt="Well Universe Screen">
+				<h5>Well Universe</h5>
+				<p>A healthcare portal. Design roles: user research, information architecture, visual design, prototyping and user testing</p>
+				<a href="wellu.html">Learn More</a>
+			</article>
+			<article>
+				<img src="Images/Home/BusyBusFinal.png" alt="BusyBus Screen">
+				<h5>BusyBus</h5>
+				<p>A transportation iOS app. Design roles: user research, information architecture, visual design, prototyping and user testing</p>
+				<a href="busybus.html">Learn More</a>
+			</article>
+		</section>
+		<section>
+			<div><!--top, section heading-->
+				<h4>About Me</h4>
+				<p>Get to know a bit about me..</p>
+			</div>
+			<img src="Images/Home/Thoughts.svg" alt="Personal Descriptors">
 			<div>
 				<p>I am a very visually oriented person. If someone is lost I can give precise directions, but they tend to be based on landmarks rather than actual street names.
 				I always loved building solutions that I would invision to the problems I ran into.  Part of the reason I love design is the challenge of building a vision that belongs to others and can be shared.</p>
-				<button><a href="about.html">Learn More</a></button>
+				<a href="about.html">Learn More</a>
 			</div>
 		</section>
 		<section>
-			<h4>My Work</h4>
-			<p>A few things I've been up to lately</p>
-			<article>
-				<img src="">
-				<h5>Well Universe</h5>
-				<p>A healthcare portal. Design roles: user research, information architecture, visual design, prototyping and user testing</p>
-				<button><a href="">Learn More</a></button>
-			</article>
-			<article>
-				<img src="">
-				<h5>BusyBus</h5>
-				<p>A transportation iOS app. Design roles: user research, information architecture, visual design, prototyping and user testing</p>
-				<button><a href="">Learn More</a></button>
-			</article>
-		</section>
-		<section>
-			<h4>My Process</h4>
-			<p>How I develop my designs..</p>
-			<div>
+			<div><!--top, section heading-->
+				<h4>My Process</h4>
+				<p>How I develop my designs..</p>
+			</div>
+			<!--organizational chart infographic-->
+			<div><!--column 1--><!--mobile view column 1, slide to col 2, 3-->
 				<article>
-					<img src="">
+					<img src="Images/Home/resdis.svg" alt="Research and Discovery Icon">
 					<p>Research and Discovery</p>
-					<img src="">
+					<p>&rarr;</p>
 				</article>
 				<article>
-					<img src="">
+					<img src="Images/Home/ia.svg" alt="Information Architecture Icon">
 					<p>Information Architecture</p>
-					<img src="">
+					<p>&rarr;</p>
 				</article>
 				<article>
-					<img src="">
+					<img src="Images/Home/vd.svg" alt="Visual Design Icon">
 					<p>Visual Design</p>
-					<img src="">
+					<p>&rarr;</p>
 				</article>
 			</div>
 			<div>
+				<!--column 2-->
 				<p>Deliverables</p>
 				<article>
-					<img src="">
+					<p>&lcub;</p>
 					<ul>
 						<li>Competitive Analysis</li>
 						<li>Content Strategy Analysis</li>
 						<li>User Surveys</li>
-						<li>User & Stakeholder Interviews</li>
+						<li>User &amp; Stakeholder Interviews</li>
 						<li>Empathy Mapping</li>
 						<li>Personas</li>
 						<li>User Journey Mapping</li>
 					</ul>
 				</article>
 				<article>
-					<img src="">
+					<p>&lcub;</p>
 					<ul>
 						<li>User Stories</li>
 						<li>User Scenarios</li>
@@ -120,7 +132,7 @@
 					</ul>
 				</article>
 				<article>
-					<img src="">
+					<p>&lcub;</p>
 					<ul>
 						<li>Moodboard</li>
 						<li>Branding</li>
@@ -129,12 +141,14 @@
 						<li>Prototypes</li>
 						<li>Usability Testing</li>
 					</ul>
+					<p>&rarr;</p>
 				</article>
 			</div>
+			<!--column 3--><!--grid area above and below empty-->
 			<div>
 				<p>Tools</p>
 				<article>
-					<img src="">
+					<p>&lcub;</p>
 					<ul>
 						<li>Adobe Photoshop</li>
 						<li>Adobe Illustrator</li>
@@ -149,15 +163,18 @@
 					</ul>
 				</article>
 			</div>
+			<!--bottom below infographic-->
 				<div>
 					<p>Don't see</p>
 					<p>something listed!?</p>
-					<button><a href="mailto:zc@zdesign.fyi?subject=I want to know more about your design process">Ask Me</a></button>
+					<a href="mailto:zosia.hello423@gmail.com">Ask Me</a>
 				</div>			
 		</section>
 		<section>
-			<h4>Testimonials</h4>
-			<p>What people have been saying..</p>
+			<div><!--top, section heading-->
+				<h4>Testimonials</h4>
+				<p>What people have been saying..</p>
+			</div>
 		</section>
 		
 	</main>
@@ -166,9 +183,7 @@
 			<h3>Curious?</h3>
 			<h3>Interested?</h3>
 			<h3>Let's get in touch!</h3>
-			<button>
-				<a href="contact.html">Contact Me</a>
-			</button>
+			<a href="contact.html">Contact Me</a>
 		</div>
 		<div>
 			<h3>Zosia Czerska</h3>
@@ -176,23 +191,22 @@
 				<h3>I am a UX Researcher</h3>
 				<h3>I am a UX Designer</h3>
 				<h3>I am for hire!</h3>
-				<!- https://jsfiddle.net/jonathansampson/h7SYp/->
-				
+				<!--marquee: https://jsfiddle.net/jonathansampson/h7SYp/-->			
 			</div>
 			<h5>Learn More</h5>
 			<ul>
 				<li>
-					<a href="mailto:{Your email address}">
+					<a href="mailto:zc@zdesign.fyi">
              			<i class="fa fa-envelope-square" aria-hidden="true"></i>
            			</a>
 				</li>
 				<li>
-					<a href="linkedin">
+					<a href="linkedin.com/in/zosiaczerska">
 						<i class="fa fa-linkedin-square" aria-hidden="true"></i>
 					</a>
 				</li>
 				<li>
-					<a href="github">
+					<a href="https://github.com/zczerska">
 						<i class="fa fa-github-square" aria-hidden="true"></i>
 					</a>
 				</li>
