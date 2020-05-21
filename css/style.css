@@ -1,0 +1,419 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 10px;
+	color: #121F41;
+	font-family: Cabin;
+	
+}
+
+.container {
+	display: grid;
+	grid-template-areas: 
+		"headhome"
+		"work"
+		"about"
+		"process"
+		"testimonials";
+	}
+
+.headhome {
+	grid-area: headhome;
+	display: grid;
+	margin-top:4rem;
+	margin-bottom: 4rem;
+	margin-left: 3rem;
+	margin-right: 3rem;
+	grid-template-areas: 
+		"hello"
+		"name"
+		"headbuttons"
+		"coffee"
+		"bio";
+	/*padding: 10rem 0;*/
+}
+
+.hello {
+	grid-area: hello;
+	padding-bottom: 1rem;
+}
+
+.hi{
+	grid-area: hi;
+	padding-bottom: 0.2rem;
+}
+
+.name{
+	grid-area: name;
+	padding-bottom: 1rem;
+}
+
+.headbuttons {
+	grid-area: headbuttons;
+	grid-template-areas: 
+		"works . "
+		" . resume";
+	
+}
+
+.works {
+	grid-area: works;
+	margin-top:1.5rem;
+	margin-bottom: 1rem;
+	margin-right: 1.5rem;
+}
+
+.resume {
+	grid-area: resume;
+	margin-top:1.5rem;
+	
+}
+
+.coffee{
+	grid-area: coffee;
+	padding-bottom: 1rem;
+	padding-top: 1rem;
+}
+
+.bio {
+	grid-area: bio;
+	font-family: Nunito;
+	color: #121F41;
+	font-size: 1.6rem;
+}
+
+.work {
+	grid-area: work;
+	display: grid;
+	background-color: rgba(255, 230, 151, 0.15);
+	padding-top:4rem;
+	padding-bottom: 4rem;
+	grid-template-areas: 
+		"whead"
+		"welluw"
+		"busyw";
+		
+}
+
+.whead{
+	grid-area: whead;
+	margin-bottom: 4rem;
+	margin-left: 3rem;
+	margin-right: 3rem;
+}
+
+.welluw{
+	grid-area: welluw;
+	display: grid;
+	margin-left: 3rem;
+	margin-right: 3rem;
+	grid-template-areas: 
+		"wellimg wellimg"
+		"wellh wellh"
+		"wellp wellp"
+		" . wlearn"
+		
+}
+
+.wellh{
+	grid-area: wellh;
+	margin-top: 1rem;
+	text-align: center;
+	}
+
+.wellimg{
+	grid-area: wellimg;
+	
+}
+.wellp{
+	grid-area: wellp;
+	margin-top:2rem;
+	margin-bottom:3rem;
+}
+
+.wlearn{
+	grid-area: wlearn;
+	margin-left: 5rem;
+	margin-bottom: 4rem;
+	
+}
+
+
+.busyw{
+	grid-area: busyw;
+	display:grid;
+	margin-left: 3rem;
+	margin-right: 3rem;
+	grid-template-areas: 
+		"busyimg busyimg"
+		"busyh busyh"
+		"busyp busyp"
+		" . busylearn"
+	
+}
+
+.busyh{
+	grid-area: busyh;
+	text-align: center;
+	margin-top: 4rem;
+}
+
+.busyimg{
+	grid-area: busyimg;	
+	width: 40%;
+	margin-left: 12em;
+}
+
+.busyp{
+	grid-area: busyp;
+	margin-top:2rem;
+	margin-bottom:3rem;
+}
+
+.busylearn{
+	grid-area: busylearn;
+	
+	
+}
+.about {
+	grid-area: about;
+	display: grid;
+	padding-top:4rem;
+	padding-bottom: 4rem;
+	background-color: rgba(0, 157, 168, 0.05);
+	grid-template-areas: 
+		"ahead ahead ahead"
+		"aimg aimg aimg"
+		"ap ap ap"
+		"ap2 ap2 ap2"
+		" . . alearn"
+}
+
+.ahead{
+	grid-area: ahead;
+	margin-left: 3rem;
+	margin-right: 3rem;
+}
+
+.aimg{
+	grid-area: aimg;
+	margin-left: 3rem;
+	
+}
+
+.ap{
+	grid-area: ap;
+	margin-left: 3rem;
+	margin-right: 3rem;
+	margin-top: 2rem;
+}
+.ap2{
+	grid-area: ap2;
+	margin-left: 3rem;
+	margin-right: 3rem;
+	margin-top:1rem;
+	margin-bottom: 3rem;
+}
+
+.alearn{
+	grid-area: alearn;
+	margin-left: 3rem;
+	margin-right: 3rem;
+	}
+
+.process {
+	grid-area: process;
+	display: grid;
+	background-color: rgba(21, 19, 103, 0.05);
+	padding-top:4rem;
+	padding-bottom: 4rem;
+	padding-left:3rem;
+	padding-right:3rem;
+	grid-template-areas: 
+		"phead phead phead"
+		" . . pask"
+}
+
+.phead{
+	grid-area: phead;
+	
+}
+
+.pask{
+	grid-area: pask;
+}
+
+.testimonials {
+	grid-area: testimonials;
+	display: grid;
+	margin-top:4rem;
+	margin-bottom: 4rem;
+	grid-template-areas: 
+}
+
+footer {
+	background: rgba(7, 6, 37, 0.9);
+	color: #FCFFF5;
+	font-family: Cabin;
+	font-size:3.6rem;
+	grid-area: footer;
+	display: grid;
+	margin-top:4rem;
+	margin-bottom: 4rem;
+	grid-template-areas: 
+		"curious"
+		"int"
+		"touch";
+}
+
+.teal{
+	color: #009DA8;
+	font-weight: 600;
+}
+
+.lm{
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+}
+
+.learnicons{
+	padding-left:2.5rem;
+	padding-bottom: 3rem;
+	display: grid;
+	grid-template-areas: 
+		"mail . . "
+		". linkd ."
+		". . git";
+}
+
+.mail{
+	grid-area: mail;
+}
+
+.linkd{
+	grid-area: linkd;
+}
+
+.git{
+	grid-area: git;
+}
+
+.fleft{
+	margin-left:3rem;
+}
+
+.fright{
+	margin-left:3rem;
+	margin-top:7rem;
+}
+.curious{
+	display: grid;
+	margin-top:6.5rem;
+}
+
+.int{
+	display: grid;
+	margin-top:1.5rem;
+}
+
+.touch{
+	display: grid;
+	margin-top:1.5rem;
+	margin-bottom: 3rem;
+}
+
+.zc{
+	
+}
+
+
+
+.lm{
+	
+}
+
+p {
+	font-family: Nunito; 
+	font-size: 1.6rem;
+	line-height: 125%;
+}
+
+.txtcolor{
+	color:#009DA8;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Cabin;
+}
+
+h1 {
+	font-size: 7.2rem;
+}
+
+h3 {
+	font-size: 3.6rem;
+}
+
+h4 {
+	font-size: 3.0rem;
+margin-bottom: 0.7rem;
+}
+
+h5 {
+	font-size: 2.4rem;
+	font-weight: 500;
+	}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+ }
+
+a:link, a:visited, a:hover, a:active {
+	text-decoration: none;
+	}
+
+.filled{
+	color:#FCFFF5;
+	background-color:#009DA8;
+	border-radius: 2px;
+	border:0.2rem #009DA8 solid;
+	}
+
+button{
+	width: 110px;
+	height: 40px;
+	text-align: center;
+	font-family:Cabin;
+	font-size: 1.6rem;
+	color: #009DA8;
+}
+
+.outline{
+	background: none;
+	border:0.2rem #009DA8 solid;
+	border-radius: 2px;
+	}
+
+.resume {
+	grid-column-start: 4;
+}
+
+.contact{
+	border:0.2rem #FCFFF5 solid;
+	border-radius: 2px;
+	padding:0.7rem 1.4rem 0.7rem 1.4rem;
+}
+
+.buttonspace{
+	margin-top:3rem;
+	/*margin-bottom:3rem;*/
+}
+
+@media screen and (min-width:768px;)
+
+@media screen and (min-width:1024px;)

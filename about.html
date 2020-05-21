@@ -9,20 +9,26 @@
 	<meta name="author" content="Zosia Czerska">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/about.css">
+	<link rel="stylesheet" href="css/hamburger.css">
+	<link rel="stylesheet" href="css/marquee.css">
 	<link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet'>
 	<link href='https://fonts.googleapis.com/css?family=Cabin+Sketch' rel='stylesheet'> 
 	<link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+	<script src="https://kit.fontawesome.com/5f1417fbcb.js" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="JS/marquee.js"></script>
 </head>
 
 <body>
 	<nav>
-		<!--left-->
-		<div>
-			<img src="Images/Logo.svg" alt="logo">
+		<div class="logoimg">
+			<img src="Images/Logo.svg">
+		</div>
+		<div class="logo">
 			<p>UX Research &amp; Design</p>
 		</div>
-		<!--right-->
-		<ul>
+		<ul class="nav-links">
 			<li>
 				<a href="index.html">Home</a>
 			</li>
@@ -33,52 +39,62 @@
 				<a href="index.html#Work">Work</a>
 			</li>
 			<li>
-				<a href="resume/zcresume.pdf">Resume</a>
+				<a href="files/CloudGoogleForms.pdf">Resume</a>
 			</li>
 			<li>
 				<a href="contact.html">Contact</a>
 			</li>
 		</ul>
+		<div class="burger">
+			<div class="line1"></div>
+			<div class="line2"></div>
+			<div class="line3"></div>
+		</div>
 	</nav>
-	<main>
-		<header>
-			<div>
-				<h1>About Me</h1>
-				<h4>In a nutshell..</h4>
+
+	<main class="containera">
+		<header class="headabout">
+			<div class="abtitle">
+				<h1 class="abh">About Me</h1>
+				<h4 class="abh2">In a nutshell..</h4>
+			</div>
+			<div class="abp">
 				<p>I am interested in the psychological underpinnings that guide people to make their decisions. I look at design through this lens. My innate curiousity has guided the choices that led me here. This is my journey:</p>
 			</div>
-			<img src="Images/AboutMe/MirrorPuzzle.png" alt="Image of Me superimposed umder puzzle outline">
+			<img src="Images/AboutMe/MirrorPuzzle.png" alt="Image of Me superimposed umder puzzle outline" class="abpic">
 		</header>
-		<section>
-			<img src="Images/AboutMe/how.svg" alt="Decorative Icon">
-			<div>
-				<h4>How I got here:</h4>
-				<p>I remember the moment that I first was able to fully grasp that other people were having different thoughts and feelings, on their own- not centered on me. </p>
-				<p>True, I was a small child, but the theory of mind was overwhelming and exciting.  My interest in other people and their thoughts and feelings continued...</p>
+		<section class="got">
+			<div class="gotinner">
+			<h4 class="goth">How I got here:</h4>
+			<img src="Images/AboutMe/how.png" alt="Decorative Icon" class="gotpic">
+			
+				<p class="gotp1">I remember the moment that I first was able to fully grasp that other people were having different thoughts and feelings, on their own- not centered on me. </p>
+			
+				<p class="gotp2">True, I was a small child, but the theory of mind was overwhelming and exciting.  My interest in other people and their thoughts and feelings continued...</p>
 			</div>
 		</section>
-		<section>
+		<section class="move">
+			<img src="Images/AboutMe/next.svg" alt="Decorative Icon" class="mpic">
 			<div>
-				<h4>My next move:</h4>
-				<p>I found a way to explore my interests in a program at Emory University where I studied neuroscience and behavioral biology. I was able to learn the answers to my questions from multiple angles: anthropology, ethology, neuroscience and psychology. How my studies evolved into my approach today:</p>
+				<h4 class="mh">My next move:</h4>
+				<p class="mp">I found a way to explore my interests in a program at Emory University where I studied neuroscience and behavioral biology. I was able to learn the answers to my questions from multiple angles: anthropology, ethology, neuroscience and psychology. How my studies evolved into my approach today:</p>
 
-				<p>1. Primatology: through behavioral research, I learned to observe slight nuances and developed an essential sense of motivation. Moreover, I learned how actions are affected by the presence of those around us.</p>
+				<p class="mp2">1. Primatology: through behavioral research, I learned to observe slight nuances and developed an essential sense of motivation. Moreover, I learned how actions are affected by the presence of those around us.</p>
 
-				<p>2. Child development: through advanced graduate and independent studies, I learned how we develop the tendencies and behaviors that construct our identity. I also learned from work with elementary school students who had behavioral issues, how temperament and self-control develops.</p>
+				<p class="mp3">2. Child development: through advanced graduate and independent studies, I learned how we develop the tendencies and behaviors that construct our identity. I also learned from work with elementary school students who had behavioral issues, how temperament and self-control develops.</p>
 
-				<p>3. Human behavior: in my studies I learned how neurochemical and neuroanatomical features define the conscious and unconscious behavioral outcomes. I have been working with individuals that have autism and see the 
+				<p class="mp4">3. Human behavior: in my studies I learned how neurochemical and neuroanatomical features define the conscious and unconscious behavioral outcomes. I have been working with individuals that have autism and see the 
 				</p>
 			</div>
-			<img src="Images/AboutMe/next.svg" alt="Decorative Icon">
+			
 		</section>
-		<section>
-			<img src="Images/AboutMe/solve.svg" alt="Decorative Icon">
-			<div>
-				<h4>A problem begets a solution:</h4>
-				<p>The problem was my interests did not narrow down. So, when I finished school, I decided to go to a social psychology conference to explore what research was going on- this was where it happened... I saw a booth recruiting UX researchers. Curious as usual, l looked up what this UX thing was, and I found my passion. I found a way to explore human behavior and needs in order to create a solution.</p>
-			</div>
+		<section class="solution">
+			<img src="Images/AboutMe/solve.svg" alt="Decorative Icon" class="sopic">
+				<h4 class="soh">A problem begets a solution:</h4>
+				<p class="sop">The problem was my interests did not narrow down. So, when I finished school, I decided to go to a social psychology conference to explore what research was going on- this was where it happened... I saw a booth recruiting UX researchers. Curious as usual, l looked up what this UX thing was, and I found my passion. I found a way to explore human behavior and needs in order to create a solution.</p>
+			
 		</section>
-		<section>
+		<section class="steps">
 			<div>
 				<h4>The next steps:</h4>
 				<p>Interaction Design Foundation Certifications:</p>
@@ -92,7 +108,7 @@
 			</div>
 			<img src="Images/AboutMe/steps.svg" alt="Decorative Icon">
 		</section>
-		<section>
+		<section class="way">
 			<img src="Images/AboutMe/work.svg" alt="Decorative Icon">
 			<div>
 				<h4>Work along the way:</h4>
@@ -100,7 +116,7 @@
 				<p>Swim lesson portal: Designing a portal connecting swim instructors with their clientele for scheduling and billing. Transititioning a growing business from paper to a connected web platform without losing the human face clients value.</p>
 			</div>
 		</section>
-		<section>
+		<section class="team">
 			<div>
 				<h4>Team projects:</h4>
 				<p>Project TrayLAB: Co-team lead on this service design project that has been examining a concerted effort to shape DCPS school food by connecting parents and business stakeholders. This project seeks to redesign the process and effectiveness of sharing stakeholder needs through adjustments to the user journey and the website that is the point of contact outside in person meetings held quarterly.</p>
@@ -111,41 +127,59 @@
 		</section>
 	</main>
 	<footer>
-		<div>
-			<h3>Curious?</h3>
-			<h3>Interested?</h3>
-			<h3>Let's get in touch!</h3>
-			<a href="contact.html">Contact Me</a>
+		<div class="fleft">
+			<h3 class="curious">Curious?</h3>
+			<h3 class="int">Interested?</h3>
+			<h3 class="touch">Let's get in touch!</h3>
+			<button class="filled" onclick="document.location = 'contact.html'">Contact Me</button>
 		</div>
-		<div>
-			<h3>Zosia Czerska</h3>
+		<div class="fright">
+			<h3 class="teal">Zosia Czerska</h3>
 			<div>
-				<h3>I am a UX Researcher</h3>
-				<h3>I am a UX Designer</h3>
-				<h3>I am for hire!</h3>
-				<!--marquee: https://jsfiddle.net/jonathansampson/h7SYp/-->
 				
+				 <script src="JS/marquee.js"></script>
+				
+				<div id="marqueecontainer" onMouseover="copyspeed=pausespeed" onMouseout="copyspeed=marqueespeed">
+					<div id="vmarquee" style="position: absolute; width: 98%;">
+
+							<!--YOUR SCROLL CONTENT HERE-->
+					<ul>
+						<li>I am a UX Researcher</li>
+						<li>I am a UX Designer</li>
+						<li>I am for hire!</li>
+					</ul>
+
+
+					</div>
+				</div>
+				<script src="JS/marquee.js"></script>
+				
+				<!--marquee: https://jsfiddle.net/jonathansampson/h7SYp/-->			
 			</div>
-			<h5>Learn More</h5>
-			<ul>
+			
+			<h5 class="teal lm">Learn More</h5>
+			<ul class="learnicons">
 				<li>
-					<a href="mailto:zc@zdesign.fyi">
-             			<i class="fa fa-envelope-square" aria-hidden="true"></i>
-           			</a>
+					<a href="mailto:zc@zdesign.fyi" class="mail">
+						<i class="fas fa-envelope-square" aria-hidden="true" style="color:#FCFFF5"></i>
+             		</a>
 				</li>
 				<li>
-					<a href="linkedin.com/in/zosiaczerska">
-						<i class="fa fa-linkedin-square" aria-hidden="true"></i>
+					<a href="linkedin.com/in/zosiaczerska" class="linkd">
+						<i class="fa fa-linkedin-square" aria-hidden="true" style="color:#FCFFF5"></i>
 					</a>
 				</li>
 				<li>
-					<a href="https://github.com/zczerska">
-						<i class="fa fa-github-square" aria-hidden="true"></i>
+					<a href="https://github.com/zczerska" class="git">
+						<i class="fa fa-github-square" aria-hidden="true" style="color:#FCFFF5"></i>
 					</a>
 				</li>
 			</ul>
 		</div>
 	</footer>
+	<script src="jquery-3.5.1.min.js"></script>
+  <script src="JS/hamburger.js"></script> 
+  <script src="JS/slider.js"></script>
   <script src="js/scripts.js"></script>
 </body>
 </html>

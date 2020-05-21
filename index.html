@@ -9,20 +9,27 @@
 	<meta name="author" content="Zosia Czerska">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/hamburger.css">
+	<link rel="stylesheet" href="css/slide.css">
+	<link rel="stylesheet" href="css/marquee.css">
 	<link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet'>
 	<link href='https://fonts.googleapis.com/css?family=Cabin+Sketch' rel='stylesheet'> 
 	<link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+	<script src="https://kit.fontawesome.com/5f1417fbcb.js" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	 <script src="JS/marquee.js"></script>
+    
 </head>
 
 <body>
 	<nav>
-		<!--left-->
-		<div> 
-			<img src="Images/Logo.svg" alt="logo">
+		<div class="logoimg">
+			<img src="Images/Logo.svg">
+		</div>
+		<div class="logo">
 			<p>UX Research &amp; Design</p>
 		</div>
-		<!--right-->
-		<ul>
+		<ul class="nav-links">
 			<li>
 				<a href="index.html">Home</a>
 			</li>
@@ -33,62 +40,71 @@
 				<a href="index.html#Work">Work</a>
 			</li>
 			<li>
-				<a href="resume/zcresume.pdf">Resume</a>
+				<a href="files/CloudGoogleForms.pdf">Resume</a>
 			</li>
 			<li>
 				<a href="contact.html">Contact</a>
 			</li>
 		</ul>
+		<div class="burger">
+			<div class="line1"></div>
+			<div class="line2"></div>
+			<div class="line3"></div>
+		</div>
 	</nav>
-	<main>
-		<header>
-			<div>
-				<h1>Hello.</h1>
-				<h4>My name is Zosia.</h4>
+
+	<main class="container">
+		<header class="headhome">
+			<div class="hello">
+				<h1 class="hi">Hello.</h1>
+				<h4 class="name">My name is Zosia.</h4>
+			</div>
+			<div class="headbuttons">
+				<button class="filled works" onclick="document.location = 'index.html#workit'">My Work</button>
+				<button class="outline resume">Resume</button>
+			</div>
+			<img src="Images/Home/Coffee3.png" alt="Me in a coffeehouse" class="coffee">
+			<div class="bio">
 				<p>I am a UX researcher and designer based in the Washington DC Metro Area. I explore human behavior and needs in order to  create a solution. I believe the best design comes from the user.</p>
-				<a href="index.html#Work">My Work</a>	
-				<a href="resume/resume.pdf">Resume</a>
 			</div>
-			<img src="Images/Home/Coffee3.png" alt="Me in a coffeehouse">
 		</header>
-		<section>
-			<div><!--top, section heading-->
+		
+		<section id="workit" class="work">
+			<div class="whead"><!--top, section heading-->
 				<h4>My Work</h4>
-				<p>A few things I've been up to lately</p>
+				<p class="txtcolor">A few things I've been up to lately..</p>
 			</div>
-			<article>
-				<img src="Images/Home/MacbookwScreen.png" alt="Well Universe Screen">
-				<h5>Well Universe</h5>
-				<p>A healthcare portal. Design roles: user research, information architecture, visual design, prototyping and user testing</p>
-				<a href="wellu.html">Learn More</a>
+			<article class="welluw">
+				<img src="Images/Home/MacbookwScreen.png" alt="Well Universe Screen" class="wellimg">
+				<h5 class="wellh">Well Universe</h5>
+				<p class="wellp">A healthcare portal. Design roles: user research, information architecture, visual design, prototyping and user testing</p>
+				<button class="outline wlearn" onclick="document.location = 'wellu.html'">Learn More</button>
 			</article>
-			<article>
-				<img src="Images/Home/BusyBusFinal.png" alt="BusyBus Screen">
-				<h5>BusyBus</h5>
-				<p>A transportation iOS app. Design roles: user research, information architecture, visual design, prototyping and user testing</p>
-				<a href="busybus.html">Learn More</a>
+			<article class="busyw">
+				<img src="Images/Home/BusyBusFinal.png" alt="BusyBus Screen" class="busyimg">
+				<h5 class="busyh">BusyBus</h5>
+				<p class="busyp">A transportation iOS app. Design roles: user research, information architecture, visual design, prototyping and user testing</p>
+				<button class="outline busylearn" onclick="document.location = 'busybus.html'">Learn More</button>
 			</article>
 		</section>
-		<section>
-			<div><!--top, section heading-->
+		<section class ="about">
+			<div class="ahead"><!--top, section heading-->
 				<h4>About Me</h4>
-				<p>Get to know a bit about me..</p>
+				<p class="txtcolor">Get to know a bit about me..</p>
 			</div>
-			<img src="Images/Home/Thoughts.svg" alt="Personal Descriptors">
-			<div>
-				<p>I am a very visually oriented person. If someone is lost I can give precise directions, but they tend to be based on landmarks rather than actual street names.
-				I always loved building solutions that I would invision to the problems I ran into.  Part of the reason I love design is the challenge of building a vision that belongs to others and can be shared.</p>
-				<a href="about.html">Learn More</a>
-			</div>
+			<img src="Images/Home/Thoughts.svg" alt="Personal Descriptors" class="aimg">
+			<p class="ap">I am a very visually oriented person. If someone is lost I can give precise directions, but they tend to be based on landmarks rather than actual street names.</p>
+			<p class="ap2">I always loved building solutions that I would invision to the problems I ran into.  Part of the reason I love design is the challenge of building a vision that belongs to others and can be shared.</p>
+			<button class="outline alearn" onclick="document.location = 'about.html'">Learn More</button>
 		</section>
-		<section>
-			<div><!--top, section heading-->
-				<h4>My Process</h4>
-				<p>How I develop my designs..</p>
+		<section class="process">
+			<div class="phead"><!--top, section heading-->
+				<h4 class="ph">My Process</h4>
+				<p class="txtcolor pp">How I develop my designs..</p>
 			</div>
 			<!--organizational chart infographic-->
-			<div><!--column 1--><!--mobile view column 1, slide to col 2, 3-->
-				<article>
+			<!--<div><!--column 1--><!--mobile view column 1, slide to col 2, 3-->
+				<!--<article>
 					<img src="Images/Home/resdis.svg" alt="Research and Discovery Icon">
 					<p>Research and Discovery</p>
 					<p>&rarr;</p>
@@ -106,7 +122,7 @@
 			</div>
 			<div>
 				<!--column 2-->
-				<p>Deliverables</p>
+				<!--<p>Deliverables</p>
 				<article>
 					<p>&lcub;</p>
 					<ul>
@@ -145,7 +161,7 @@
 				</article>
 			</div>
 			<!--column 3--><!--grid area above and below empty-->
-			<div>
+			<!--<div>
 				<p>Tools</p>
 				<article>
 					<p>&lcub;</p>
@@ -164,13 +180,39 @@
 				</article>
 			</div>
 			<!--bottom below infographic-->
-				<div>
+				<div class="slider-contain">
+					<input type="radio" name="images" id=i1 checked>
+					<input type="radio" name="images" id=i2>
+					<input type="radio" name="images" id=i3>
+					<div class="slider-slide">
+						<img src="Images/Home/processcol1.svg" alt="process" id="one">
+						<label for="i3" class="pre"></label>
+						<label for="i2" class="nxt"></label>
+					</div>
+					<div class="slider-slide">
+						<img src="Images/Home/processcol2.svg" alt="deliverables" id="two">
+						<label for="i1" class="pre"></label>
+						<label for="i3" class="nxt"></label>
+					</div>
+					<div class="slider-slide">
+						<img src="Images/Home/processcol3.svg" alt="tools" id="three">
+						<label for="i2" class="pre"></label>
+						<label for="i1" class="nxt"></label>
+					</div>
+					<div class="dots">
+						<label class="dot" id="dot1" for="i1"></label>
+						<label class="dot" id="dot2" for="i2"></label>
+						<label class="dot" id="dot3" for="i3"></label>
+					</div>
+				</div>
+			
+				<div class="pask">
 					<p>Don't see</p>
 					<p>something listed!?</p>
-					<a href="mailto:zosia.hello423@gmail.com">Ask Me</a>
+					<button class="outline" style="margin-top: 1.5rem;" onclick="window.open('mailto:zosia.hello423@gmail.com');">Ask Me</button>
 				</div>			
 		</section>
-		<section>
+		<section class="testimonials">
 			<div><!--top, section heading-->
 				<h4>Testimonials</h4>
 				<p>What people have been saying..</p>
@@ -179,40 +221,58 @@
 		
 	</main>
 	<footer>
-		<div>
-			<h3>Curious?</h3>
-			<h3>Interested?</h3>
-			<h3>Let's get in touch!</h3>
-			<a href="contact.html">Contact Me</a>
+		<div class="fleft">
+			<h3 class="curious">Curious?</h3>
+			<h3 class="int">Interested?</h3>
+			<h3 class="touch">Let's get in touch!</h3>
+			<button class="filled" onclick="document.location = 'contact.html'">Contact Me</button>
 		</div>
-		<div>
-			<h3>Zosia Czerska</h3>
+		<div class="fright">
+			<h3 class="teal">Zosia Czerska</h3>
 			<div>
-				<h3>I am a UX Researcher</h3>
-				<h3>I am a UX Designer</h3>
-				<h3>I am for hire!</h3>
+				
+				 <script src="JS/marquee.js"></script>
+				
+				<div id="marqueecontainer" onMouseover="copyspeed=pausespeed" onMouseout="copyspeed=marqueespeed">
+					<div id="vmarquee" style="position: absolute; width: 98%;">
+
+							<!--YOUR SCROLL CONTENT HERE-->
+					<ul>
+						<li>I am a UX Researcher</li>
+						<li>I am a UX Designer</li>
+						<li>I am for hire!</li>
+					</ul>
+
+
+					</div>
+				</div>
+				<script src="JS/marquee.js"></script>
+				
 				<!--marquee: https://jsfiddle.net/jonathansampson/h7SYp/-->			
 			</div>
-			<h5>Learn More</h5>
-			<ul>
+			
+			<h5 class="teal lm">Learn More</h5>
+			<ul class="learnicons">
 				<li>
-					<a href="mailto:zc@zdesign.fyi">
-             			<i class="fa fa-envelope-square" aria-hidden="true"></i>
-           			</a>
+					<a href="mailto:zc@zdesign.fyi" class="mail">
+						<i class="fas fa-envelope-square" aria-hidden="true" style="color:#FCFFF5"></i>
+             		</a>
 				</li>
 				<li>
-					<a href="linkedin.com/in/zosiaczerska">
-						<i class="fa fa-linkedin-square" aria-hidden="true"></i>
+					<a href="linkedin.com/in/zosiaczerska" class="linkd">
+						<i class="fa fa-linkedin-square" aria-hidden="true" style="color:#FCFFF5"></i>
 					</a>
 				</li>
 				<li>
-					<a href="https://github.com/zczerska">
-						<i class="fa fa-github-square" aria-hidden="true"></i>
+					<a href="https://github.com/zczerska" class="git">
+						<i class="fa fa-github-square" aria-hidden="true" style="color:#FCFFF5"></i>
 					</a>
 				</li>
 			</ul>
 		</div>
 	</footer>
-  <script src="js/scripts.js"></script>
+  <script src="jquery-3.5.1.min.js"></script>
+  <script src="JS/hamburger.js"></script> 
+  <script src="JS/slider.js"></script>
 </body>
 </html>

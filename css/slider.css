@@ -1,0 +1,36 @@
+.slider-contain{
+	width:100%;
+	margin:auto;
+	overflow: hidden;
+	position:relative;
+}
+
+.slider-slide{
+	display: flex;
+	width: 85%;
+	height:400px;
+	margin-left: auto;
+	margin-right:auto;
+	
+}
+
+#prevBtn{
+	position: absolute;
+	top:50%;
+	z-index: 10;
+	left: 0%;
+	font-size:30px;
+	color:white;
+	cursor: pointer;
+}
+
+#nextBtn{
+	position: absolute;
+	top:50%;
+	z-index: 10;
+	right:0%;
+	font-size:30px;
+	color:white;
+	cursor: pointer;
+}
+

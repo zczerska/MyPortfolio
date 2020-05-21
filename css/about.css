@@ -1,0 +1,170 @@
+.containera{
+	display: grid;
+	grid-template-areas: 
+		"headabout"
+		"got"
+		"gotp"
+		"move"
+		"solution"
+		"steps"
+		"way"
+		"team";
+		
+}
+
+.headabout{
+	grid-area: headabout;
+	display: grid;
+	
+	margin-bottom: 4rem;
+	margin-left: 3rem;
+	margin-right: 3rem;
+	grid-template-areas: 
+		"abtitle"
+		"abh"
+		"abh2"
+		"abpic"
+		"abp";
+		
+	
+}
+
+.abtitle{
+	grid-area: abtitle;
+	padding-bottom: 1rem;
+}
+
+.abh{
+	grid-area: abh;
+	padding-bottom: 0.2rem;
+}
+
+.abh2{
+	grid-area: abh2;
+	padding-bottom: 1rem;
+}
+
+.abp{
+	grid-area:abp;
+	padding-bottom: 1rem;
+	padding-top: 1rem;
+	
+}
+
+.abpic{
+	grid-area:abpic;
+	
+}
+
+.got{
+	grid-area:got;
+	display: grid;
+	
+	padding-left: 3rem;
+	padding-right: 3rem;
+	}
+
+.gotinner{
+	display: grid;
+	grid-template-columns: 20em 9em;
+	grid-column-gap: 1em;
+	grid-row-gap: 1em;
+	grid-template-rows: 4em 16em 12em;
+	padding-bottom: 1rem;
+}
+
+.goth{
+	display: grid;
+	grid-column-start: 1;
+	grid-row: 1;
+}
+.gotp1{
+	display: grid;
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row: 2;
+	
+}
+
+.gotpic{
+	display: grid;
+	grid-column-start: 3;
+	grid-column-end: 4;
+	grid-row: 1/2;
+	
+}
+
+.gotp2{
+	display: grid;
+	grid-area: gotp2;
+}
+
+.move{
+	grid-area: move;
+	display: grid;
+	margin-bottom: 4rem;
+	margin-left: 3rem;
+	margin-right: 3rem;
+	grid-template-areas: 
+		". . mpic"
+		"mh mh mh"
+		"mp . ."
+		"mp2 mp2 mp2"
+		"mp3 mp3 mp3"
+		"mp4 mp4 mp4";
+}
+
+.mpic{
+	grid-area: mpic;
+}
+
+.mh{
+	grid-area: mh;
+}
+
+.mp {
+	grid-area: mp;
+	margin-bottom: 1.5rem;
+}
+
+.mp2{
+	grid-area: mp2;
+	margin-bottom: 1.5rem;
+}
+
+.mp3{
+	grid-area: mp3;
+	margin-bottom: 1.5rem;
+}
+
+.mp4{
+	grid-area: mp4;
+	margin-bottom: 1.5rem;
+}
+
+.solution{
+	grid-area: solution;
+	display: grid;
+	margin-bottom: 4rem;
+	margin-left: 3rem;
+	margin-right: 3rem;
+	grid-template-areas: 
+		
+		"soh ."
+		"sop ."
+		". sopic"
+		
+}
+
+.sopic{
+	grid-area: sopic;
+	width:80%;
+}
+
+.soh{
+	grid-area: soh;
+}
+
+.sop{
+	grid-area: sop;
+}
