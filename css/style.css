@@ -1,3 +1,6 @@
+@charset "UTF-8";
+/* Css Document */
+
 * {
 	box-sizing: border-box;
 }
@@ -60,19 +63,23 @@ html {
 
 .works {
 	grid-area: works;
-	margin-top:1.5rem;
+	
 	margin-bottom: 1rem;
 	margin-right: 1.5rem;
 }
 
 .resume {
 	grid-area: resume;
-	margin-top:1.5rem;
+	
 	
 }
 
 .coffee{
 	grid-area: coffee;
+	width:100%;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
 	padding-bottom: 1rem;
 	padding-top: 1rem;
 }
@@ -88,6 +95,7 @@ html {
 	grid-area: work;
 	display: grid;
 	background-color: rgba(255, 230, 151, 0.15);
+	border-top: 1px solid #FFE697;
 	padding-top:4rem;
 	padding-bottom: 4rem;
 	grid-template-areas: 
@@ -99,7 +107,7 @@ html {
 
 .whead{
 	grid-area: whead;
-	margin-bottom: 4rem;
+	margin-bottom: 2rem;
 	margin-left: 3rem;
 	margin-right: 3rem;
 }
@@ -113,7 +121,7 @@ html {
 		"wellimg wellimg"
 		"wellh wellh"
 		"wellp wellp"
-		" . wlearn"
+		" . wlearn";
 		
 }
 
@@ -125,6 +133,10 @@ html {
 
 .wellimg{
 	grid-area: wellimg;
+	width: 95%;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
 	
 }
 .wellp{
@@ -150,7 +162,7 @@ html {
 		"busyimg busyimg"
 		"busyh busyh"
 		"busyp busyp"
-		" . busylearn"
+		" . busylearn";
 	
 }
 
@@ -163,7 +175,9 @@ html {
 .busyimg{
 	grid-area: busyimg;	
 	width: 40%;
-	margin-left: 12em;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .busyp{
@@ -188,7 +202,7 @@ html {
 		"aimg aimg aimg"
 		"ap ap ap"
 		"ap2 ap2 ap2"
-		" . . alearn"
+		" . . alearn";
 }
 
 .ahead{
@@ -199,7 +213,10 @@ html {
 
 .aimg{
 	grid-area: aimg;
-	margin-left: 3rem;
+	width:80%;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
 	
 }
 
@@ -232,8 +249,10 @@ html {
 	padding-left:3rem;
 	padding-right:3rem;
 	grid-template-areas: 
-		"phead phead phead"
-		" . . pask"
+		"phead phead phead phead"
+		"pslider pslider pslider pslider"
+		" . . pask pask"
+		". . . pbutton";
 }
 
 .phead{
@@ -241,15 +260,26 @@ html {
 	
 }
 
-.pask{
-	grid-area: pask;
+.pslider{
+	grid-area:pslider;
 }
 
+.pask{
+	grid-area: pask;
+	padding-left: 5rem;
+	
+}
+ 
+.pbutton{
+	grid-area: pbutton;
+}
 .testimonials {
 	grid-area: testimonials;
 	display: grid;
-	margin-top:4rem;
-	margin-bottom: 4rem;
+	padding-top:4rem;
+	margin-bottom: 20rem;
+	padding-left:3rem;
+	padding-right:3rem;
 	grid-template-areas: 
 }
 
@@ -260,13 +290,12 @@ footer {
 	font-size:3.6rem;
 	grid-area: footer;
 	display: grid;
-	margin-top:4rem;
-	margin-bottom: 4rem;
 	grid-template-areas: 
 		"curious"
 		"int"
 		"touch";
 }
+
 
 .teal{
 	color: #009DA8;
@@ -290,23 +319,29 @@ footer {
 
 .mail{
 	grid-area: mail;
+	font-size:4rem;
+	color:#FCFFF5;
 }
 
 .linkd{
 	grid-area: linkd;
+	font-size:4rem;
+	color:#FCFFF5;
 }
 
 .git{
 	grid-area: git;
+	font-size:4rem;
+	color:#FCFFF5;
 }
 
 .fleft{
-	margin-left:3rem;
+	padding-left:3rem;
 }
 
 .fright{
-	margin-left:3rem;
-	margin-top:7rem;
+	padding-left:3rem;
+	padding-top:7rem;
 }
 .curious{
 	display: grid;
@@ -315,7 +350,7 @@ footer {
 
 .int{
 	display: grid;
-	margin-top:1.5rem;
+	margin-top:1rem;
 }
 
 .touch{
@@ -334,10 +369,15 @@ footer {
 	
 }
 
+.lifoot{
+	font-size: 3.0rem;
+}
+
 p {
 	font-family: Nunito; 
 	font-size: 1.6rem;
 	line-height: 125%;
+	padding-bottom: 2rem;
 }
 
 .txtcolor{
@@ -358,13 +398,18 @@ h3 {
 
 h4 {
 	font-size: 3.0rem;
-margin-bottom: 0.7rem;
+margin-bottom: 2rem;
 }
 
 h5 {
 	font-size: 2.4rem;
 	font-weight: 500;
 	}
+
+h6 {
+	font-size:2.2rem;
+	padding-bottom: 2rem;
+}
 
 img {
   max-width: 100%;
@@ -373,10 +418,46 @@ img {
   margin-top: 2rem;
  }
 
+li{
+	font-family: Nunito;
+	font-size:1.6rem;
+	line-height: 120%;
+}
+
 a:link, a:visited, a:hover, a:active {
 	text-decoration: none;
 	}
 
+p {
+	padding-top: 1rem;
+}
+
+.nope p{
+	padding-top: unset;
+	padding-bottom: unset;
+}
+
+.heavy {
+	font-weight:600;
+}
+
+.slant{
+	font-style: italic;
+}
+
+.under{
+	text-decoration: underline;
+}
+
+.txtcntr{
+	text-align: center;
+}
+
+.cntr{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 .filled{
 	color:#FCFFF5;
 	background-color:#009DA8;
@@ -412,6 +493,46 @@ button{
 .buttonspace{
 	margin-top:3rem;
 	/*margin-bottom:3rem;*/
+}
+.centerimg{
+	display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.hcenter{
+	text-align: center;
+}
+
+.xtrat{
+	margin-top:9rem;
+}
+.extratop{
+	margin-top: 8rem;
+}
+
+.extratopp{
+	margin-top: 3rem;
+}
+
+.extratoppy{
+	margin-top:1.5rem;
+}
+
+.extrabtm{
+	margin-bottom: 3rem;
+}
+
+.extrabttm{
+	margin-bottom: 1rem;
+}
+
+.xtrab{
+	margin-bottom: 4rem;
+}
+
+.extrabttmy{
+	margin-bottom: 6rem;
 }
 
 @media screen and (min-width:768px;)

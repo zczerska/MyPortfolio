@@ -3,7 +3,6 @@
 	grid-template-areas: 
 		"headabout"
 		"got"
-		"gotp"
 		"move"
 		"solution"
 		"steps"
@@ -15,7 +14,7 @@
 .headabout{
 	grid-area: headabout;
 	display: grid;
-	
+	margin-top:4rem;
 	margin-bottom: 4rem;
 	margin-left: 3rem;
 	margin-right: 3rem;
@@ -41,130 +40,195 @@
 
 .abh2{
 	grid-area: abh2;
-	padding-bottom: 1rem;
+	
 }
 
 .abp{
 	grid-area:abp;
-	padding-bottom: 1rem;
-	padding-top: 1rem;
+	
 	
 }
 
 .abpic{
 	grid-area:abpic;
+	margin-bottom: 3rem;
 	
 }
 
 .got{
 	grid-area:got;
-	display: grid;
-	
+	background: rgba(255, 230, 151, 0.15);
+	border-top: 1px solid #FFE697;
+	padding-top:4rem;
+	padding-bottom: 4rem;
 	padding-left: 3rem;
 	padding-right: 3rem;
 	}
 
+.gottop{
+	display: flex;
+	flex-direction: row;
+}
+
 .gotinner{
-	display: grid;
-	grid-template-columns: 20em 9em;
-	grid-column-gap: 1em;
-	grid-row-gap: 1em;
-	grid-template-rows: 4em 16em 12em;
-	padding-bottom: 1rem;
+	display: flex;
+	flex-direction: column;
+	
 }
 
 .goth{
-	display: grid;
-	grid-column-start: 1;
-	grid-row: 1;
-}
-.gotp1{
-	display: grid;
-	grid-column-start: 1;
-	grid-column-end: 3;
-	grid-row: 2;
-	
+	margin-bottom: 1rem;
 }
 
 .gotpic{
-	display: grid;
-	grid-column-start: 3;
-	grid-column-end: 4;
-	grid-row: 1/2;
+	width:25%;
+	height: 80%;
+	margin-left: 1rem;
+}
+
+.gotp{
+	margin-right: 1rem;	
 	
 }
 
-.gotp2{
-	display: grid;
-	grid-area: gotp2;
-}
+
 
 .move{
 	grid-area: move;
-	display: grid;
-	margin-bottom: 4rem;
-	margin-left: 3rem;
-	margin-right: 3rem;
-	grid-template-areas: 
-		". . mpic"
-		"mh mh mh"
-		"mp . ."
-		"mp2 mp2 mp2"
-		"mp3 mp3 mp3"
-		"mp4 mp4 mp4";
+	background: rgba(0, 157, 168, 0.1);
+	padding-top:4rem;
+	padding-bottom: 4rem;
+	padding-left: 3rem;
+	padding-right: 3rem;
+	border-top: 1px solid #b3e2e5;
+}
+
+.mtop{
+	display: flex;
+	flex-direction: row;
+}
+
+.minner{
+	display: flex;
+	flex-direction: column;
 }
 
 .mpic{
-	grid-area: mpic;
+	width:25%;
+	height: 80%;
+	margin-left: 1rem;
 }
 
 .mh{
-	grid-area: mh;
+	margin-bottom: 1rem;
 }
 
-.mp {
-	grid-area: mp;
-	margin-bottom: 1.5rem;
-}
 
-.mp2{
-	grid-area: mp2;
-	margin-bottom: 1.5rem;
-}
-
-.mp3{
-	grid-area: mp3;
-	margin-bottom: 1.5rem;
-}
-
-.mp4{
-	grid-area: mp4;
-	margin-bottom: 1.5rem;
-}
 
 .solution{
 	grid-area: solution;
-	display: grid;
-	margin-bottom: 4rem;
-	margin-left: 3rem;
-	margin-right: 3rem;
-	grid-template-areas: 
-		
-		"soh ."
-		"sop ."
-		". sopic"
-		
+	background: rgba(21, 19, 103, 0.1);
+	padding-top:4rem;
+	padding-bottom: 4rem;
+	padding-left: 3rem;
+	padding-right: 3rem;
+	border-top: 1px solid #b1bdd2;
+}
+
+.solinner{
+	display: flex;
+	flex-direction: column;
+}
+
+.soltop{
+	display: flex;
+	flex-direction: row;
 }
 
 .sopic{
-	grid-area: sopic;
-	width:80%;
+	width:25%;
+	height: 80%;
+	margin-left: 1rem;
 }
 
-.soh{
-	grid-area: soh;
+.steps{
+	grid-area: steps;
+	padding-top:4rem;
+	padding-bottom: 4rem;
+	padding-left: 3rem;
+	padding-right: 3rem;
+	}
+
+.stepinner{
+	display: flex;
+	flex-direction: column;
 }
 
-.sop{
-	grid-area: sop;
+.steptop{
+	display: flex;
+	flex-direction: row;
 }
+
+.stepic{
+	width:25%;
+	height: 80%;
+	margin-left: 1rem;
+}
+
+.steph{
+	margin-top:1.5rem;
+	margin-bottom: 2rem;
+}
+
+.way{
+	grid-area:way;
+	background: rgba(255, 230, 151, 0.15);
+	border-top: 1px solid #FFE697;
+	padding-top:4rem;
+	padding-bottom: 4rem;
+	padding-left: 3rem;
+	padding-right: 3rem;
+}
+
+.wayinner{
+	display: flex;
+	flex-direction: column;
+}
+
+.waytop{
+	display: flex;
+	flex-direction: row;
+}
+
+.waypic{
+	width:25%;
+	height: 80%;
+	margin-left: 1rem;
+}
+
+.team{
+	grid-area:team;
+	background: rgba(0, 157, 168, 0.1);
+	border-top: 1px solid #b3e2e5;
+	padding-top:4rem;
+	padding-bottom: 4rem;
+	padding-left: 3rem;
+	padding-right: 3rem;
+}
+
+.teaminner{
+	display: flex;
+	flex-direction: column;
+}
+
+.teamtop{
+	display: flex;
+	flex-direction: row;
+}
+
+.teampic{
+	width:25%;
+	height: 80%;
+	margin-left: 1rem;
+}
+

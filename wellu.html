@@ -3,16 +3,25 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Portfolio | Zosia Czerska</title>
+	<title>Zosia Czerska | Portfolio</title>
 	<meta name="description" content="Portfolio projects of Zosia Czerska">
 	<meta name="author" content="Zosia Czerska">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/wellu.css">
 	<link rel="stylesheet" href="css/hamburger.css">
+	<link rel="stylesheet" href="css/marquee.css">
+	<link rel="stylesheet" href="css/flickity.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet'>
 	<link href='https://fonts.googleapis.com/css?family=Cabin+Sketch' rel='stylesheet'> 
 	<link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+	<script src="https://kit.fontawesome.com/5f1417fbcb.js" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	
+	<script src="JS/marquee.js"></script>
+	<script src="JS/flickity.js"></script>
+	
 </head>
 
 <body>
@@ -31,7 +40,7 @@
 				<a href="about.html">About</a>
 			</li>
 			<li>
-				<a href="index.html#Work">Work</a>
+				<a href="index.html#workit">Work</a>
 			</li>
 			<li>
 				<a href="files/CloudGoogleForms.pdf">Resume</a>
@@ -47,523 +56,699 @@
 		</div>
 	</nav>
 
-	<main>
-		<header>
-			<img src="Images/CaseWellU/wellu.svg" alt="Well Universe Logo">
-			<h1>Well Universe</h1>
-			<p>A partnership in healthcare and self-care</p>
-		</header>
-		<section>
-			<div>
-				<img src="Images/Home/MacbookwScreen.png" alt="Well Universe Screen">
-			</div>
-			<div>
-				<h5>Summary:</h5>
-				<p>The current healthcare market is saturated with cumbersome and incomplete patient portals. This project sought to increase the amount of available tasks a patient can complete remotely with a more intuitive and friendly interface. 
-				</p>
-				<h5>Goal:</h5>
-				<p>To enhance the patient/provider relationship in a way that would increase adherence to healthcare provided advice and provide a baseline to increase patient overall wellness.
-				</p>
-			</div>
-			<div>
-				<h5>See the final prototype</h5>
-				<h5>take me there:</h5>
-				<a href="">HiFi Prototype</a>
-			</div>
-		</section>
-		<section>
+	<main class="containerw">
+		<div class="intro">
+			<header class="inhead">
+				<img src="Images/CaseWellU/wellu.svg" alt="Well Universe Logo" class="wellimg">
+				<div class="topper">
+					<h3 class="wellh">Well Universe</h3>
+					<p class="ptopper">A partnership in healthcare and self-care</p>
+				</div>
+			</header>
+			
+			<section>
+				<div>
+					<img src="Images/Home/MacbookwScreen.png" alt="Well Universe Screen" class="screen">
+				</div>
+				<div>
+					<h5>Summary:</h5>
+					<p>This project sought to increase the amount of available tasks a patient can complete remotely with a more intuitive and friendly interface. 
+ 					</p>
+				</div>
+				<div >
+					<h5 class="see">See the final prototype</h5>
+					<h5 class="take">take me there:</h5>
+					<button class="filled wellbutton" onclick="window.location.href = 'https://w3docs.com';">HiFi Prototype</a>
+				</div>
+			</section>
+		</div>
+		<section class="evolution">
 			<h5>Design Evolution:</h5>
-			<h5>a preview of the process</h5>
+			<h5 class="preview">a preview of the process</h5>
 			<!--slider, lightbox-->
-			<img src="Images/CaseWellU/1.png" alt="Design Evolution Screen">
-			<img src="Images/CaseWellU/2.png" alt="Design Evolution Screen">
-			<img src="Images/CaseWellU/3.png" alt="Design Evolution Screen">
-			<img src="Images/CaseWellU/4.png" alt="Design Evolution Screen">
-			<img src="Images/CaseWellU/5.png" alt="Design Evolution Screen">
+			<div class="gallery js-flickity">
+			  <div class="gallery-cell1"><img src="Images/CaseWellU/1.png" alt="Design Evolution Screen"></div>
+			  <div class="gallery-cell2"><img src="Images/CaseWellU/2.png" alt="Design Evolution Screen"></div>
+			  <div class="gallery-cell3"><img src="Images/CaseWellU/3.png" alt="Design Evolution Screen"></div>
+			  <div class="gallery-cell4"><img src="Images/CaseWellU/4.png" alt="Design Evolution Screen"></div>
+			  <div class="gallery-cell5"><img src="Images/CaseWellU/5.png" alt="Design Evolution Screen"></div>
+			</div>
 		</section>
-		<section>
-			<div>
-				<article>
+		<section class="probsolve">
+			<div class="top">
+				<article class="inner">
 					<h5>Problem:</h5>
-					<p>There is a disconnect between providers and patients that results in avoidance, exacerbating any existing health problems and letting unknown problems go unnoticed. A platform that provides a conduit to patient/provider interaction is needed.There is no system in place to allow for supervised health maintenance.</p>
+					<p>There is a disconnect between providers and patients that results in avoidance, exacerbating any existing health problems and letting unknown problems go unnoticed.</p>
 				</article>
-				<div>
-					<img src="Images/CaseWellU/problem.png" alt="Problem">
+				<img src="Images/CaseWellU/problem.png" alt="Problem" class="probpic">
+			</div>
+				<div class="top">
+					
+					<img src="Images/CaseWellU/solved.png" alt="Solution" class="solvepic">
+					<article class="inner">
+						<h5>Solution:</h5>
+						<p>An interface that is user friendly and provides the ability to complete necessary tasks. To keep the patient informed, this portal provides</p> 
+					</article>
 				</div>
-			</div>
-			<div>
-				<div>
-					<img src="Images/CaseWellU/solved.png" alt="Solution">
-				</div>
-				<article>
-					<h5>Solution:</h5>
-					<p>A patient portal that is also a wellness portal. The objective is to produce an interface that is user friendly and provides the ability to complete necessary tasks. To keep the patient informed, this portal provides medical records along with proper resources and explanations to understand the implications of the information. 
-					</p>
-				</article>
-			</div>
-			<div>
-				<img src="Images/CaseWellU/deliver.svg" alt="Infographic">
-			</div>
-			<div>
-				<h3>Design Thinking</h3>
-				<h5>it's a process</h5>
-				<p>&rarr;</p>
-				<h5>let's begin</h5>
-			</div>
+			<p class="psolve">medical records along with proper resources and explanations to understand the implications of the information. </p>
+			
+			
 		</section>
-		<hr/>
-		<section>
-			<h2>Discovery and Research</h2>			
+		<section class="deliver">
+				<img src="Images/CaseWellU/deliverm.svg" alt="Infographic" class="deliverm">
+				
+			</section>
+		
+		<section class="drbanner">
+			<h2>Discovery &amp; Research</h2>			
 		</section>
-		<section>
-			<h3>Competitive Analysis</h3>
+		<section class="companalysis">
+			<h5 class="type">Competitive Analysis</h5>
+			
 			<article>
+				
 				<div>
-					<img src="Images/CaseWellU/CVSLogo.png" alt="CVS Logo">
-					<img src="Images/CaseWellU/CVSswot.svg" alt="CVS SWOT">
+					<img src="Images/CaseWellU/CVSLogo.png" alt="CVS Logo" class="complogo">
+					<img src="Images/CaseWellU/CVSswot.svg" alt="CVS SWOT" class="swot">
+					<p class="slant">(Tap SWOT images to zoom)</p>
 				</div>
 				<div>
-					<img src="Images/CaseWellU/nextgenlogo.png" alt="NextGen Logo">
-					<img src="Images/CaseWellU/NextGenswot.svg" alt="NextGen SWOT">
-				</div>
-			</article>
-			<article>
-				<img src="Images/CaseWellU/logo-iprescribe.png" alt="iPrescribe Logo">
-				<img src="Images/CaseWellU/iPrescribeswot.svg"  alt="iPrescribe SWOT">
-			</article>
-			<article>
-				<h3>Key Takeaways</h3>
-				<img src="Images/CaseWellU/key.svg" alt="Key Icon">
-				<div>
-					<h5>connect patients &plus; providers &plus; medical information</h5>
-					<h5>&equals;</h5>
-					<h5>greater patient involvement in their own health</h5>
+					<img src="Images/CaseWellU/nextgenlogo.png" alt="NextGen Logo" class="complogo">
+					<img src="Images/CaseWellU/NextGenswot.svg" alt="NextGen SWOT" class="swot">
 				</div>
 			</article>
 			<article>
-				<h5>Accomplish by:</h5>
-				<ul>
-					<li>Resolving security concerns</li>
-					<li>Attracting hesitant users to portal us with features</li>
+				<img src="Images/CaseWellU/logo-iprescribe.png" alt="iPrescribe Logo" class="complogo">
+				<img src="Images/CaseWellU/iPrescribeswot.svg"  alt="iPrescribe SWOT" class="swot">
+			</article>
+			<article>
+				<div class="keyouter">
+					<div class="key">
+						<h5 class="keyh">Key Takeaways</h5>
+						<img src="Images/CaseWellU/key.svg" alt="Key Icon" class="keyimg">
+					</div>
+				</div>
+				<div class="highlight">
+					<p>connect patients &plus; providers &plus; medical information<br>&equals;<br>greater patient involvement in their own health</p>
+				</div>
+		    </article>
+			<article style="padding-top:3rem;">
+				<p class="heavy">Accomplish by:</p>
+				<ul class="fa-ul">
+					<li class="dmove"><span class="fa-li"><i class="fas fa-asterisk"></i></span>Resolving security concerns</li>
+					<li class="dmove"><span class="fa-li"><i class="fas fa-asterisk"></i></span>Attracting hesitant users to portal us with features</li>
 				</ul>
 			</article>
 			<div>
-				<h5>See the whole report</h5>
-						<h5>take me there:</h5>
+				<h5 class="see">See the whole report</h5>
+						<h5 class="take">take me there:</h5>
 				
-				<a href="https://docs.google.com/document/d/12vNHnGjGspTylf90qVJyHdv11ixFvvhX85-y3idQPaI/edit?usp=sharing">Competitive Analysis</a>
+				<button class="filled wellbutton" onclick="window.location.href = 'https://docs.google.com/document/d/12vNHnGjGspTylf90qVJyHdv11ixFvvhX85-y3idQPaI/edit?usp=sharing';">Competitive Analysis</button>
 			</div>
 		</section>
 		
-		<section>
-			<h3>User Survey</h3>
-			<img src="Images/CaseWellU/survey.svg" alt="Survey Icon">
-			<div>				
-				<p>The survey conducted examined various types of consumer knowledge and behavior in regards to cloud computing and patient portal use. 
-				Opinions about cloud computing and patient portals  were largely in agreement, but usage and comfort level with patient portals varied widely.
-				</p>
+		<section class="survey">
+			<div class="top">
+				<div class="inner">	
+					<h5 class="type space">User Survey</h5>
+					<p>The survey conducted examined various types of consumer knowledge and behavior in regards to cloud computing and patient portal use. 
+					</p>
+				</div>
+				<img src="Images/CaseWellU/survey.svg" alt="survey icon">
 			</div>
-			<h5>Cloud Computing Findings</h5>
+			<p class="psolve">Opinions about cloud computing and patient portals  were largely in agreement, but usage and comfort level with patient portals varied widely.</p>
+			<h5 class="hcenter extratopp">Cloud Computing Findings</h5>
 			<article>
-				<div>
-					<p>95%</p>
-					<p>Rely on Cloud Computing</p>
+				<div class="gallery js-flickity">
+				<div class="gallery-cell9">
+					<div class="card">
+					<div class="inner">
+						<p class="percent">95<span class="percentage">%</span></p>
+						<p class="descript">Rely on cloud computing</p>
+					</div>
 				</div>
-				<div>
-					<p>90%</p>
-					<p>Use for Data Backup</p>
 				</div>
-				<div>
-					<p>85%</p>
-					<p>Use for Storage</p>
+				<div class="gallery-cell10">
+					<div class="card">
+						<div class="inner">
+							<p class="percent fix">90<span class="percentage">%</span></p>
+							<p class="descript fix2">Use for data backup</p>
+						</div>
+					</div>
 				</div>
-				<div>
-					<p>95%</p>
-					<p>Have Security Concerns</p>
+				<div class="gallery-cell11">
+					<div class="card">
+						<div class="inner">
+							<p class="percent fix">85<span class="percentage">%</span></p>
+							<p class="descript fix2">Use for storage</p>
+						</div>
+					</div>
+				</div>
+				<div class="gallery-cell12">
+					<div class="card">
+						<div class="inner">
+							<p class="percent">95<span class="percentage">%</span></p>
+							<p class="descript">Have security concerns</p>
+						</div>
+					</div>
+				</div>
 				</div>
 			</article>
-			<h5>Patient Portal Findings</h5>
-			<article>
-				<div>
-					<p>67%</p>
-					<p>Use a Patient Portal</p>
+			<div class="">
+			<h5 class="hcenter extratop">Patient Portal Findings</h5>
+			<article class="extrabttmy">
+				<div class="gallery js-flickity">
+				<div class="gallery-cell13">
+				<div class="card">
+					<div class="inner">
+						<p class="percent fix">67<span class="percentage">%</span></p>
+						<p class="descript fix2">Use a patient portal</p>
+					</div>
 				</div>
-				<div>
-					<p>83%</p>
-					<p>Can view test results</p>
-					<p>Schedult an appt</p>
 				</div>
-				<div>
-					<p>50%</p>
-					<p>Contact doctor</p>
-					<p>Refill prescription</p>
-					<p>Access records</p>
+				<div class="gallery-cell14">
+				<div class="card">
+					<div class="inner">
+						<p class="percent fix">83<span class="percentage">%</span></p>
+						<p class="descript fix2">Can view test results</p>
+						<p class="descript fix2 spot">Schedule an appt</p>
+					</div>
 				</div>
-				<div>
-					<p>72%</p>
-					<p>Want portal to connect to insurance</p>
 				</div>
-				<h6>Patient Portal reliance and comfort level</h6>
-				<div>
-					<p>chart js</p>
-					<p>chart js</p>
+				<div class="gallery-cell15">
+				<div class="card">
+					<div class="inner">
+						<p class="percent fix">50<span class="percentage">%</span></p>
+						<p class="descript fix2">Contact doctor</p>
+						<p class="descript fix2 spot">Refill prescription</p>
+						<p class="descript fix2 spot">Access records</p>
+					</div>
+				</div>
+				</div>
+				<div class="gallery-cell16">
+				<div class="card">
+					<div class="inner">
+						<p class="percent">72<span class="percentage">%</span></p>
+						<p class="descript">Want portal to connect to insurance</p>
+					</div>
+				</div>
+				</div>
 				</div>
 			</article>
 			<article>
-				<h3>Key Takeaways</h3>
-				<img src="Images/CaseWellU/key.svg" alt="Key Icon">
-				<div>
-					<h5>current state = discontent!</h5>
+				<h6 class="xtrat ">Survey Insight:</h6>
+				<ul class="fa-ul xtrab" >
+					<li class="slant"><span class="fa-li"><i class="fas fa-bolt"></i></i></span>There was a high level of agreement in survey opinions of patient portals, but there was a great deal of variation amongst reported reliance and comfort level in regards to portal use:</li>
+				</ul>
+				<div class="chartbkg">
+					<div class="chartpadding">
+						<p class="txtcntr">When given a choice, do you rely on a patient portal?</p>
+						<canvas class="extrabttmy" id="myChart" width="80%"></canvas>
+					</div>
 				</div>
-				<h5>Renewed interest if:</h5>
-				<ul>
-					<li>Features enhanced</li>
-					<li>More user-friendly</li>
-					<li>Integrate with other services</li>
+				<div class="chartbkg extrabttmy">
+					<div class="chartpadding">
+						<p class="txtcntr">How would you rate your comfort level with the patient portal you use?</p>
+						<canvas id="myChart2" width="80%"></canvas>
+					</div>
+				</div>	
+				
+			</article>
+			<article>
+				<div class="keyouter">
+					<div class="key">
+						<h5 class="keyh">Key Takeaways</h5>
+						<img src="Images/CaseWellU/key.svg" alt="Key Icon" class="keyimg">
+					</div>
+				</div>
+				<div class="highlight">
+					<h6>current state = discontent!</h6>
+				</div>
+		    </article>
+			<article style="padding-top:3rem; padding-bottom: 3rem;">
+				<p class="heavy" style="padding-bottom: 2rem;">Renewed interest if:</p>
+				<ul class="fa-ul">
+					<li class="dmove"><span class="fa-li"><i class="fas fa-asterisk"></i></span>Features enhanced</li>
+					<li class="dmove"><span class="fa-li"><i class="fas fa-asterisk"></i></span>More user-friendly</li>
+					<li class="dmove"><span class="fa-li"><i class="fas fa-asterisk"></i></span>Integrate with other services</li>
 				</ul>
 			</article>
 			<div>
-				<h5>See the details</h5>
-				<h5>take me there:</h5>
+				<h5 class="see">See the details</h5>
+				<h5 class="take">take me there:</h5>
 				<div>
 					<a href="">Google Forms</a>
-					<a href="https://docs.google.com/document/d/11zF3ADlKhz9tm-9xN9u4KMvJbn9ge0YBzKroJPLOSwg/edit?usp=sharing">Survey Writeup</a>
+					<button class="filled wellbutton" onclick="window.location.href = 'https://docs.google.com/document/d/11zF3ADlKhz9tm-9xN9u4KMvJbn9ge0YBzKroJPLOSwg/edit?usp=sharing';">Survey Writeup</button>
 				</div>
 			</div>
 		</section>
-		<section>
-			<h3>User Interviews</h3>
-			<h5>What I learned about user needs and habits:</h5>
-			<article>
-				<ul>
-					<li>Web Usage</li>
-					<li>Integral to work, predominantly email.Varied reporting of personal use- one person was embarrassed to say.(In the future will adjust interview to gage a daily estimate)Top sites: Google and shopping sites. Social media was also high on the list, but generally limited to mobile device use.</li>
-					<li>Health</li>
-					<li>Priorities: work, enjoyment, family Health as a priority: dependent on age (older respondents) or if had children Fitness: All cited as a priority.. Actual degree of activity varied (goals vs action) Diet: not a consideration</li>
-					<li>Patient Portal</li>
-				</ul>
-				<ul>
-						<li>Likes</li>
-						<li> Complete tasks remotely</li>
-						<li>Can use anytime of day</li>
-				</ul>
-				<ul>
-						<li>Dislikes</li>
-						<li>Hard to find things</li>
-						<li> Limited tasks available to      complete</li>
-						<li>Not a “pretty” interface</li>
-				</ul>
-			</article>
-		</section>
-		<section>
-			<h3>Personas &amp; Development</h3>
-			<h5>How the metrics represent each persona</h5>
-			<article>
-				<ul>
-					<li>Set the stage</li>
-					<li>Name, picture, keywords and background stats</li>
-					<li>Create a connection</li>
-					<li>Personal quote, bio</li>
-					<li>Highlight pain points</li>
-					<li>Goals, frustrations</li>
-					<li>Product in terms of fit for user</li>
-					<li>Personality traits, comfort with tech, motivations</li>
-				</ul>
-			</article>
-			<!-- lightbox area -->
-			<div>
-				<h3>Key Takeaways</h3>
-				<img src="Images/CaseWellU/key.svg" alt="Key Icon">
+		<section class="interviews">
+			<h5 class="type">User Interviews</h5>
+			<div class="intout">
+				<p class="intx">What I learned about user needs and habits:</p>
 			</div>
 			<article>
-				<h5>Why these personas?</h5>
-				<ul>
-					<li>Angela: young, healthy- needs platform that elicits interest
+				<p class="dot">Web Usage</p>
+						<ul class="fa-ul extrabtm">
+							<li><span class="fa-li"><i class="fas fa-greater-than"></i></span>Integral to work</li>
+							<li><span class="fa-li"><i class="fas fa-greater-than"></i></span>Varied reporting of personal use</li>
+							<li><span class="fa-li"><i class="fas fa-greater-than"></i></span>Top sites: Google and shopping sites.</li>
+						</ul>
+					
+				<p class="dot">Health</p>
+						<ul class="fa-ul extrabtm">
+							<li><span class="fa-li"><i class="fas fa-greater-than"></i></span>Priorities: work, enjoyment, family</li>
+							<li><span class="fa-li"><i class="fas fa-greater-than"></i></span>Health as a priority: dependent on need</li>
+							<li><span class="fa-li"><i class="fas fa-greater-than"></i></span>Fitness: All cited as a priority..Goals vs action=issue</li>
+							<li><span class="fa-li"><i class="fas fa-greater-than"></i></span>Diet: not a consideration</li>
+						</ul>
+					
+				<p class="dot">Patient Portal</p>
+					<div class="hcard extrabtm">
+						<div class="halfcard" style="margin-right:2rem;">
+							<div class="halfinner">
+								<ul class="fa-ul fix3">
+									<li class="fixfnt"><span class="fa-li"><i class="far fa-thumbs-up"></i></span>Likes</li>
+									<li class="fix4"> Complete tasks remotely</li>
+									<li class="fix4">Can use anytime of day</li>
+								</ul>
+							</div>
+						</div>
+							
+					<div class="halfcard">
+						<div class="halfinner">
+							<ul class="fa-ul fix3">
+								<li class="fixfnt">Dislikes<span class="fa-li"><i class="far fa-thumbs-down"></i></span></li>
+								<li class="fix4">Hard to find things</li>
+								<li class="fix4"> Limited tasks available to complete</li>
+								<li class="fix4">Not a “pretty” interface</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</article>
+		</section>
+		<section class="personas">
+			<h5 class="type">Personas &amp; Development</h5>
+			<p class="top2">How the metrics represent each persona:</p>
+			<article class="plmove">
+				<ul class="fa-ul extrabtm">
+					<li class="dot"><span class="fa-li"><i class="far fa-dot-circle"></i></span>Set the stage</li>
+					<li class="dmove">Name, picture, keywords and background stats</li>
+					<li class="dot"><span class="fa-li"><i class="far fa-dot-circle"></i></span>Create a connection</li>
+					<li class="dmove">Personal quote, bio</li>
+					<li class="dot"><span class="fa-li"><i class="far fa-dot-circle"></i></span>Highlight pain points</li>
+					<li class="dmove">Goals, frustrations</li>
+					<li class="dot"><span class="fa-li"><i class="far fa-dot-circle"></i></span>Product in terms of fit for user</li>
+					<li class="dmove">Personality traits, comfort with tech, motivations</li>
+				</ul>
+			</article>
+						<!--slider, lightbox-->
+			<div class="gallery js-flickity extrabtm">
+			  <div class="gallery-cell6"><img src="Images/CaseWellU/BillLg1.png" alt="Persona third 1"></div>
+			  <div class="gallery-cell7"><img src="Images/CaseWellU/BillLg2.png" alt="Persona third 2"></div>
+			  <div class="gallery-cell8"><img src="Images/CaseWellU/BillLg3.png" alt="Persona third 3"></div>
+			  
+			</div>
+			<div>
+				<div class="keyouter">
+					<div class="key">
+						<h5 class="keyh">Key Takeaways</h5>
+						<img src="Images/CaseWellU/key.svg" alt="Key Icon" class="keyimg">
+					</div>
+				</div>
+			</div>
+			<article>
+				<h5 class="dot extratopp">Why these personas?</h5>
+				<ul class="extratoppy">
+					<li class="extrabttm"><span class="heavy">Angela</span>: <span style="font-style: italic;">young, healthy-</span> needs platform that elicits interest
 					</li>
-					<li>Bill: older, health problems- needs easy to use, comprehensive platform</li>
-					<li>Robert: doctor- needs to minimize time spent on paperwork and redundancy</li>
+					<li class="extrabttm"><span class="heavy">Bill</span>: <span style="font-style: italic;">older, health problems-</span> needs easy to use, comprehensive platform</li>
+					<li class="extrabttm"><span class="heavy">Robert</span>: <span style="font-style: italic;">doctor-</span> needs to minimize time spent on paperwork and redundancy</li>
 				</ul>
 			</article>
 			<div>
-				<h5>See the original</h5>
-				<h5>take me there:</h5>
-				<a href="https://docs.google.com/presentation/d/1v7wm9cF3OoWvWs0u4y2egmPC4aZ3VMlrJ02U8pqxTfc/edit?usp=sharing">Personas</a>
+				<h5 class="see">See the original</h5>
+						<h5 class="take">take me there:</h5>
+				
+				<button class="filled wellbutton" onclick="window.location.href = 'https://docs.google.com/presentation/d/1v7wm9cF3OoWvWs0u4y2egmPC4aZ3VMlrJ02U8pqxTfc/edit?usp=sharing';">Personas</button>
 			</div>
 		</section>
-		<section>
+		<section class="iabanner">
 			<h2>Information Archtitecture</h2>
 		</section>
-		<section>
-			<h3>UserStories</h3>
+		<section class="stories">
+			<h5 class="type">User Stories</h5>
 			<p>User stories were built from feedback from the user survey and interviews and were matched to parallel the needs of the diverse set of personas.</p>
 			<h5>As a returning user I want:</h5>
 			<article>
-				<ul>
-					<li>High Priority..</li>
+				<ul class="fix5">
+					<li class="under heavy">High Priority:</li>
 					<li><img src="Images/CaseWellU/high.svg" alt="High Prioriry User Stories"></li>
-					<li>Top priority for users was taking care of tasks surrounding their healthcare.</li>
 				</ul>
-				<ul>
-					<li>Medium Priority..</li>
+				<ul class="fa-ul">
+					<li><span class="fa-li"><i class="fas fa-long-arrow-alt-right"></i></span>Top priority for users was taking care of tasks surrounding their healthcare.</li>
+				</ul>
+				<ul class="fix5">
+					<li class="under heavy">Medium Priority:</li>
 					<li><img src="Images/CaseWellU/medium.svg" alt="Medium Prioriry User Stories"></li>
-					<li>Medium priority stories confirmed the desire for more information</li>
 				</ul>
-				<ul>
-					<li>Low Priority..</li>
+				<ul class="fa-ul">
+					<li><span class="fa-li"><i class="fas fa-long-arrow-alt-right"></i></span>
+					Medium priority stories confirmed the desire for more information</li>
+				</ul>
+				<ul class="fix5">
+					<li class="under heavy">Low Priority:</li>
 					<li><img src="Images/CaseWellU/low.svg" alt="Low Prioriry User Stories"></li>
-					<li>Low priority user stories included nice, but not necessary extra functionality.</li>
+				</ul>
+				<ul class="fa-ul">
+					<li><span class="fa-li"><i class="fas fa-long-arrow-alt-right"></i></span>
+					Low priority user stories included nice, but not necessary extra functionality.</li>
 				</ul>
 			</article>
+			<div>
+				<h5 class="see">See the full story</h5>
+						<h5 class="take">take me there:</h5>
+				
+				<button class="filled wellbutton" onclick="window.location.href = 'https://docs.google.com/presentation/d/1v7wm9cF3OoWvWs0u4y2egmPC4aZ3VMlrJ02U8pqxTfc/edit?usp=sharing';">User Stories</button>
+			</div>
 		</section>
-		<section>
-			<h3>User Flows</h3>
+		<section class="flows">
+			<h5 class="type">User Flows</h5>
 			<img src="Images/CaseWellU/flow.svg" alt="User Flow">
-			<ul>
+			<ul class="extrabtm">
 				<li>A user flow was drawn out for each task a user would be able to complete, ensuring the necessary path of steps would be available for task completion. Users were able to complete tasks, return to menus and access help if necessary.
 				</li>
 			</ul>
 		</section>
-		<section>
-			<h3>Wireframes</h3>
+		<section class="frames">
+			<h5 class="type">Wireframes</h5>
 			<p>It all started out with sketching the layout..</p>
-			<!-- Lightbox -->
-			<ul>
-				<li>Early sketches included a side tabbed navigation which was later converted to a clean top menu.</li>
-				<li>Early sketches also included placeholders for lots of imagery that was later deemphasized to create a cleaner look and emphasize function.</li>
-			</ul>
-			<p>The sketches were developed into wireframes in Figma and then converted to a prototype in InVision</p>
-			<!-- Lightbox Area -->
-			<div>
-				<h5>See the wireframes</h5>
-				<h5>take me there:</h5>
-				<a href="https://www.figma.com/file/czZvFhuL64SZ5tXq8kfVw0/Healthcare-Portal-Wires?node-id=94%3A150">Wireframes</a>
+			
+			<div class="gallery js-flickity extrabttmy">
+			  <div class="gallery-cell17"><img src="Images/CaseWellU/sketch1.png" alt="Sketch 1"></div>
+			  <div class="gallery-cell18"><img src="Images/CaseWellU/sketch2.png" alt="Sketch 2"></div>
+			  <div class="gallery-cell19"><img  src="Images/CaseWellU/sketch3.png" alt="Sketch 3"></div>
+			  
 			</div>
+			<ul class="fa-ul">
+				<li class="extrabttm"><span class="fa-li"><i class="fas fa-long-arrow-alt-right"></i></span>Early sketches included a side tabbed navigation which was later converted to a clean top menu.</li>
+				<li><span class="fa-li"><i class="fas fa-long-arrow-alt-right"></i></span>Early sketches also included placeholders for lots of imagery that was later deemphasized to create a cleaner look and emphasize function.</li>
+			</ul>
+			<p class="extratopp">The sketches were developed into wireframes in Figma and then converted to a prototype in InVision</p>
+			<div class="gallery js-flickity extrabttmy">
+			  <div class="gallery-cell20"><img src="Images/CaseWellU/wire1.svg" alt="Wireframe 1"></div>
+			  <div class="gallery-cell21"><img src="Images/CaseWellU/wire2.svg" alt="Wireframe 2"></div>
+			  <div class="gallery-cell22"><img src="Images/CaseWellU/wire3.png" alt="Wireframe 3"></div>
+			</div>
+			<div>
+				<h5 class="see">See the wires</h5>
+						<h5 class="take">take me there:</h5>
+				
+				<button class="filled wellbutton" onclick="window.location.href = 'https://www.figma.com/file/czZvFhuL64SZ5tXq8kfVw0/Healthcare-Portal-Wires?node-id=94%3A150';">Wireframes</button>
+			</div>
+			
 		</section>
-		<section>
-			<h3>Usability testing: wireframes</h3>
-			<p>As part of usability testing I focused on the following tasks.  Under each task, user performance is listed.</p>
-				<ul>
-					<li>What is the product? Purpose?</li>
-					<li>Didn’t immediately identify product, needed to read further</li>
-					<li>Signup &amp; Login</li>
-					<li>Quick to locate, fast completion</li>
+		<section class="usabilityw">
+			<h5 class="type">Usability testing: wireframes</h5>
+			<p >As part of usability testing I focused on the following tasks.  Under each task, user performance is listed.</p>
+			
+				<ul class="fa-ul extratopp">
+					<li class="dot"><span class="fa-li"><i class="far fa-dot-circle"></i></span>What is the product? Purpose?</li>
+					<li class="dmove">Didn’t immediately identify product, needed to read further</li>
+					<li class="dot"><span class="fa-li"><i class="far fa-dot-circle"></i></span>Signup &amp; Login</li>
+					<li class="dmove">Quick to locate, fast completion</li>
+				</ul>
+			
+			<ul class="fa-ul">
+				<li class="dot"><span class="fa-li"><i class="far fa-dot-circle"></i></span>Inbox: read, reply</li>
+					<li class="dmove">Fast completion</li>
+						<li class="dot"><span class="fa-li"><i class="far fa-dot-circle"></i></span>Schedule appointment</li>
+					<li class="dmove">Fast completion, confused by display of calendar on appointment dashboard</li>
+						<li class="dot"><span class="fa-li"><i class="far fa-dot-circle"></i></span>Refill a prescription</li>
+					<li class="dmove">Easy completion,instruction reading added time to completion</li>
+				</ul>
+				<ul class="fa-ul xtrab">
+					<li class="dot"><span class="fa-li"><i class="far fa-dot-circle"></i></span>Health vitals: add a reading, view more info</li>
+					<li class="dmove">Easy completion, positive feedback to learn more feature</li>
+					<li class="dot"><span class="fa-li"><i class="far fa-dot-circle"></i></span>Goal Progress: record daily activity, view more info</li>
+					<li class="dmove">Time taken to adjust to novel interface </li>
+					<li class="dot"><span class="fa-li"><i class="far fa-dot-circle"></i></span>Treatment plan: explore</li>
+					<li class="dmove">Time to read through,comprehension of features not transparent</li>
 				</ul>
 			<div>
 				<img src="Images/CaseWellU/47wire.GIF" alt="Wireframe Testing GIF">
 			</div>
-			<ul>
-					<li>Inbox: read, reply</li>
-					<li>Fast completion</li>
-					<li>Schedule appointment</li>
-					<li>Fast completion, confused by display of calendar on appointment dashboard</li>
-					<li>Refill a prescription</li>
-					<li>Easy completion,instruction reading added time to completion</li>
-				</ul>
-				<ul>
-					<li>Health vitals: add a reading, view more info</li>
-					<li>Easy completion, positive feedback to learn more feature</li>
-					<li>Goal Progress: record daily activity, view more info</li>
-					<li>Time taken to adjust to novel interface </li>
-					<li>Treatment plan: explore</li>
-					<li>Time to read through,comprehension of features not transparent</li>
-				</ul>
-				<p>Changes made based on performance and feedback:</p>
-			<ol>
-				<li>Condense interface</li>
-				<li>Restructure goals display</li>
-				<li>Move feedback position</li>
+				<p class="dot">Changes made based on performance and feedback:</p>
+			<ol style="list-style-type: decimal;" class="ullt">
+				<li class="extrabttm">Condense interface</li>
+				<li class="extrabttm">Restructure goals display</li>
+				<li class="extrabttmy">Move feedback position</li>
 			</ol>
 			<div>
-				<h5>See the wireframe prototype</h5>
-				<h5>take me there:</h5>
-				<a href="https://invis.io/XJSONQ8WDNU">Wireframe Prototype</a>
+				<h5 class="see">See the test prototype</h5>
+						<h5 class="take">take me there:</h5>
+				
+				<button class="filled wellbutton" onclick="window.location.href = 'https://invis.io/XJSONQ8WDNU';">Wireframe Prototype</button>
 			</div>
 		</section>
-		<section>
+		<section class="brandidbanner">
 			<h2>Brand and Identity Development</h2>
 		</section>
-		<section>
-			<h3>Identity:</h3>
+		<section class="mood">
+			<h5 class="type">Identity</h5>
 			<p>The branding of this product is intent on conveying a sense of security and trust. These emotions are intertwined with how the product functions as a bridge between patient and provider.</p>
-			<h3>Moodboard:</h3>
+			<h5 class="type">Moodboard</h5>
 			<div>
 				<p>The purpose is defined, but what feeling is conveyed? Vizualize it!</p>
-				<img src="Images/CaseWellU/Moodboard.png" alt="Moodboard">
-				<h5>Moodboard Highlights:</h5>
-				<ul>
-					<li>Interactions between doctors and patients</li>
-					<li>Friendly and supportive tone</li>
-					<li>General health and community</li>
+				<img src="Images/CaseWellU/Moodboard.png" alt="Moodboard" class="extrabtm">
+				<p class="extrabttm heavy">Moodboard Highlights:</p>
+				<ul class="fa-ul">
+					<li class="extrabttm"><span class="fa-li"><i class="fas fa-long-arrow-alt-right"></i></span>Interactions between doctors and patients</li>
+					<li class="extrabttm"><span class="fa-li"><i class="fas fa-long-arrow-alt-right"></i></span>Friendly and supportive tone</li>
+					<li class="extrabttm"><span class="fa-li"><i class="fas fa-long-arrow-alt-right"></i></span>General health and community</li>
 				</ul>
 			</div>
 			<div>
-				<h5>See the original</h5>
-				<h5>take me there:</h5>
-				<a href="https://www.figma.com/file/XR1Ef7cmI7HwXfCAbkEkY9/Well-Universe-Moodboard?node-id=0%3A1">Moodboard</a>
+				<h5 class="see">See the original</h5>
+						<h5 class="take">take me there:</h5>
+				
+				<button class="filled wellbutton" onclick="window.location.href = 'https://www.figma.com/file/XR1Ef7cmI7HwXfCAbkEkY9/Well-Universe-Moodboard?node-id=0%3A1';">Moodboard</button>
+			</div>
+		</section>
+		<section class="logodev">
+			<h5 class="type extrabtm">Logo Development</h5>
+			<h6>Initial thoughts:</h6>
+			<div>
+				<img src="Images/CaseWellU/WBrainstorm.png" alt="Brainstorm" class="brain">
+				<img src="Images/CaseWellU/LogoSketch.png" alt="Logo Sketch" class="initial">
+			</div>
+			<h5 class="extratopp">Final Design</h5>
+			<img src="Images/CaseWellU/LogoArrow.png" alt="Logo Explained" class="cntr">
+			<ul class="fa-ul">
+					<li class="extrabttm"><span class="fa-li"><i class="fas fa-long-arrow-alt-right"></i></span>
+					Heart represents warmth, care and connection with others</li>
+					<li class="extrabttm"><span class="fa-li"><i class="fas fa-long-arrow-alt-right"></i></span> Hand shaped “U” represents  individual aspect of health maintenance &amp; the inclusion of providers and peers (universe)</li>
+			</ul>
+			<div>
+				<h5 class="see">See the style</h5>
+						<h5 class="take">take me there:</h5>
+				
+				<button class="filled wellbutton" onclick="window.location.href = 'https://www.figma.com/file/hhqLLo9q1kNU3dTBeJCWl2/Well-Universe-Styleguide?node-id=0%3A1';">Styleguide</button>
 			</div>
 			
 		</section>
-		<section>
-			<h3>Logo Development</h3>
-			<h5>Initial thoughts:</h5>
-			<div>
-				<img src="Images/CaseWellU/WBrainstorm.png" alt="Brainstorm">
-				<img src="Images/CaseWellU/LogoSketch.png" alt="Logo Sketch">
-			</div>
-			<h5>Final Design</h5>
-			<p>Heart represents warmth, care and connection with others</p>
-			
-			<img src="Images/CaseWellU/logowarrows.svg" alt="Logo Explained">
-			
-			<p>Hand shaped “U” represents  individual aspect of health maintenance &amp; the inclusion of providers and peers (universe)</p>
-			<div>
-				<h5>See the original</h5>
-				<h5>take me there:</h5>
-				<a href="https://www.figma.com/file/hhqLLo9q1kNU3dTBeJCWl2/Well-Universe-Styleguide?node-id=0%3A1">Styleguide</a>
-			</div>
-		</section>
-		<section>
-			<h3>Preference Testing:</h3>
+		<section class="preftest">
+			<h5 class="type">Preference Testing:</h5>
 			<p>Do you prefer buttons with icons or plain text?</p>
-			<div>
-				<img src="Images/CaseWellU/bicon.svg" alt="Buttons with icons">
-				<p>VS</p>
-				<img src="Images/CaseWellU/bplain.svg" alt="Buttons without icons">
+			<div class="row">
+				<img src="Images/CaseWellU/bicon.svg" alt="Buttons with icons" class="bicon">
+				<p class="vs heavy">VS</p>
+				<img src="Images/CaseWellU/bplain.svg" alt="Buttons without icons" class="bplain">
 			</div>
 			<img src="Images/CaseWellU/bresults.svg" alt="Results">
-			<h5>How this influenced final design:</h5>
-			<ul>
-				<li>Icons were used in buttons.</li>
-				<li>Based on additional feedback icons were moved to the right of the word.</li>
-				<li>All icons adhered to outline style and button size was made uniform.</li>
+			<p class="heavy">How this influenced final design:</p>
+			<ul class="fa-ul">
+				<li class="extrabttm"><span class="fa-li"><i class="fas fa-long-arrow-alt-right"></i></span>Icons were used in buttons.</li>
+				<li class="extrabttm"><span class="fa-li"><i class="fas fa-long-arrow-alt-right"></i></span>Based on additional feedback icons were moved to the right of the word.</li>
+				<li class="extrabttm"><span class="fa-li"><i class="fas fa-long-arrow-alt-right"></i></span>All icons adhered to outline style and button size was made uniform.</li>
 			</ul>
 		</section>
-		<section>
-			<h3>Initial HiFi Mockups</h3>
-			<!-- lightbox area -->
+		<section class="hifibanner">
+			<h2>High Fidelity Mockups</h2>
 		</section>
-		<section>
-			<h3>Usability testing: HiFi mockups</h3>
+		<section class="hifimocks">
+			<h5 class="type extrabttm">Initial HiFi Mockups</h5>
+			<div class="gallery js-flickity extrabttmy">
+			  <div class="gallery-cell23"><img src="Images/CaseWellU/ihifi1.svg" alt="Initial HiFi 1"></div>
+			  <div class="gallery-cell24"><img src="Images/CaseWellU/ihifi2.svg" alt="Initial HiFi 2"></div>
+			  <div class="gallery-cell25"><img src="Images/CaseWellU/ihifi3.svg" alt="Initial HiFi 3"></div>
+			</div>
+			
+		</section>
+		<section class="usabilityh">
+			<h5 class="type">Usability testing: HiFi mockups</h5>
 			<p>Usability tasks were the same as used in the wireframe testing, but the script was updated to reflect more scenario driven tasks.
 			</p>
-			<ul>
-					<li>What is the product? Purpose</li>
-					<li>Product features clearly conveyed</li>
-					<li>Signup &amp; Login</li>
-					<li>Quick to locate, fast completion</li>
+			<ul class="fa-ul extratopp">
+					<li class="dot"><span class="fa-li"><i class="far fa-dot-circle"></i></span>What is the product? Purpose</li>
+					<li class="dmove">Product features clearly conveyed</li>
+					<li class="dot"><span class="fa-li"><i class="far fa-dot-circle"></i></span>Signup &amp; Login</li>
+					<li class="dmove">Quick to locate, fast completion</li>
 			</ul>
+			
+		<div>
+			<ul class="fa-ul">
+					<li class="dot"><span class="fa-li"><i class="far fa-dot-circle"></i></span>Inbox: read, reply</li>
+					<li class="dmove">Fast completion, same performance</li>
+					<li class="dot"><span class="fa-li"><i class="far fa-dot-circle"></i></span>Schedule appointment</li>
+					<li class="dmove">Fast completion, calendar format remains an issue</li>
+					<li class="dot"><span class="fa-li"><i class="far fa-dot-circle"></i></span>Refill a prescription</li>
+					<li class="dmove">Faster completion relying on intuitive instruction</li>
+				</ul>
+				<ul class="fa-ul xtrab">
+					<li class="dot"><span class="fa-li"><i class="far fa-dot-circle"></i></span>Health vitals: add a reading, view more info</li>
+					<li class="dmove">Easy completion, easily comprehended</li>
+					<li class="dot"><span class="fa-li"><i class="far fa-dot-circle"></i></span>Goal Progress: record daily activity, view more info</li>
+					<li class="dmove">Similar performance, Majority enjoyed feature, one user had negative feedback  </li>
+					<li class="dot"><span class="fa-li"><i class="far fa-dot-circle"></i></span>Treatment plan: explore</li>
+					<li class="dmove">Condensed and reorganized display  easier to comprehend</li>
+				</ul>
+			</div>
 			<div>
 				<img src="Images/CaseWellU/47sec.GIF" alt="HiFi Testing">
 			</div>
-		<div>
-			<ul>
-					<li>Inbox: read, reply</li>
-					<li>Fast completion, same performance</li>
-					<li>Schedule appointment</li>
-					<li>Fast completion, calendar format remains an issue</li>
-					<li>Refill a prescription</li>
-					<li>Faster completion relying on intuitive instruction</li>
-				</ul>
-				<ul>
-					<li>Health vitals: add a reading, view more info</li>
-					<li>Easy completion, easily comprehended</li>
-					<li>Goal Progress: record daily activity, view more info</li>
-					<li>Similar performance, Majority enjoyed feature, one user had negative feedback  </li>
-					<li>Treatment plan: explore</li>
-					<li>Condensed and reorganized display  easier to comprehend</li>
-				</ul>
-			</div>
-			<h5>Changes made based on performance and feedback:</h5>
-			<ol>
-				<li>Added a “Go” to dashboard buttons</li>
-				<li>Revamped scheduling calendar</li>
-				<li>Badges converted to cards</li>
+			<p class="dot">Changes made based on performance and feedback:</p>
+			<ol style="list-style-type: decimal;" class="ullt">
+				<li class="extrabttm">Added a “Go” to dashboard buttons</li>
+				<li class="extrabttm">Revamped scheduling calendar</li>
+				<li class="extrabttmy">Badges converted to cards</li>
 			</ol>
 			<div>
-				<h5>See the HiFi prototype</h5>
-				<h5>take me there:</h5>
-				<a href="https://www.figma.com/file/o9kANmJfzWUr7xcrQsGB4r/Well-Universe-Prototype">HiFi Prototype</a>
+				<h5 class="see">See the test prototype</h5>
+						<h5 class="take">take me there:</h5>
+				
+				<button class="filled wellbutton" onclick="window.location.href = 'https://www.figma.com/file/o9kANmJfzWUr7xcrQsGB4r/Well-Universe-Prototype';">HiFi Prototype</button>
 			</div>
 		</section>
-		<section>
-			<h3>Final HiFi Mockups</h3>
-			<!-- lightbox area -->
+		<section class="fhifi">
+			<h5 class="type extrabttm">Final HiFi Mockups</h5>
+			<div class="gallery js-flickity extrabttmy">
+			  <div class="gallery-cell28"><img src="Images/CaseWellU/fhifi3.svg" alt="Final HiFi 3"></div>
+			  <div class="gallery-cell26"><img src="Images/CaseWellU/fhifi1.svg" alt="Final HiFi 1"></div>
+			  <div class="gallery-cell27"><img src="Images/CaseWellU/fhifi2.svg" alt="Final HiFi 2"></div>
+			  <div class="gallery-cell29"><img src="Images/CaseWellU/fhifi4.svg" alt="Final HiFi 4"></div>
+			</div>
 			<div>
-				<h5>See the HiFi mockups</h5>
-				<h5>take me there:</h5>
-				<a href="https://www.figma.com/file/mGJj538qY4SRVThNOXYxWO/Well-Universe-Final-HiFi?node-id=0%3A1">HiFi Mockups</a>
+				<h5 class="see">See the final mockups</h5>
+						<h5 class="take">take me there:</h5>
+				
+				<button class="filled wellbutton" onclick="window.location.href = 'https://www.figma.com/file/mGJj538qY4SRVThNOXYxWO/Well-Universe-Final-HiFi?node-id=0%3A1';">HiFi Mockups</button>
 			</div>
 		</section>
-		<section>
+		<section class="conclubanner">
 			<h2>Conclusion</h2>
 		</section>
-		<section>
-			<h3>Lessons learned</h3>
-			<div>
+		<section class="conclusion">
+			<div class="top">
+				<div class="inner">	
+			<h5 class="type extrabtm">Lessons learned</h5>
+			
+			<article>
+				
+				<ul class="fa-ul extrabttmy">
+					<li class="dmove"><span class="fa-li"><i class="fas fa-asterisk"></i></span>Refinement and extension of design skills</li>
+					<li class="dmove"><span class="fa-li"><i class="fas fa-asterisk"></i></span>Need to contain project growth</li>
+				</ul>
+				</div>
+				<div>
 				<img src="Images/CaseWellU/learn.svg" alt="Learned Icon">
 			</div>
-			<article>
-				<ul>
-					<li>Refinement and extension of design skills</li>
-					<li>Need to contain project growth</li>
+				</div>
+			
+			<div class="top">
+				<div class="inner">
+			<h5 class="type extrabtm">In the future</h5>
+					
+				<ul class="fa-ul extrabtm">
+					<li class="dmove"><span class="fa-li"><i class="fas fa-asterisk"></i></span>Some revisions to testing scripts</li>
+					<li class="dmove"><span class="fa-li"><i class="fas fa-asterisk"></i></span>All usability testing video taped to be able to time task completion</li>
+					<li class="dmove"><span class="fa-li"><i class="fas fa-asterisk"></i></span>Test several color palettes in preference testing to ensure proper mood conveyed</li>
+					<li class="dmove"><span class="fa-li"><i class="fas fa-asterisk"></i></span>Conduct another usability test after implementing last changes</li>
+					<li class="dmove"><span class="fa-li"><i class="fas fa-asterisk"></i></span>Limit features, keep ideas in storage for future growth for the base product</li>
 				</ul>
-			</article>
-			<div>
-				<img src="Images/CaseWellU/future.svg" alt="Future Icon">
+				</div>
+				<div>
+				<img src="Images/CaseWellU/future.svg" alt="Future Icon" class="future">
 			</div>
-			<article>
-				<ul>
-					<li>Some revisions to testing scripts</li>
-					<li>All usability testing video taped to be able to time task completion</li>
-					<li>Test several color palettes in preference testing to ensure proper mood conveyed</li>
-					<li>Conduct another usability test after implementing last changes</li>
-					<li>Limit features, keep ideas in storage for future growth for the base product</li>
-				</ul>
-			</article>
+			</div>
 			<div>
-				<h4>Thanks for joining me on my journey!</h4>
-				<h5>Have questions?</h5>
-				<a href="contact.html">Ask Me</a>
+				<h5 class="type txtcntr thx">Thanks for joining me on my journey!</h5>
+				<h5 class="txtcntr have">Have questions?</h5>
+				<button class="filled wellbutton cntr" onclick="window.location.href='mailto:zosia.hello423@gmail.com?subject=Ask me about:';">Ask Me</button>
 			</div>
 		</section>
 	</main>
 	<footer>
-		<div>
-			<h3>Curious?</h3>
-			<h3>Interested?</h3>
-			<h3>Let's get in touch!</h3>
-			<a href="contact.html">Contact Me</a>
-			
+		<div class="fleft">
+			<h3 class="curious">Curious?</h3>
+			<h3 class="int">Interested?</h3>
+			<h3 class="touch">Let's get in touch!</h3>
+			<button class="filled" onclick="document.location = 'contact.html'">Contact Me</button>
 		</div>
-		<div>
-			<h3>Zosia Czerska</h3>
-			<div>
-				<h3>I am a UX Researcher</h3>
-				<h3>I am a UX Designer</h3>
-				<h3>I am for hire!</h3>
-				<!--marquee: https://jsfiddle.net/jonathansampson/h7SYp/-->
+		<div class="fright">
+			<h3 class="teal">Zosia Czerska</h3>
 				
+			<div>
+				
+				 <script src="JS/marquee.js"></script>
+				
+				<div id="marqueecontainer" onMouseover="copyspeed=pausespeed" onMouseout="copyspeed=marqueespeed">
+					<div id="vmarquee" style="position: absolute; width: 98%;">
+
+							<!--YOUR SCROLL CONTENT HERE-->
+					<ul>
+						<li class="lifoot">I am a UX Researcher</li>
+						<li class="lifoot">I am a UX Designer</li>
+						<li class="lifoot">I am for hire!</li>
+					</ul>
+
+
+					</div>
+				</div>
+				<script src="JS/marquee.js"></script>
+				
+						
 			</div>
-			<h5>Learn More</h5>
-			<ul>
+			
+			<h5 class="teal lm">Learn More</h5>
+			<ul class="learnicons">
 				<li>
-					<a href="mailto:zc@zdesign.fyi">
-             			<i class="fa fa-envelope-square" aria-hidden="true"></i>
-           			</a>
-				</li>
-				<li>
-					<a href="linkedin.com/in/zosiaczerska">
-						<i class="fa fa-linkedin-square" aria-hidden="true"></i>
+					<a href="mailto:zc@zdesign.fyi" class="mail">
+						<i class="fas fa-envelope-square" aria-hidden="true" ></i>
 					</a>
 				</li>
 				<li>
-					<a href="https://github.com/zczerska">
+					<a href="linkedin.com/in/zosiaczerska" class="linkd">
+						<i class="fa fa-linkedin-square" aria-hidden="true" ></i>
+					</a>
+				</li>
+				<li>
+					<a href="https://github.com/zczerska" class="git">
 						<i class="fa fa-github-square" aria-hidden="true"></i>
 					</a>
 				</li>
 			</ul>
 		</div>
 	</footer>
+	<script src="jquery-3.5.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+	<script src="JS/chartjs1.js"></script>	
+	<script src="JS/chartjs2.js"></script>
+  <script src="JS/hamburger.js"></script> 
+  <script src="JS/slider.js"></script>
   <script src="js/scripts.js"></script>
+  <script src="JS/flickity.js"></script>
+  <script src="JS/marquee.js"></script>
 </body>
 </html>
