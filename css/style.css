@@ -440,7 +440,7 @@ button{
 	margin-bottom: 20rem;
 	padding-left:3rem;
 	padding-right:3rem;
-	grid-template-areas: 
+	 
 }
 
 /* ABOUT PAGE ATTRIBUTES */
@@ -1167,15 +1167,19 @@ button{
 	display: flex;
 	margin-left: auto;
 	margin-right: auto;
+	text-align: center;
 	
 }
 
 .percent{
 	color:#121F41;
 	font-size:7.2rem;
-	text-align: center;
 	margin-top:6rem;
-	padding-left: 1.5rem;
+	display:block;
+	margin-right: auto;
+	margin-left:auto;
+	padding-left: 2rem;
+	
 }
 
 .fix{
@@ -1190,12 +1194,11 @@ button{
 	margin-top: -2.5rem;
 }
 
-c
 .descript{
 	color:#121F41;
 	font-size:1.8rem;
-	text-align: center;
-	padding-left: 0.5rem;
+	display: inline-block;
+	padding-left: 0.75rem;
 }
 
 .percentage{
@@ -2206,6 +2209,4 @@ https://flickity.metafizzy.co
 
 
 
-@media screen and (min-width:768px;)
 
-@media screen and (min-width:1024px;)
