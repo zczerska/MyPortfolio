@@ -4,7 +4,7 @@
 #marqueecontainer{
 position: relative;
 width: 100%; /*marquee width */
-height: 3.6rem; /*marquee height */
+height: 3.0rem; /*marquee height */
 background: none;
 overflow: hidden;
 padding: 2px;
