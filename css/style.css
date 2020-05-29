@@ -1012,7 +1012,7 @@ button{
 .probpic{
 	width:75%;
 	height: 75%;
-	margin-left: 1rem;
+	padding-left: 1rem;
 	opacity: 0.8;
 	padding-right: 1rem;
 	padding-top: 1rem;
