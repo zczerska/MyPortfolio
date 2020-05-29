@@ -13,6 +13,10 @@ html {
 	font-family: Cabin;
 }
 
+body {
+	max-width: 100%;
+}
+
 
 
 
@@ -1006,8 +1010,8 @@ button{
 }
 
 .probpic{
-	width:25%;
-	height: 50%;
+	width:75%;
+	height: 75%;
 	margin-left: 1rem;
 	opacity: 0.8;
 	padding-right: 1rem;
@@ -1022,8 +1026,8 @@ button{
 }
 
 .solvepic{
-	width:25%;
-	height: 50%;
+	width:75%;
+	height:75%;
 	margin-right: 2rem;
 	opacity: 0.8;
 	padding-right: 1rem;
@@ -1519,7 +1523,6 @@ button{
 		border-top: 1px solid #b3e2e5;
 	}
 .future{
-	max-width: 100%;
 	margin-right: 2rem;
 }
 
@@ -1666,7 +1669,7 @@ padding-left: 4px;
 
 
 nav {
-	position:fixed;
+	position: fixed;
 	top: 0;
     width: 100%;
 	display: flex;
@@ -1800,7 +1803,7 @@ nav img {
   margin-right: 10px;
   margin-top: -10px;
   counter-increment: gallery-cell;
-	z-index: 2;
+	z-index: 10;
 }
 
 .gallery-cell2 {
@@ -1824,7 +1827,7 @@ nav img {
   height: 330px;
   margin-right: 10px;
   counter-increment: gallery-cell;
-	z-index: 2;
+	z-index: 10;
 }
 
 .gallery-cell5 {
@@ -1832,7 +1835,7 @@ nav img {
   height: 330px;
   margin-right: 10px;
   counter-increment: gallery-cell;
-	z-index: 2;
+	z-index: 8;
 }
 
 .gallery-cell6 {
@@ -1842,7 +1845,7 @@ nav img {
   align-items: center;
   justify-content: center;
   counter-increment: gallery-cell;
-	z-index: 2;
+	z-index: 8;
 }
 
 .gallery-cell7 {
