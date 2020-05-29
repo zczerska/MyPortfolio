@@ -217,16 +217,17 @@ button{
 }
 
 .headbuttons {
-	grid-area: headbuttons;
+	/*grid-area: headbuttons;
 	grid-template-areas: 
 		"works . "
-		" . resume";
+		" . resume";*/
+	display: flex;
+	flex-direction: row;
 	
 }
 
 .works {
 	grid-area: works;
-	
 	margin-bottom: 1rem;
 	margin-right: 0.5rem;
 }
