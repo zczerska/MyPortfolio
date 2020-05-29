@@ -3,14 +3,16 @@
 
 * {
 	box-sizing: border-box;
+	margin:0;
+	padding:0;
 }
 
 html {
 	font-size: 10px;
 	color: #121F41;
 	font-family: Cabin;
-	
 }
+
 
 
 
@@ -111,13 +113,13 @@ p {
 	}
 
 button{
-	width: 110px;
+	width: 125px;
 	height: 40px;
 	text-align: center;
 	font-family:Cabin;
 	font-size: 1.6rem;
 	color: #009DA8;
-}
+    }
 
 .outline{
 	background: none;
@@ -857,6 +859,7 @@ button{
 
 .containerw {
 	display: grid;
+	width:100%;
 	grid-template-areas: 
 		"intro"
 		"evolution"
@@ -887,11 +890,11 @@ button{
 	
 .intro {
 	grid-area: intro;
-	padding-top:4rem;
-	padding-bottom: 4rem;
-	padding-left: 3rem;
-	padding-right: 3rem;
-	margin-top:12vh;
+	margin-top:4rem;
+	margin-bottom: 4rem;
+	margin-left: 3rem;
+	margin-right: 3rem;
+	padding-top:12vh;
 	
 }
 
@@ -956,7 +959,7 @@ button{
 }
 
 .wellbutton{
-	width: 17.5rem;
+	width: 20rem;
 	height: 4.5rem;
 	display: block;
 	margin-left: auto;
@@ -1070,10 +1073,10 @@ button{
 	
 .companalysis{
 		grid-area: companalysis;
-		padding-top:4rem;
-		padding-bottom: 4rem;
-		padding-left: 3rem;
-		padding-right: 3rem;
+		margin-top:4rem;
+		margin-bottom: 4rem;
+		margin-left: 3rem;
+		margin-right: 3rem;
 	}
 
 .type {
@@ -1183,7 +1186,6 @@ button{
 	margin-right: auto;
 	margin-left:auto;
 	padding-left: 2rem;
-	
 }
 
 .fix{
@@ -1673,16 +1675,22 @@ nav {
 	background-color: #009DA8;
 	font-family: cabin;
 	font-size: 14px;
+	z-index: 1;
+	overflow-x: hidden;
 	
 }
 
 .logo {
+	
 	color: #FCFFF5;
 	font-size: 14px;
 	position: relative;
-	left:-120px;
-	top:10px;
+	margin-top: 10px;
 	
+}
+
+.noverflow{
+	overflow-x: hidden;
 }
 
 .nav-links{
@@ -1690,6 +1698,7 @@ nav {
 	justify-content: space-around;
 	width: 35%;
 	font-size: 14px;
+	overflow-x: hidden;
 }
 
 .nav-links a{
