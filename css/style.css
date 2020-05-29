@@ -228,7 +228,7 @@ button{
 	grid-area: works;
 	
 	margin-bottom: 1rem;
-	margin-right: 1.5rem;
+	margin-right: 0.75rem;
 }
 
 .resume {
@@ -1674,8 +1674,7 @@ nav {
 	background-color: #009DA8;
 	font-family: cabin;
 	font-size: 14px;
-	overflow-x: hidden;
-	
+		
 }
 
 .logo {
@@ -1690,7 +1689,7 @@ nav {
 .nav-links{
 	display: flex;
 	justify-content: space-around;
-	width: 35%;
+	width: 30%;
 	font-size: 14px;
 	
 }
