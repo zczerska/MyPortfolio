@@ -1665,8 +1665,7 @@ padding-left: 4px;
 
 
 nav {
-	position: fixed;
-    top: 0;
+	top: 0;
     width: 100%;
 	display: flex;
 	justify-content: space-around;
@@ -1675,7 +1674,6 @@ nav {
 	background-color: #009DA8;
 	font-family: cabin;
 	font-size: 14px;
-	z-index: 1;
 	overflow-x: hidden;
 	
 }
