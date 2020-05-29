@@ -1689,16 +1689,12 @@ nav {
 	
 }
 
-.noverflow{
-	overflow-x: hidden;
-}
-
 .nav-links{
 	display: flex;
 	justify-content: space-around;
 	width: 35%;
 	font-size: 14px;
-	overflow-x: hidden;
+	
 }
 
 .nav-links a{
