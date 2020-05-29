@@ -113,7 +113,7 @@ p {
 	}
 
 button{
-	width: 125px;
+	width: 120px;
 	height: 40px;
 	text-align: center;
 	font-family:Cabin;
@@ -191,7 +191,7 @@ button{
 	margin-bottom: 4rem;
 	margin-left: 3rem;
 	margin-right: 3rem;
-	margin-top:12vh;
+	margin-top:10vh;
 	grid-template-areas: 
 		"hello"
 		"name"
@@ -228,7 +228,7 @@ button{
 	grid-area: works;
 	
 	margin-bottom: 1rem;
-	margin-right: 0.75rem;
+	margin-right: 0.5rem;
 }
 
 .resume {
@@ -468,7 +468,7 @@ button{
 	margin-bottom: 4rem;
 	margin-left: 3rem;
 	margin-right: 3rem;
-	padding-top: 12vh;
+	padding-top: 10vh;
 	grid-template-areas: 
 		"abtitle"
 		"abh"
@@ -894,7 +894,7 @@ button{
 	margin-bottom: 4rem;
 	margin-left: 3rem;
 	margin-right: 3rem;
-	padding-top:12vh;
+	padding-top:10vh;
 	
 }
 
