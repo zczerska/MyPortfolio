@@ -185,10 +185,11 @@ button{
 .headhome {
 	grid-area: headhome;
 	display: grid;
-	margin-top:4rem;
+	padding-top:4rem;
 	margin-bottom: 4rem;
 	margin-left: 3rem;
 	margin-right: 3rem;
+	margin-top:12vh;
 	grid-template-areas: 
 		"hello"
 		"name"
@@ -465,6 +466,7 @@ button{
 	margin-bottom: 4rem;
 	margin-left: 3rem;
 	margin-right: 3rem;
+	padding-top: 12vh;
 	grid-template-areas: 
 		"abtitle"
 		"abh"
@@ -689,6 +691,7 @@ button{
 	margin-bottom: 2rem;
 	margin-left: 3rem;
 	margin-right: 3rem;
+	padding-top:12vh;
 }
 
 .cform{
@@ -888,6 +891,7 @@ button{
 	padding-bottom: 4rem;
 	padding-left: 3rem;
 	padding-right: 3rem;
+	margin-top:12vh;
 	
 }
 
@@ -1655,10 +1659,13 @@ padding-left: 4px;
 }
 
 
-/* HAMBURGER ATTRIBUTES */
+/* HAMBURGER ATTRIBUTES----------- */ 
 
 
 nav {
+	position: fixed;
+    top: 0;
+    width: 100%;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -1724,7 +1731,7 @@ nav img {
 		overflow-x: hidden;
 	}
 	.nav-links{
-		position: absolute;
+		position: fixed;
 		right: 0px;
 		height: 92vh;
 		top:8vh;
@@ -1742,19 +1749,20 @@ nav img {
 	.burger{
 		display: block;
 	}
+}
 
-	.nav-active{
+.nav-active{
 		transform: translateX(0%);
 	}
 
-	@keyframes navLinkFade{
+@keyframes navLinkFade{
 	from{
 		opacity:0;
 		transform: translateX(50px);
 	}
 	to{
 		opacity:1;
-		transform: translateX(0px);
+		transform: translateX(0);
 	}
 }
 
@@ -1776,7 +1784,7 @@ nav img {
 	left:-30px;
 	
 }
-}
+
 	
 
 /* FLICKITY SLIDER ATTRIBUTES */
