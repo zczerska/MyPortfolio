@@ -36,7 +36,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	font-size: 7.2rem;
+	font-size: 6.4rem;
 }
 
 h3 {
@@ -229,7 +229,7 @@ button{
 .works {
 	grid-area: works;
 	margin-bottom: 1rem;
-	margin-right: 0.5rem;
+	margin-right: 1rem;
 }
 
 .resume {
@@ -1519,7 +1519,7 @@ button{
 		border-top: 1px solid #b3e2e5;
 	}
 .future{
-	max-width: 150%;
+	max-width: 100%;
 	margin-right: 2rem;
 }
 
@@ -1800,6 +1800,7 @@ nav img {
   margin-right: 10px;
   margin-top: -10px;
   counter-increment: gallery-cell;
+	z-index: 2;
 }
 
 .gallery-cell2 {
@@ -1807,6 +1808,7 @@ nav img {
   height: 330px;
   margin-right: 10px;
   counter-increment: gallery-cell;
+	z-index: 2;
 }
 
 .gallery-cell3 {
@@ -1814,6 +1816,7 @@ nav img {
   height: 330px;
   margin-right: 10px;
   counter-increment: gallery-cell;
+	z-index: 2;
 }
 
 .gallery-cell4 {
@@ -1821,6 +1824,7 @@ nav img {
   height: 330px;
   margin-right: 10px;
   counter-increment: gallery-cell;
+	z-index: 2;
 }
 
 .gallery-cell5 {
@@ -1828,6 +1832,7 @@ nav img {
   height: 330px;
   margin-right: 10px;
   counter-increment: gallery-cell;
+	z-index: 2;
 }
 
 .gallery-cell6 {
@@ -1837,6 +1842,7 @@ nav img {
   align-items: center;
   justify-content: center;
   counter-increment: gallery-cell;
+	z-index: 2;
 }
 
 .gallery-cell7 {
@@ -1846,6 +1852,7 @@ nav img {
   align-items: center;
   justify-content: center;
   counter-increment: gallery-cell;
+	z-index: 2;
 }
 
 .gallery-cell8 {
@@ -1855,6 +1862,7 @@ nav img {
   align-items: center;
   justify-content: center;
   counter-increment: gallery-cell;
+	z-index: 2;
 }
 
 .gallery-cell9 {
@@ -1864,6 +1872,7 @@ nav img {
   align-items: center;
   justify-content: center;
   counter-increment: gallery-cell;
+	z-index: 2;
 }
 
 .gallery-cell10 {
@@ -1873,6 +1882,7 @@ nav img {
   align-items: center;
   justify-content: center;
   counter-increment: gallery-cell;
+	z-index: 2;
 }
 
 .gallery-cell11 {
@@ -1882,6 +1892,7 @@ nav img {
   align-items: center;
   justify-content: center;
   counter-increment: gallery-cell;
+	z-index: 2;
 }
 
 .gallery-cell12 {
@@ -1891,6 +1902,7 @@ nav img {
   align-items: center;
   justify-content: center;
   counter-increment: gallery-cell;
+	z-index: 2;
 }
 
 .gallery-cell13 {
@@ -1900,6 +1912,7 @@ nav img {
   align-items: center;
   justify-content: center;
   counter-increment: gallery-cell;
+	z-index: 2;
 }
 
 .gallery-cell14 {
@@ -1909,6 +1922,7 @@ nav img {
   align-items: center;
   justify-content: center;
   counter-increment: gallery-cell;
+	z-index: 2;
 }
 
 .gallery-cell15 {
@@ -1918,6 +1932,7 @@ nav img {
   align-items: center;
   justify-content: center;
   counter-increment: gallery-cell;
+	z-index: 2;
 }
 
 .gallery-cell16 {
@@ -1927,6 +1942,7 @@ nav img {
   align-items: center;
   justify-content: center;
   counter-increment: gallery-cell;
+	z-index: 2;
 }
 
 .gallery-cell17 {
@@ -1936,6 +1952,7 @@ nav img {
   align-items: center;
   justify-content: center;
   counter-increment: gallery-cell;
+	z-index: 2;
 }
 
 .gallery-cell18 {
@@ -1945,6 +1962,7 @@ nav img {
   align-items: center;
   justify-content: center;
   counter-increment: gallery-cell;
+	z-index: 2;
 }
 
 .gallery-cell19 {
@@ -1954,6 +1972,7 @@ nav img {
   align-items: center;
   justify-content: center;
   counter-increment: gallery-cell;
+	z-index: 2;
 }
 
 .gallery-cell20 {
@@ -1963,6 +1982,7 @@ nav img {
   align-items: center;
   justify-content: center;
   counter-increment: gallery-cell;
+	z-index: 2;
 }
 
 .gallery-cell21 {
@@ -1972,6 +1992,7 @@ nav img {
   align-items: center;
   justify-content: center;
   counter-increment: gallery-cell;
+	z-index: 2;
 }
 
 .gallery-cell22 {
@@ -1981,6 +2002,7 @@ nav img {
   align-items: center;
   justify-content: center;
   counter-increment: gallery-cell;
+	z-index: 2;
 }
 
 .gallery-cell23 {
@@ -1990,6 +2012,7 @@ nav img {
   align-items: center;
   justify-content: center;
   counter-increment: gallery-cell;
+	z-index: 2;
 }
 
 .gallery-cell24 {
@@ -1999,6 +2022,7 @@ nav img {
   align-items: center;
   justify-content: center;
   counter-increment: gallery-cell;
+	z-index: 2;
 }
 
 .gallery-cell25 {
@@ -2008,6 +2032,7 @@ nav img {
   align-items: center;
   justify-content: center;
   counter-increment: gallery-cell;
+	z-index: 2;
 }
 
 .gallery-cell26 {
@@ -2017,6 +2042,7 @@ nav img {
   align-items: center;
   justify-content: center;
   counter-increment: gallery-cell;
+	z-index: 2;
 }
 
 .gallery-cell27 {
@@ -2026,6 +2052,7 @@ nav img {
   align-items: center;
   justify-content: center;
   counter-increment: gallery-cell;
+	z-index: 2;
 }
 
 .gallery-cell28 {
@@ -2035,6 +2062,7 @@ nav img {
   align-items: center;
   justify-content: center;
   counter-increment: gallery-cell;
+	z-index: 2;
 }
 
 .gallery-cell29 {
@@ -2044,6 +2072,7 @@ nav img {
   align-items: center;
   justify-content: center;
   counter-increment: gallery-cell;
+	z-index: 2;
 }
 
 .gallery-cell30 {
@@ -2051,6 +2080,7 @@ nav img {
   height: auto;
   margin-right:5rem;
   counter-increment: gallery-cell;
+	z-index: 2;
 }
 
 .gallery-cell31 {
@@ -2058,6 +2088,7 @@ nav img {
   height: auto;
   margin-right:5rem;
   counter-increment: gallery-cell;
+	z-index: 2;
 }
 
 .gallery-cell32 {
@@ -2065,6 +2096,7 @@ nav img {
   height: auto;
   margin-right:5rem;
   counter-increment: gallery-cell;
+	z-index: 2;
 }
 
 
