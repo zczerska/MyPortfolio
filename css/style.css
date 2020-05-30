@@ -198,7 +198,6 @@ button{
 	margin-top:10vh;
 	grid-template-areas: 
 		"hello"
-		"name"
 		"headbuttons"
 		"coffee"
 		"bio";
@@ -221,10 +220,7 @@ button{
 }
 
 .headbuttons {
-	/*grid-area: headbuttons;
-	grid-template-areas: 
-		"works . "
-		" . resume";*/
+	grid-area: headbuttons;
 	display: flex;
 	flex-direction: row;
 	
@@ -258,7 +254,7 @@ button{
 	color: #121F41;
 	font-size: 1.6rem;
 }
-
+	
 .work {
 	grid-area: work;
 	display: grid;
@@ -270,11 +266,13 @@ button{
 		"whead"
 		"welluw"
 		"busyw";
+	box-sizing: border-box;
 		
 }
 
 .whead{
 	grid-area: whead;
+	display:grid;
 	margin-bottom: 2rem;
 	margin-left: 3rem;
 	margin-right: 3rem;
@@ -295,6 +293,7 @@ button{
 
 .wellh{
 	grid-area: wellh;
+	display: grid;
 	margin-top: 1rem;
 	text-align: center;
 	}
@@ -319,7 +318,6 @@ button{
 	margin-bottom: 4rem;
 	
 }
-
 
 .busyw{
 	grid-area: busyw;
@@ -359,6 +357,122 @@ button{
 	
 	
 }
+
+@media screen and (min-width: 600px){
+	.coffee{
+		width: 70%;
+	}
+	
+	.bio, .wellp {
+		width:70%;
+		display: block;
+		margin-left: auto;
+		margin-right:auto;
+	}
+	
+	.hello, .headbuttons {
+		margin-left: 15%;
+		}
+	.whead{
+		margin-left:15%;
+	}
+	
+	.wellimg{
+		width:70%;
+	}
+	
+	button.outline.wlearn {
+		margin-left: -5rem;
+	}
+	
+	
+}
+
+@media screen and (min-width:768px){
+	.headhome {
+	grid-area: headhome;
+	display: grid;
+	padding-top:4rem;
+	margin-bottom: 4rem;
+	margin-left: 3rem;
+	margin-right: 3rem;
+	margin-top:10vh;
+	grid-template-areas: 
+		"hello coffee "
+		"name coffee "
+		"headbuttons coffee "
+		"bio coffee ";}
+
+	.bio{
+		width:70%;
+	}
+	
+	.work {
+	grid-area: work;
+	display: grid;
+	grid-template-areas: 
+		"whead whead"
+		"welluw busyw"
+		"welluw busyw";
+}
+	.busyimg{
+		height:30%;
+		width:auto;
+		margin-top: -1rem;
+	}
+	.busyp{
+		
+		width: 90%;
+	}
+	
+	button.outline.ble
+}
+
+@media screen and (min-width:1000px){
+	.headhome {
+	grid-area: headhome;
+	display: grid;
+	padding-top:4rem;
+	margin-bottom: 4rem;
+	margin-left: 3rem;
+	margin-right: 3rem;
+	margin-top:10vh;
+	grid-template-areas: 
+		" hello coffee . "
+		" name coffee . "
+		" headbuttons coffee . "
+		" bio coffee . ";
+}
+	.hello, .headbuttons{
+		margin-left: 5rem;
+	}
+	.bio{
+		width:70%;
+		margin-left:5rem;
+		margin-top:-10rem;
+	}
+	
+	.headbuttons {
+		margin-top: -8rem;
+	}
+	
+	.hello {
+		margin-top:5rem;
+	}
+	
+	.work {
+	grid-area: work;
+	display: grid;
+	grid-template-areas: 
+		"whead whead"
+		"welluw busyw"
+		"welluw busyw";
+}
+	
+	
+	
+}
+
 .about {
 	grid-area: about;
 	display: grid;
@@ -455,6 +569,7 @@ button{
 
 .containera{
 	display: grid;
+	max-width: 100%;
 	grid-template-areas: 
 		"headabout"
 		"got"
@@ -864,7 +979,7 @@ button{
 
 .containerw {
 	display: grid;
-	width:100%;
+	max-width:100%;
 	grid-template-areas: 
 		"intro"
 		"evolution"
@@ -895,6 +1010,7 @@ button{
 	
 .intro {
 	grid-area: intro;
+	box-sizing: border-box;
 	margin-top:4rem;
 	margin-bottom: 4rem;
 	margin-left: 3rem;
@@ -906,6 +1022,7 @@ button{
 .inhead {
 		display: flex;
 		flex-direction: row;
+		margin-left:5%;
 	}
 
 .wellh{
@@ -927,7 +1044,7 @@ button{
 .welluimg{
     width:15%;
 	height: 60%;
-	margin-left: 1rem;
+	
 	margin-right: 1rem;
 	
 }
@@ -980,6 +1097,7 @@ button{
 		padding-bottom: 8rem;
 		padding-left: 3rem;
 		padding-right: 3rem;
+		box-sizing: border-box;
 	}
 
 .preview {
@@ -997,6 +1115,7 @@ button{
 		padding-left: 3rem;
 		padding-right: 3rem;
 		border-top: 1px solid #b3e2e5;
+		box-sizing: border-box;
 	}
 
 .top{
@@ -1010,8 +1129,8 @@ button{
 }
 
 .probpic{
-	width:75%;
-	height: 75%;
+	width:25%;
+	height:50%;
 	padding-left: 1rem;
 	opacity: 0.8;
 	padding-right: 1rem;
@@ -1026,8 +1145,8 @@ button{
 }
 
 .solvepic{
-	width:75%;
-	height:75%;
+	width:25%;
+	height:50%;
 	margin-right: 2rem;
 	opacity: 0.8;
 	padding-right: 1rem;
@@ -1259,7 +1378,16 @@ button{
 .hcard{
 	display: flex;
 	flex-direction: row;
+	justify-content: center;
+		
 }
+
+/*hcenter{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}*/
+
 .halfcard {
 	width:15rem;
 	height:27.5rem;
@@ -1267,11 +1395,12 @@ button{
 	background: linear-gradient(0deg, #FFFFFF, #FFFFFF), #DADADA;
 	box-shadow: 0px 5.33333px 26.6667px rgba(3, 69, 130, 0.25);
 	border-radius: 13.3333px;
-}
+	}
 
 .halfinner{
 	display: flex;
 	flex-direction: column;
+	
 }
 
 .fix3{
@@ -1679,6 +1808,8 @@ nav {
 	background-color: #009DA8;
 	font-family: cabin;
 	font-size: 14px;
+	z-index:1;
+	
 		
 }
 
@@ -1696,7 +1827,6 @@ nav {
 	justify-content: space-around;
 	width: 30%;
 	font-size: 14px;
-	
 }
 
 .nav-links a{
@@ -1723,6 +1853,7 @@ nav img {
 @media screen and (max-width:1024px){
 	.nav-links{
 		width: 60%;
+		
 	}	
 	.logo {
 	color: #FCFFF5;
@@ -1749,14 +1880,18 @@ nav img {
 		width: 50%;
 		transform: translateX(100%);
 		transition: transform 0.3s ease-in;
+		
+		
 	}
 	.nav-links li {
 		opacity: 0;
+		
 	}
 	.burger{
 		display: block;
 	}
 }
+
 
 .nav-active{
 		transform: translateX(0%);
@@ -1801,9 +1936,8 @@ nav img {
   width: 100%;
   height: 330px;
   margin-right: 10px;
-  margin-top: -10px;
   counter-increment: gallery-cell;
-	z-index: 10;
+	
 }
 
 .gallery-cell2 {
@@ -1811,7 +1945,7 @@ nav img {
   height: 330px;
   margin-right: 10px;
   counter-increment: gallery-cell;
-	z-index: 2;
+	
 }
 
 .gallery-cell3 {
@@ -1819,7 +1953,7 @@ nav img {
   height: 330px;
   margin-right: 10px;
   counter-increment: gallery-cell;
-	z-index: 2;
+	
 }
 
 .gallery-cell4 {
@@ -1827,7 +1961,7 @@ nav img {
   height: 330px;
   margin-right: 10px;
   counter-increment: gallery-cell;
-	z-index: 10;
+	
 }
 
 .gallery-cell5 {
@@ -1835,7 +1969,7 @@ nav img {
   height: 330px;
   margin-right: 10px;
   counter-increment: gallery-cell;
-	z-index: 8;
+	
 }
 
 .gallery-cell6 {
@@ -1845,7 +1979,7 @@ nav img {
   align-items: center;
   justify-content: center;
   counter-increment: gallery-cell;
-	z-index: 8;
+	
 }
 
 .gallery-cell7 {
@@ -1855,7 +1989,7 @@ nav img {
   align-items: center;
   justify-content: center;
   counter-increment: gallery-cell;
-	z-index: 2;
+	
 }
 
 .gallery-cell8 {
@@ -1865,7 +1999,7 @@ nav img {
   align-items: center;
   justify-content: center;
   counter-increment: gallery-cell;
-	z-index: 2;
+	
 }
 
 .gallery-cell9 {
@@ -1875,7 +2009,7 @@ nav img {
   align-items: center;
   justify-content: center;
   counter-increment: gallery-cell;
-	z-index: 2;
+	
 }
 
 .gallery-cell10 {
@@ -1885,7 +2019,7 @@ nav img {
   align-items: center;
   justify-content: center;
   counter-increment: gallery-cell;
-	z-index: 2;
+	
 }
 
 .gallery-cell11 {
@@ -1895,7 +2029,7 @@ nav img {
   align-items: center;
   justify-content: center;
   counter-increment: gallery-cell;
-	z-index: 2;
+	
 }
 
 .gallery-cell12 {
@@ -1905,7 +2039,7 @@ nav img {
   align-items: center;
   justify-content: center;
   counter-increment: gallery-cell;
-	z-index: 2;
+	
 }
 
 .gallery-cell13 {
@@ -1915,7 +2049,7 @@ nav img {
   align-items: center;
   justify-content: center;
   counter-increment: gallery-cell;
-	z-index: 2;
+	
 }
 
 .gallery-cell14 {
@@ -1925,7 +2059,7 @@ nav img {
   align-items: center;
   justify-content: center;
   counter-increment: gallery-cell;
-	z-index: 2;
+	
 }
 
 .gallery-cell15 {
@@ -1935,7 +2069,7 @@ nav img {
   align-items: center;
   justify-content: center;
   counter-increment: gallery-cell;
-	z-index: 2;
+	
 }
 
 .gallery-cell16 {
@@ -1945,7 +2079,7 @@ nav img {
   align-items: center;
   justify-content: center;
   counter-increment: gallery-cell;
-	z-index: 2;
+	
 }
 
 .gallery-cell17 {
@@ -1955,7 +2089,7 @@ nav img {
   align-items: center;
   justify-content: center;
   counter-increment: gallery-cell;
-	z-index: 2;
+	
 }
 
 .gallery-cell18 {
@@ -1965,7 +2099,7 @@ nav img {
   align-items: center;
   justify-content: center;
   counter-increment: gallery-cell;
-	z-index: 2;
+	
 }
 
 .gallery-cell19 {
@@ -1975,7 +2109,7 @@ nav img {
   align-items: center;
   justify-content: center;
   counter-increment: gallery-cell;
-	z-index: 2;
+	
 }
 
 .gallery-cell20 {
@@ -1985,7 +2119,7 @@ nav img {
   align-items: center;
   justify-content: center;
   counter-increment: gallery-cell;
-	z-index: 2;
+	
 }
 
 .gallery-cell21 {
@@ -1995,7 +2129,7 @@ nav img {
   align-items: center;
   justify-content: center;
   counter-increment: gallery-cell;
-	z-index: 2;
+	
 }
 
 .gallery-cell22 {
@@ -2005,7 +2139,7 @@ nav img {
   align-items: center;
   justify-content: center;
   counter-increment: gallery-cell;
-	z-index: 2;
+	
 }
 
 .gallery-cell23 {
@@ -2015,7 +2149,7 @@ nav img {
   align-items: center;
   justify-content: center;
   counter-increment: gallery-cell;
-	z-index: 2;
+	
 }
 
 .gallery-cell24 {
@@ -2025,7 +2159,7 @@ nav img {
   align-items: center;
   justify-content: center;
   counter-increment: gallery-cell;
-	z-index: 2;
+	
 }
 
 .gallery-cell25 {
@@ -2035,7 +2169,7 @@ nav img {
   align-items: center;
   justify-content: center;
   counter-increment: gallery-cell;
-	z-index: 2;
+	
 }
 
 .gallery-cell26 {
@@ -2045,7 +2179,7 @@ nav img {
   align-items: center;
   justify-content: center;
   counter-increment: gallery-cell;
-	z-index: 2;
+	
 }
 
 .gallery-cell27 {
@@ -2055,7 +2189,7 @@ nav img {
   align-items: center;
   justify-content: center;
   counter-increment: gallery-cell;
-	z-index: 2;
+	
 }
 
 .gallery-cell28 {
@@ -2065,7 +2199,7 @@ nav img {
   align-items: center;
   justify-content: center;
   counter-increment: gallery-cell;
-	z-index: 2;
+	
 }
 
 .gallery-cell29 {
@@ -2075,7 +2209,7 @@ nav img {
   align-items: center;
   justify-content: center;
   counter-increment: gallery-cell;
-	z-index: 2;
+	
 }
 
 .gallery-cell30 {
@@ -2083,7 +2217,7 @@ nav img {
   height: auto;
   margin-right:5rem;
   counter-increment: gallery-cell;
-	z-index: 2;
+	
 }
 
 .gallery-cell31 {
@@ -2091,7 +2225,7 @@ nav img {
   height: auto;
   margin-right:5rem;
   counter-increment: gallery-cell;
-	z-index: 2;
+	
 }
 
 .gallery-cell32 {
@@ -2099,7 +2233,7 @@ nav img {
   height: auto;
   margin-right:5rem;
   counter-increment: gallery-cell;
-	z-index: 2;
+	
 }
 
 
@@ -2251,6 +2385,11 @@ https://flickity.metafizzy.co
 .flickity-page-dots .dot.is-selected {
   opacity: 1;
 }
+
+
+/*---MEDIA QUERY SECTION ---*/
+
+
 
 
 
