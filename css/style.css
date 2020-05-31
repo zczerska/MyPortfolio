@@ -276,6 +276,7 @@ button{
 	margin-bottom: 2rem;
 	margin-left: 3rem;
 	margin-right: 3rem;
+	font-size: 2.4rem;
 }
 
 .welluw{
@@ -296,6 +297,7 @@ button{
 	display: grid;
 	margin-top: 1rem;
 	text-align: center;
+	font-size: 2.4rem;
 	}
 
 .wellimg{
@@ -355,123 +357,7 @@ button{
 .busylearn{
 	grid-area: busylearn;
 	
-	
-}
-
-@media screen and (min-width: 600px){
-	.coffee{
-		width: 70%;
 	}
-	
-	.bio, .wellp {
-		width:70%;
-		display: block;
-		margin-left: auto;
-		margin-right:auto;
-	}
-	
-	.hello, .headbuttons {
-		margin-left: 15%;
-		}
-	.whead{
-		margin-left:15%;
-	}
-	
-	.wellimg{
-		width:70%;
-	}
-	
-	button.outline.wlearn {
-		margin-left: -5rem;
-	}
-	
-	
-}
-
-@media screen and (min-width:768px){
-	.headhome {
-	grid-area: headhome;
-	display: grid;
-	padding-top:4rem;
-	margin-bottom: 4rem;
-	margin-left: 3rem;
-	margin-right: 3rem;
-	margin-top:10vh;
-	grid-template-areas: 
-		"hello coffee "
-		"name coffee "
-		"headbuttons coffee "
-		"bio coffee ";}
-
-	.bio{
-		width:70%;
-	}
-	
-	.work {
-	grid-area: work;
-	display: grid;
-	grid-template-areas: 
-		"whead whead"
-		"welluw busyw"
-		"welluw busyw";
-}
-	.busyimg{
-		height:30%;
-		width:auto;
-		margin-top: -1rem;
-	}
-	.busyp{
-		
-		width: 90%;
-	}
-	
-	button.outline.ble
-}
-
-@media screen and (min-width:1000px){
-	.headhome {
-	grid-area: headhome;
-	display: grid;
-	padding-top:4rem;
-	margin-bottom: 4rem;
-	margin-left: 3rem;
-	margin-right: 3rem;
-	margin-top:10vh;
-	grid-template-areas: 
-		" hello coffee . "
-		" name coffee . "
-		" headbuttons coffee . "
-		" bio coffee . ";
-}
-	.hello, .headbuttons{
-		margin-left: 5rem;
-	}
-	.bio{
-		width:70%;
-		margin-left:5rem;
-		margin-top:-10rem;
-	}
-	
-	.headbuttons {
-		margin-top: -8rem;
-	}
-	
-	.hello {
-		margin-top:5rem;
-	}
-	
-	.work {
-	grid-area: work;
-	display: grid;
-	grid-template-areas: 
-		"whead whead"
-		"welluw busyw"
-		"welluw busyw";
-}
-	
-	
-	
-}
 
 .about {
 	grid-area: about;
@@ -546,6 +432,10 @@ button{
 	grid-area:pslider;
 }
 
+.theprocess{
+	display:none;
+}
+
 .pask{
 	grid-area: pask;
 	padding-left: 5rem;
@@ -555,6 +445,9 @@ button{
 .pbutton{
 	grid-area: pbutton;
 }
+
+
+
 .testimonials {
 	grid-area: testimonials;
 	display: grid;
@@ -626,6 +519,7 @@ button{
 	
 }
 
+
 .got{
 	grid-area:got;
 	background: rgba(255, 230, 151, 0.15);
@@ -661,6 +555,225 @@ button{
 	margin-right: 1rem;	
 	
 }
+
+@media screen and (min-width:768px){
+	.headhome {
+	grid-area: headhome;
+	display: grid;
+	padding-top:4rem;
+	margin-bottom: 4rem;
+	margin-left: 6rem;
+	margin-right: 10rem;
+	margin-top:10vh;
+	grid-template-areas: 
+		"hello coffee "
+		"name coffee "
+		"headbuttons coffee "
+		"bio coffee ";}
+
+	.bio{
+		width:70%;
+	}
+	
+	.coffee{
+		width:100%;
+	}
+	
+	.work {
+	grid-area: work;
+	display: grid;
+	grid-template-areas: 
+		"whead whead"
+		"welluw busyw"
+		"welluw busyw";
+}
+	
+	.whead{
+		padding-left: 4rem;
+	}
+	
+	.wellph {
+		margin-top:-2rem;
+	}
+	
+	.wellimg {
+		width:80%;
+	}
+	
+	.busyimg{
+		height:30%;
+		width:auto;
+		margin-top: -1rem;
+	}
+	.busyp {
+		
+		width: 90%;
+	}
+	
+	button.outline.busylearn{
+		margin-top: -4rem;
+	}
+	
+	.aph{
+		margin-top: -2rem;
+	}
+	
+	.wellp{
+		width:90%;
+		margin-left:5rem;
+	}
+	
+	.about {
+	grid-area: about;
+	display: grid;
+	padding-top:4rem;
+	padding-bottom: 4rem;
+	background-color: rgba(0, 157, 168, 0.05);
+	grid-template-areas: 
+		"ahead ahead"
+		"aimg ap"
+		"aimg ap2"
+		" . alearn";
+	}
+	
+	.ap, .ap2 {
+		width: 60%;
+		margin-left: 18rem;
+	}
+	
+	.ap2 {
+		margin-top: -2rem;
+	}
+	
+	.aimg{
+		width:100%;
+	}
+	
+	button.alearn.outline {
+		margin-left: 55rem;
+	}
+	
+	.aimg, .ahead {
+		margin-left: 6rem;
+	}
+	
+	.pph{
+		margin-top: -2rem;
+	}
+	
+	.theprocess{
+		display:block;
+		margin-left: 15%;
+	}
+	
+	.pslider{
+		display: none;
+	}
+	
+	.footer{
+		grid-area: footer;
+		display: grid;
+		grid-template-areas: 
+			"fleft fright";
+	}
+	
+	.logo{
+		margin-left:-2rem;
+	}
+	
+	.headabout{
+		grid-template-areas: 
+		"abtitle abpic"
+		"abp abpic";
+	}
+	
+	.abp {
+		width:80%;
+	}
+	
+	.abtitle, .abp{ 
+		margin-left: 4rem;
+	}
+	
+	.gotpic {
+		width: 15%;
+		margin-left:-10rem;
+	}
+	
+	.gotp, .gotp2 {
+		width:70%;
+	}
+	
+	.gotp2 {
+		margin-top:-2em;
+	}
+	
+	.goth, .gotp, .gotp2 {
+		margin-left:4rem;
+	}
+	
+}
+	
+	
+	
+	
+@media screen and (min-width:1024px){
+	.headhome {
+	grid-area: headhome;
+	display: grid;
+	padding-top:4rem;
+	margin-bottom: 4rem;
+	margin-left: 3rem;
+	margin-right: 3rem;
+	margin-top:10vh;
+	grid-template-areas: 
+		" hello coffee . "
+		" name coffee . "
+		" headbuttons coffee . "
+		" bio coffee . ";
+}
+	.hello, .headbuttons{
+		margin-left: 5rem;
+	}
+	.bio{
+		width:65%;
+		margin-left:5rem;
+		margin-top:-14rem;
+	}
+	
+	.headbuttons {
+		margin-top: -12rem;
+	}
+	
+	.hello {
+		margin-top:5rem;
+	}
+	
+	.work {
+	grid-area: work;
+	display: grid;
+	grid-template-areas: 
+		"whead whead"
+		"welluw busyw"
+		"welluw busyw";
+}
+	.ahead, .aimg {
+		margin-left: 5rem;
+	}
+	.abtitle, .abp {
+		margin-left:3rem;
+	}
+	.abp{
+		width:65%;
+		margin-top:-5rem;
+	}
+	
+	.logo{
+		margin-left:-15rem;
+	}
+	
+}
+
 
 
 
