@@ -26,8 +26,8 @@ body {
 
 p {
 	font-family: Nunito; 
-	font-size: 1.8rem;
-	line-height: 140%;
+	font-size: 1.6rem;
+	line-height: 125%;
 	/*padding-bottom: 2rem;*/
 }
 
@@ -305,7 +305,7 @@ button{
     margin-left: auto;
     margin-right: auto;
 	margin-bottom: 2rem;
-	margin-top: 1rem;
+	margin-top: 5rem;
 }
 
 .bio {
@@ -419,6 +419,10 @@ button{
 		"ap ap ap"
 		"ap2 ap2 ap2"
 		"alearn . . ";
+}
+
+.ab{
+	margin-top: 1rem;
 }
 
 .ahead{
@@ -2277,7 +2281,7 @@ https://flickity.metafizzy.co
 	
 	.headbuttons{
 		grid-area:headbuttons;
-		margin-top:4rem;
+		margin-top:2rem;
 	}
 	
 	.headhome{
@@ -2317,11 +2321,11 @@ https://flickity.metafizzy.co
 	}
 	
 	.wellph {
-		margin-top:1rem;
+		/*margin-top:1rem;*/
 	}
 	
 	.wellimg {
-		width:80%;
+		width:70%;
 		margin-top:4rem;
 	}
 	
@@ -2370,8 +2374,8 @@ https://flickity.metafizzy.co
 	
 	.aimg{
 		grid-area:aimg;
-		width:100%;
-		margin-top:3rem;
+		/*width:100%;
+		margin-top:3rem;*/
 	}
 	
 	.alearn{
@@ -2379,7 +2383,7 @@ https://flickity.metafizzy.co
 	}
 	
 	button.alearn.outline {
-		margin-top: -4rem;
+		/*margin-top: -0.5rem;*/
 	}
 	
 	.aimg, .ahead {
@@ -2405,7 +2409,7 @@ https://flickity.metafizzy.co
 	.theprocess{
 		display:block;
 		margin-top: 3rem;
-		width:90%;
+		width:95%;
 		/*margin-left: 15%;*/
 	}
 	
@@ -2516,7 +2520,7 @@ https://flickity.metafizzy.co
 	}
 	
 	.wellh{
-		font-size: 4.8rem;
+		/*font-size: 4.8rem;*/
 	}
 	
 	.ptopper{
@@ -2682,7 +2686,8 @@ https://flickity.metafizzy.co
 	}
 	
 	.alearn{
-		margin-top: 12rem;
+		/*margin-top: 12rem;*/
+		margin-top: 1.5rem;
 	}
 	
 	
@@ -2785,8 +2790,7 @@ nav {
 	color: #FCFFF5;
 	font-size: 14px;
 	position: relative;
-	margin-top: 10px;
-	
+		
 }
 
 .nav-links{
@@ -2890,7 +2894,7 @@ nav img {
 	color: #FCFFF5;
 	font-size: 14px;
 	position: relative;
-	left:-30px;
+	/*left:-30px;*/
 	
 }
 
