@@ -51,50 +51,54 @@
 	</nav>
 
 	<main class="container">
-		<header class="headhome">
-			<div class="hello">
-				<h1 class="hi">Hello.</h1>
-				<h4 class="name">My name is Zosia.</h4>
-			</div>
-			<div class="headbuttons">
-				<button class="filled works" onclick="document.location = 'index.html#workit'">My Work</button>
-				<button class="outline resume" onclick="window.location.href = 'files/ZC-DesignResume.pdf';">Resume</button>
-			</div>
+		<header class="headhome page area">
+				<div class="hello">
+					<h1 class="hi">Hello.</h1>
+					<h4 class="name">My name is Zosia.</h4>
+				</div>
+				<div class="headbuttons">
+					<button class="filled works" onclick="document.location = 'index.html#workit'">My Work</button>
+					<button class="outline resume" onclick="window.location.href = 'files/ZC-DesignResume.pdf';">Resume</button>
+				</div>
+				<p class="bio">I am a UX researcher and designer based in the Washington DC Metro Area. I explore human behavior and needs in order to  create a solution. I believe the best design comes from the user.</p>
 			<img src="Images/Home/Coffee3.png" alt="Me in a coffeehouse" class="coffee">
-			<div class="bio">
-				<p>I am a UX researcher and designer based in the Washington DC Metro Area. I explore human behavior and needs in order to  create a solution. I believe the best design comes from the user.</p>
-			</div>
+			
 		</header>
 		
-		<section id="workit" class="work">
-			<div class="whead"><!--top, section heading-->
-				<h4>My Work</h4>
-				<p class="txtcolor wellph">A few things I've been up to lately..</p>
-			</div>
-			<article class="welluw">
-				<img src="Images/Home/MacbookwScreen.png" alt="Well Universe Screen" class="wellimg">
-				<h5 class="wellh">Well Universe</h5>
-				<p class="wellp">A healthcare portal. Design roles: user research, information architecture, visual design, prototyping and user testing</p>
+		<section id="workit" class="yellow">
+			<div class="page area work">
+				<div class="whead"><!--top, section heading-->
+					<h4>My Work</h4>
+					<p class="txtcolor wellph">A few things I've been up to lately..</p>
+				</div>
+				<article class="welluw">
+					<img src="Images/Home/MacbookwScreen.png" alt="Well Universe Screen" class="wellimg cntr">
+					<h5 class="wellh">Well Universe</h5>
+					<p class="wellp">A healthcare portal. Design roles: user research, information architecture, visual design, prototyping and user testing</p>
+				</article>
 				<button class="outline wlearn" onclick="document.location = 'wellu.html'">Learn More</button>
-			</article>
-			<article class="busyw">
-				<img src="Images/Home/BusyBusFinal.png" alt="BusyBus Screen" class="busyimg">
-				<h5 class="busyh">BusyBus</h5>
-				<p class="busyp">A transportation iOS app. Design roles: user research, information architecture, visual design, prototyping and user testing</p>
+				<article class="busyw">
+					<img src="Images/Home/BusyBusFinal.png" alt="BusyBus Screen" class="busyimg cntr">
+					<h5 class="busyh">BusyBus</h5>
+					<p class="busyp">A transportation iOS app. Design roles: user research, information architecture, visual design, prototyping and user testing</p>
+				</article>
 				<button class="outline busylearn" onclick="document.location = 'busybus.html'">Learn More</button>
-			</article>
-		</section>
-		<section class ="about">
-			<div class="ahead"><!--top, section heading-->
-				<h4>About Me</h4>
-				<p class="txtcolor aph">Get to know a bit about me..</p>
 			</div>
-			<img src="Images/Home/Thoughts.svg" alt="Personal Descriptors" class="aimg">
-			<p class="ap">I am a very visually oriented person. If someone is lost I can give precise directions, but they tend to be based on landmarks rather than actual street names.</p>
-			<p class="ap2">I always loved building solutions that I would invision to the problems I ran into.  Part of the reason I love design is the challenge of building a vision that belongs to others and can be shared.</p>
-			<button class="outline alearn" onclick="document.location = 'about.html'">Learn More</button>
 		</section>
-		<section class="process">
+		<section class ="green">
+			<div class="about page area">
+				<div class="ahead"><!--top, section heading-->
+					<h4>About Me</h4>
+					<p class="txtcolor aph">Get to know a bit about me..</p>
+				</div>
+				<img src="Images/Home/Thoughts.svg" alt="Personal Descriptors" class="aimg cntr">
+				<p class="ap">I am a very visually oriented person. If someone is lost I can give precise directions, but they tend to be based on landmarks rather than actual street names.</p>
+				<p class="ap2">I always loved building solutions that I would invision to the problems I ran into.  Part of the reason I love design is the challenge of building a vision that belongs to others and can be shared.</p>
+				<button class="outline alearn" onclick="document.location = 'about.html'">Learn More</button>
+			</div>
+		</section>
+		<section class="process blue">
+			<div class="page area">
 			<div class="phead"><!--top, section heading-->
 				<h4 class="ph">My Process</h4>
 				<p class="txtcolor pp pph">How I develop my designs..</p>
@@ -113,9 +117,10 @@
 			</div>
 			<div class="pbutton">
 					<button class="outline" style="margin-top: 1.5rem;" a href="contact.html#form">Ask Me</button>
-				</div>			
+				</div>	
+				</div>
 		</section>
-		<section class="testimonials">
+		<section class="testimonials page area">
 			<div><!--top, section heading-->
 				<h4>Testimonials</h4>
 				<p class="txtcolor">What people have been saying..</p>
@@ -158,17 +163,17 @@
 			<ul class="learnicons">
 				<li>
 					<a href="contact.html#form" class="mail">
-						<i class="fas fa-envelope-square" aria-hidden="true" style="color:#FCFFF5"></i>
+						<i class="fas fa-envelope-square txtwhite" aria-hidden="true" ></i>
              		</a>
 				</li>
 				<li>
 					<a href="https://www.linkedin.com/in/zosiaczerska" class="linkd">
-						<i class="fa fa-linkedin-square" aria-hidden="true" style="color:#FCFFF5"></i>
+						<i class="fa fa-linkedin-square txtwhite" aria-hidden="true" ></i>
 					</a>
 				</li>
 				<li>
 					<a href="https://github.com/zczerska" class="git">
-						<i class="fa fa-github-square" aria-hidden="true" style="color:#FCFFF5"></i>
+						<i class="fa fa-github-square txtwhite" aria-hidden="true"></i>
 					</a>
 				</li>
 			</ul>
