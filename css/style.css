@@ -271,11 +271,6 @@ button{
 	padding-bottom: 1rem;
 }
 
-.hi{
-	grid-area: hi;
-	padding-bottom: 0.2rem;
-}
-
 .name{
 	grid-area: name;
 	padding-bottom: 1rem;
@@ -300,12 +295,12 @@ button{
 
 .coffee{
 	grid-area: coffee;
-	width:90%;
+	width:100%;
 	display: block;
     margin-left: auto;
     margin-right: auto;
-	margin-bottom: 2rem;
-	margin-top: 5rem;
+	margin-bottom: 4rem;
+	
 }
 
 .bio {
@@ -315,6 +310,8 @@ button{
 	font-size: 1.6rem;
 }
 	
+
+
 .work {
 	grid-area: work;
 	display: grid;
@@ -411,7 +408,7 @@ button{
 	}
 
 .about {
-	grid-area: about;
+	grid-area:about;
 	display: grid;
 	grid-template-areas: 
 		"ahead ahead ahead"
@@ -450,7 +447,7 @@ button{
 .ap2{
 	grid-area: ap2;
 	margin-top:1rem;
-	margin-bottom: 3rem;
+	margin-bottom: 2rem;
 }
 
 .alearn{
@@ -546,11 +543,14 @@ button{
 
 .abh2{
 	grid-area: abh2;
-	
+	margin-top:2rem;
+	margin-bottom:2rem;
 }
 
 .abp{
 	grid-area:abp;
+	padding-top:1rem;
+	padding-bottom:4rem;
 	
 	
 }
@@ -1622,7 +1622,7 @@ footer {
 }
 
 .learnicons{
-	padding-left:2.5rem;
+	padding-left:0.5rem;
 	padding-bottom: 3rem;
 	display: grid;
 	grid-template-areas: 
@@ -1650,12 +1650,12 @@ footer {
 }
 
 .fleft{
-	padding-left:3rem;
+	
 }
 
 .fright{
-	padding-left:3rem;
-	padding-top:7rem;
+	
+	padding-top:6.5rem;
 }
 .curious{
 	display: grid;
@@ -1739,6 +1739,7 @@ nav {
 	color: #FCFFF5;
 	font-size: 14px;
 	position: relative;
+	font-family:Cabin;
 	
 	
 }
@@ -2260,6 +2261,10 @@ https://flickity.metafizzy.co
 		margin-right: 7rem;
 	}
 	
+	.logo{
+		margin-right:-10rem;
+	}
+	
 
 	
 /* INDEX 768 */
@@ -2337,7 +2342,7 @@ https://flickity.metafizzy.co
 	}
 	
 	.busyimg{
-		height:30%;
+		height:40%;
 		width:auto;
 		margin-top: 3rem;
 	}
@@ -2366,12 +2371,12 @@ https://flickity.metafizzy.co
 	
 	.ap, .ap2 {
 		width: 80%;
-		margin-left: 5rem;
 	}
 	
 	.ap2 {
 		
 		grid-area:ap2;
+		margin-bottom: 5rem;
 	}
 	
 	.aimg{
@@ -2393,14 +2398,14 @@ https://flickity.metafizzy.co
 	}
 	
 	.about {
-	grid-area: about;
+	
 	display: grid;
 	padding-top:4rem;
 	padding-bottom: 4rem;
 	grid-template-areas: 
 		"ahead ahead"
-		"aimg ap"
-		"aimg ap2"
+		"ap aimg"
+		"ap2 aimg"
 		"alearn . ";
 	}
 	
@@ -2454,8 +2459,28 @@ https://flickity.metafizzy.co
 		width:70%;
 	}
 	
+	.gotp, .gotp2{
+		padding-top:1.5rem;
+	}
+	
 	.mpic, .sopic, .stepic, .waypic, .teampic{
 		width:20%;
+	}
+	
+	.gotp2, .mp4, .sop, .blpp, .wp, .wp2, .tp, .tc{
+		padding-bottom:2rem;
+	}
+	
+	.gotinner, .mh, .soh, .steph, .blp, .wh, .th{
+		padding-top:2rem;
+	}
+	
+	.mp, .mp2, .mp3, .mp4, .sop, .blp, .wp, .tp, .tc{
+		padding-top:1.5rem;
+	}
+	
+	.blp{
+		padding-bottom: 1.5rem;
 	}
 	
 	
@@ -2631,12 +2656,32 @@ https://flickity.metafizzy.co
 		margin-right:3rem;
 	}
 	
+	.abp{
+		margin-top:-6rem;
+	}
+	
+	.abpic{
+		padding-bottom: 8rem;
+	}
+	
+	.headbuttons{
+		margin-top:-10rem;
+	}
+	
+	.bio{
+		margin-top:-12rem;
+	}
+	
 	.ap, .ap2{
-	width:60%;
+	width:80%;
 }
 	
 	.logo{
-		margin-left:-50px;
+		margin-right:8rem;
+	}
+	
+	.logo p{
+		margin-left:-18rem;
 	}
 	
 	.hi2{
@@ -2688,13 +2733,8 @@ https://flickity.metafizzy.co
 		height: 45%;
 	}
 	
-	.ap {
-		width: 90%;
-		
-	}
-	
 	.ap2{
-		margin-top: -2rem;
+		margin-top: -8rem;
 	}
 	
 	.alearn{
@@ -2765,15 +2805,9 @@ https://flickity.metafizzy.co
 	
 	/*ABOUT PAGE*/
 	
-	/*.got{
-	grid-area:got;
-	background: rgba(255, 230, 151, 0.15);
-	border-top: 1px solid #FFE697;
-	padding-top:4rem;
-	padding-bottom: 4rem;
-	margin-left: 10rem;
-	padding-right: 10rem;
-	}*/
+	.gotpic, .mpic, .sopic, .stepic, .teampic, .waypic {
+		width:10%;
+	}
 	
 }
 
@@ -2906,7 +2940,7 @@ nav img {
 	color: #FCFFF5;
 	font-size: 14px;
 	position: relative;
-	/*left:-30px;*/
+	margin-left:-2rem;
 	
 }
 
