@@ -60,14 +60,15 @@
 	</nav>
 
 	<main class="containerw">
+		<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
 		<div class="intro">
 			
 			<header class="inhead">
-				<img src="Images/CaseWellU/wellu.svg" alt="Well Universe Logo" class="welluimg">
-				<div class="topper">
-					<h3 class="wellh">Well Universe</h3>
+				
+				
+					<h3 class="wellh cntr">Well Universe</h3>
 					<p class="ptopper">A partnership in healthcare and self-care</p>
-				</div>
+				
 			</header>
 			
 			<section>
@@ -81,10 +82,9 @@
 						</p>
 					</div>
 				</div>
-				<div class="seetake">
-					<h5 class="see">See the final prototype</h5>
-					<h5 class="take">take me there:</h5>
+				<div class="wellhbuttons">
 					<button class="filled wellbutton" onclick="window.location.href = 'https://w3docs.com';">HiFi Prototype</button>
+					<button class="outline wellbutton" onclick="window.location.href = 'https://w3docs.com';">Case Study</button>
 				</div>
 			</section>
 		</div>
@@ -109,11 +109,11 @@
 					<h5>Problem:</h5>
 					<p>There is a disconnect between providers and patients that results in avoidance, exacerbating any existing health problems and letting unknown problems go unnoticed.</p>
 				</article>
-				<img src="Images/CaseWellU/problem.png" alt="Problem" class="probpic">
+				
 			</div>
 				<div class="top">
 					
-					<img src="Images/CaseWellU/solved.png" alt="Solution" class="solvepic">
+					
 					<article class="inner">
 						<h5>Solution:</h5>
 						<p>An interface that is user friendly and provides the ability to complete necessary tasks. To keep the patient informed, this portal providesmedical records along with proper resources and explanations to understand the implications of the information.</p> 
@@ -735,57 +735,53 @@
 			</div>
 		</section>
 	</main>
-	<footer class="footer">
+	<footer>
+		<div class="page area footer">
 		<div class="fleft">
-			<h3 class="curious">Curious?</h3>
-			<h3 class="int">Interested?</h3>
-			<h3 class="touch">Let's get in touch!</h3>
-			<button class="filled" onclick="document.location = 'contact.html'">Contact Me</button>
+			
+				<h5 class="int">Curious?</h5>
+				<h5 class="int">Interested?</h5>
+				<h5 class="touch">Let's get in touch!</h5>
 		</div>
 		<div class="fright">
-			<h3 class="teal">Zosia Czerska</h3>
-				
-			<div>
-				
-				 <script src="JS/marquee.js"></script>
-				
-				<div id="marqueecontainer" onMouseover="copyspeed=pausespeed" onMouseout="copyspeed=marqueespeed">
+			<div id="marqueecontainer" onMouseover="copyspeed=pausespeed" onMouseout="copyspeed=marqueespeed">
 					<div id="vmarquee" style="position: absolute; width: 98%;">
 
 							<!--YOUR SCROLL CONTENT HERE-->
 					<ul>
-						<li class="lifoot">I am a UX Researcher</li>
-						<li class="lifoot">I am a UX Designer</li>
-						<li class="lifoot">I am for hire!</li>
+						<li class="lifoot txtcolor">I am a UX Researcher</li>
+						<li class="lifoot txtcolor">I am a UX Designer</li>
+						<li class="lifoot txtcolor">I am for hire!</li>
 					</ul>
 
 
 					</div>
 				</div>
-				
-				
-						
-			</div>
-			
-			<h5 class="teal lm">Learn More</h5>
+			<!--<h5 class="teal lm">Learn More</h5>-->
 			<ul class="learnicons">
 				<li>
 					<a href="contact.html#form" class="mail">
-						<i class="fas fa-envelope-square" aria-hidden="true" ></i>
-					</a>
+						<i class="fas fa-envelope-square txtwhite" aria-hidden="true" ></i>
+             		</a>
 				</li>
 				<li>
 					<a href="https://www.linkedin.com/in/zosiaczerska" class="linkd">
-						<i class="fa fa-linkedin-square" aria-hidden="true" ></i>
+						<i class="fa fa-linkedin-square txtwhite" aria-hidden="true" ></i>
 					</a>
 				</li>
 				<li>
 					<a href="https://github.com/zczerska" class="git">
-						<i class="fa fa-github-square" aria-hidden="true"></i>
+						<i class="fa fa-github-square txtwhite" aria-hidden="true"></i>
 					</a>
 				</li>
 			</ul>
+			</div>
+			</div>
+			<div class="fcntr page">
+			<p class="copy txtwhite">&copy; Designed and coded by Zosia Czerska</p>
 		</div>
+		
+		
 	</footer>
 	
 	
@@ -795,15 +791,8 @@
   <script src="JS/hamburger.js"></script> 
   <script src="JS/flickity.js"></script>
   <script src="JS/marquee.js"></script>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-168149713-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-168149713-1');
-</script>
+	<script src="JS/btn.js"></script>
+	
 
   
 </body>

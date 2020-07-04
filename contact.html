@@ -28,58 +28,83 @@
 </head>
 
 <body>
-	<nav>
-		<div class="logoimg">
-			<img src="Images/Logo.svg" alt="personal logo">
-		</div>
-		<div class="logo">
-			<p>UX Research &amp; Design</p>
-		</div>
-		<ul class="nav-links">
-			<li>
-				<a href="index.html">Home</a>
-			</li>
-			<li>
-				<a href="about.html">About</a>
-			</li>
-			<li>
-				<a href="index.html#workit">Work</a>
-			</li>
-			<li>
-				<a href="files/CloudGoogleForms.pdf">Resume</a>
-			</li>
-			<li>
-				<a href="contact.html">Contact</a>
-			</li>
-		</ul>
-		<div class="burger">
-			<div class="line1"></div>
-			<div class="line2"></div>
-			<div class="line3"></div>
-		</div>
-	</nav>
-
-	<main>
-		<header class="hcontact page area">
-			<div class="ctop">
-				<article class="chello">
+		<nav>
+			<div class="logo">
+				<img src="logo.svg" alt="Logo Image">
+			</div>
+			<div class="hamburger">
+				<div class="line1"></div>
+				<div class="line2"></div>
+				<div class="line3"></div>
+			</div>
+			<ul class="nav-links">
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="about.html">About</a>
+				</li>
+				<li>
+					<a href="index.html#workit">Work</a>
+				</li>
+				<li>
+					<a href="files/CloudGoogleForms.pdf">Resume</a>
+				</li>
+				<li>
+					<a href="contact.html">Contact</a>
+				</li>
+			</ul>
+		</nav>
+		
+		<!--
+		<nav>
+			<div class="logoimg">
+				<img src="Images/Logo.svg" alt="personal logo">
+			</div>
+			<div class="logo">
+				<p>Zosia Czerska</p>
+			</div>
+			<ul class="nav-links">
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="about.html">About</a>
+				</li>
+				<li>
+					<a href="index.html#workit">Work</a>
+				</li>
+				<li>
+					<a href="files/CloudGoogleForms.pdf">Resume</a>
+				</li>
+				<li>
+					<a href="contact.html">Contact</a>
+				</li>
+			</ul>
+			<div class="burger">
+				<div class="line1"></div>
+				<div class="line2"></div>
+				<div class="line3"></div>
+			</div>
+		</nav>-->
+	</header>
+	<main class="contactpage">
+		<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
+		<section class="hcontact page area">
+			<article class="chello">
 					<h1>I'm Here.</h1>
 					<h4>Reach out to me!</h4>
-				</article>
-				<p class="pcontact">Looking for someone to <span class="slant">build your solution</span>? Looking for a <span class="slant">collaborator</span>? Or do you just have some <span class="slant">thoughts to share</span>?</p>
-			</div>
-			<img src="Images/ContactMe/Facetune.png" alt="Image of Me" class="cme">
-		</header>
-		<section id="form" class="yellow">
+			</article>
+			<p class="pcontact">Looking for someone to <span class="slant">build your solution</span>? Looking for a <span class="slant">collaborator</span>? Or do you just have some <span class="slant">thoughts to share</span>?</p>
+			<img src="Images/ContactMe/CutoutZ.png" alt="Image of Me" class="cme cntrgrid">
+		</section>
+		<section id="form" class="yellow cright">
 			<div class="formula page area">
-			<h5 class="a">Use my contact form..</h5>
-			<div class="form cntr">
-				<div class="formed">
-					<form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/zofia.hello@gmail.com" method="post" class="cntr">
-						<fieldset id="fs-frm-inputs">
-						<legend class="legend txtcolor txtcntr">Let's get in touch!</legend>
-							<div class="fillin">
-								<div class="fillname">
+					<form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/zofia.hello@gmail.com" method="post" >
+					<fieldset id="fs-frm-inputs" >
+						<h4 class="legend txtcolor">Let's get in touch!</h4>
+						<div class="frmcntr">		
+						<div class="fillname">
 									<label class="named" for="full-name">Full Name</label>
 									<input  class="inputn" type="text" name="name" id="full-name"  required="">
 								</div>
@@ -87,79 +112,77 @@
 									<label class="email" for="email-address">Email Address</label>
 									<input class="inpute" type="email" name="_replyto" id="email-address"  required="">
 								</div>
+								<img src="Images/logo2x.png" alt="logo" class="logoimg">
 							</div>
-						<label class="message" for="message">Message</label>
-						<textarea class="inputm" rows="5"  name="message" id="message" placeholder="" required=""></textarea>
-						<input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
-						</fieldset>
+						<div class="messcntr">	
+							<label class="message" for="message">Message</label>
+							<textarea class="inputm" rows="5"  name="message" id="message" placeholder="" required=""></textarea>
+							<input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+							</fieldset>
+						</div>
+							<input class="submit" type="submit" value="Submit">
 						
-						<input class="submit" type="submit" value="Submit">
 					</form>
-				</div>
-			</div>
 				<p class="respond txtcolor slant txtcntr">I respond within 24 hours!</p>
 			</div>
+				
 			
-		</section>	
+			
+		</section>
 	</main>
 	<footer>
+		<div class="page area footer">
 		<div class="fleft">
-			<div class ="page">
-				<h3 class="curious">Curious?</h3>
-				<h3 class="int">Interested?</h3>
-				<h3 class="touch">Let's get in touch!</h3>
-				<button class="filled" onclick="document.location = 'contact.html'">Contact Me</button>
-			</div>
+			
+				<h5 class="int">Curious?</h5>
+				<h5 class="int">Interested?</h5>
+				<h5 class="touch">Let's get in touch!</h5>
 		</div>
 		<div class="fright">
-			<div class="page">
-			<h3 class="teal">Zosia Czerska</h3>
-			<div>
-				
-				 <script src="JS/marquee.js"></script>
-				
-				<div id="marqueecontainer" onMouseover="copyspeed=pausespeed" onMouseout="copyspeed=marqueespeed">
+			<div id="marqueecontainer" onMouseover="copyspeed=pausespeed" onMouseout="copyspeed=marqueespeed">
 					<div id="vmarquee" style="position: absolute; width: 98%;">
 
 							<!--YOUR SCROLL CONTENT HERE-->
 					<ul>
-						<li class="lifoot">I am a UX Researcher</li>
-						<li class="lifoot">I am a UX Designer</li>
-						<li class="lifoot">I am for hire!</li>
+						<li class="lifoot txtcolor">I am a UX Researcher</li>
+						<li class="lifoot txtcolor">I am a UX Designer</li>
+						<li class="lifoot txtcolor">I am for hire!</li>
 					</ul>
 
 
 					</div>
 				</div>
-				<script src="JS/marquee.js"></script>
-				
-				<!--marquee: https://jsfiddle.net/jonathansampson/h7SYp/-->			
-			</div>
-			
-			<h5 class="teal lm">Learn More</h5>
+			<!--<h5 class="teal lm">Learn More</h5>-->
 			<ul class="learnicons">
 				<li>
 					<a href="contact.html#form" class="mail">
-						<i class="fas fa-envelope-square" aria-hidden="true"></i>
+						<i class="fas fa-envelope-square txtwhite" aria-hidden="true" ></i>
              		</a>
 				</li>
 				<li>
 					<a href="https://www.linkedin.com/in/zosiaczerska" class="linkd">
-						<i class="fa fa-linkedin-square" aria-hidden="true"></i>
+						<i class="fa fa-linkedin-square txtwhite" aria-hidden="true" ></i>
 					</a>
 				</li>
 				<li>
 					<a href="https://github.com/zczerska" class="git">
-						<i class="fa fa-github-square" aria-hidden="true"></i>
+						<i class="fa fa-github-square txtwhite" aria-hidden="true"></i>
 					</a>
 				</li>
 			</ul>
+			</div>
+			</div>
+			<div class="fcntr page">
+			<p class="copy txtwhite">&copy; Designed and coded by Zosia Czerska</p>
 		</div>
-		</div>
+		
+		
 	</footer>
+	
     
     <script src="JS/hamburger.js"></script> 
     <script src="JS/marquee.js"></script>
-		
+	<script src="JS/btn.js"></script>
+	<script src="nav2.js"></script>	
 </body>
 </html>

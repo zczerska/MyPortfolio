@@ -15,14 +15,6 @@ html {
 
 body {
 	max-width: 100%;
-	overflow-x: hidden;
-}
-
-p, li{
-	font-family: Nunito;
-	font-size:2.2rem;
-	line-height: 140%;
-	color: #121F41;
 }
 
 
@@ -54,226 +46,7 @@ p, li{
 }
 
 
-/*NAV try v3*/
 
-nav{
-    height: 12vh;
-    width: 100vw;
-    background-color: #131418;
-    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
-    display: flex;
-    position: fixed;
-    z-index: 10;
-}
-
-/*Styling logo*/
-.logo{
-    padding:1vh 1vw;
-    text-align: center;
-}
-.logo img {
-    height: 10vh;
-    width: 10vw;
-}
-
-/*Styling Links*/
-.nav-links{
-    display: flex;
-    list-style: none; 
-    width: 88vw;
-    padding: 0 0.7vw;
-    justify-content: space-evenly;
-    align-items: center;
-    text-transform: uppercase;
-}
-.nav-links li a{
-    text-decoration: none;
-    margin: 0 0.7vw;
-}
-.nav-links li a:hover {
-    color: #61DAFB;
-}
-.nav-links li {
-    position: relative;
-}
-.nav-links li a::before {
-    content: "";
-    display: block;
-    height: 3px;
-    width: 0%;
-    background-color: #61DAFB;
-    position: absolute;
-    transition: all ease-in-out 250ms;
-    margin: 0 0 0 10%;
-}
-.nav-links li a:hover::before{
-    width: 80%;
-}
-
-/*Styling Hamburger Icon*/
-.hamburger div{
-    width: 30px;
-    height:3px;
-    background: #f2f5f7;
-    margin: 5px;
-    transition: all 0.3s ease;
-}
-.hamburger{
-    display: none;
-}
-
-/*Stying for small screens*/
-@media screen and (max-width: 800px){
-    nav{
-        position: fixed;
-        z-index: 3;
-    }
-    .hamburger{
-        display:block;
-        position: absolute;
-        cursor: pointer;
-        right: 5%;
-        top: 50%;
-        transform: translate(-5%, -50%);
-        z-index: 2;
-        transition: all 0.7s ease;
-    }
-    .nav-links{
-        position: fixed;
-        background: #131418;
-        height: 100vh;
-        width: 100%;
-        flex-direction: column;
-        clip-path: circle(50px at 90% -20%);
-        -webkit-clip-path: circle(50px at 90% -10%);
-        transition: all 1s ease-out;
-        pointer-events: none;
-    }
-    .nav-links.open{
-        clip-path: circle(1000px at 90% -10%);
-        -webkit-clip-path: circle(1000px at 90% -10%);
-        pointer-events: all;
-    }
-    .nav-links li{
-        opacity: 0;
-    }
-    .nav-links li:nth-child(1){
-        transition: all 0.5s ease 0.2s;
-    }
-    .nav-links li:nth-child(2){
-        transition: all 0.5s ease 0.4s;
-    }
-    .nav-links li:nth-child(3){
-        transition: all 0.5s ease 0.6s;
-    }
-    .nav-links li:nth-child(4){
-        transition: all 0.5s ease 0.7s;
-    }
-    .nav-links li:nth-child(5){
-        transition: all 0.5s ease 0.8s;
-    }
-    .nav-links li:nth-child(6){
-        transition: all 0.5s ease 0.9s;
-        margin: 0;
-    }
-    .nav-links li:nth-child(7){
-        transition: all 0.5s ease 1s;
-        margin: 0;
-    }
-    li.fade{
-        opacity: 1;
-    }
-}
-/*Animating Hamburger Icon on Click*/
-.toggle .line1{
-    transform: rotate(-45deg) translate(-5px,6px);
-}
-.toggle .line2{
-    transition: all 0.7s ease;
-    width:0;
-}
-.toggle .line3{
-    transform: rotate(45deg) translate(-5px,-6px);
-}
-
-/* NAV try v2 
-header {
-	background:#009DA8;
-	width: 100%;
-	height:7.6rem;
-	position: fixed;
-	top: 0;
-	left:0;
-	z-index: 100;
-}
-
-header li {
-	display:inline-block;
-	float:left;
-	padding:1rem;
-}
-
-header a{
-	color: #FCFFF5;
-}
-
-header a:hover {
-	text-decoration:underline;
-}
-
-.logoo {
-	margin: 2rem;
-	float: left;
-	width: 2.5rem;
-	height: 5rem;
-	background: url(images/logo.svg);
-	display:block;
-}
-
-nav {
-	float: right;
-	padding 2rem;
-}
-
-.menuicon{
-	background: url (images/menu-icon.png);
-	display:hidden;
-	width:3.2rem;
-	height: 3.2rem;)
-}
-
-@media screen and (max-width: 640px) {
-	header {
-		position: absolute;
-	}
-	
-	.menuicon {
-		display: inline-block;
-	}
-	
-	nav ul, nav:active ul {
-		display:none;
-		position: absolute;
-		padding: 2rem;
-		background: #c5c5c5;
-		right: 1rem;
-		top:6.5rem;
-		width:35%;
-	}
-	
-	nav:hover ul{
-		display: block;
-	}
-	
-	nav li{
-		text-align: center;
-		width:100%;
-		padding: 1.5rem 0;
-		margin:0;
-	}
-	}
-}
-*/
 
 /* GLOBAL ATTRIBUTES */
 
@@ -281,8 +54,8 @@ nav {
 
 p {
 	font-family: Nunito; 
-	font-size: 2rem;
-	line-height: 140%;
+	font-size: 1.6rem;
+	line-height: 125%;
 	/*padding-bottom: 2rem;*/
 }
 
@@ -296,16 +69,14 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
 	font-size: 6.4rem;
-	line-height: 110%;
 }
 
 h3 {
 	font-size: 3.6rem;
-	}
+}
 
 h4 {
-	font-size: 3.6rem;
-	margin-bottom: 2.5rem;
+	font-size: 3.0rem;
 }
 
 h5 {
@@ -323,11 +94,11 @@ img {
  
  }
 
-/*li{
+li{
 	font-family: Nunito;
-	font-size:2.4rem;
+	font-size:1.8rem;
 	line-height: 140%;
-}*/
+}
 
 a:link, a:visited, a:hover, a:active {
 	text-decoration: none;
@@ -374,8 +145,8 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .area{
-	padding-top:6rem;
-	padding-bottom:6rem;	
+	padding-top:4rem;
+	padding-bottom:4rem;	
 }
 
 .nope {
@@ -429,158 +200,10 @@ a:link, a:visited, a:hover, a:active {
     margin-right: auto
 }
 
-.cntrgrid{
-	display: grid;
-	align-items: center;
-	justify-items: center;
-}
-
 .hcenter{
 	text-align: center;
 }
 
-/*Nav tryII*/
-
-header {
-	
-}
-
-/* NAVIGATION */
-/* HAMBURGER ATTRIBUTES----------- */ 
-
-
-/*nav {
-	position: fixed;
-	top: 0;
-    width: 100%;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	min-height: 8vh;
-	background-color: #009DA8;
-	font-family: cabin;
-	font-size: 14px;
-	z-index:1;
-	
-		
-}
-
-.logo {
-	
-	color: #FCFFF5;
-	font-size: 14px;
-	position: relative;
-		
-}
-
-.nav-links{
-	display: flex;
-	justify-content: space-around;
-	width: 30%;
-	font-size: 16px;
-}
-
-.nav-links a{
-	font-size: 1.6rem;
-	color: #FCFFF5;
-	font-family: Cabin;
-}
-
-.burger{
-	display: none;
-}
-.burger div{
-	width: 25px;
-	height: 3px;
-	margin: 5px;
-	background-color: #FCFFF5;
-	transition: all 0.3s ease;
-}
-
-nav img {
-	max-width: 80%;
-}
-
-@media screen and (max-width:1024px){
-	.nav-links{
-		width: 60%;
-		
-	}	
-	
-
-	
-	.logo {
-	color: #FCFFF5;
-	font-size: 14px;
-	position: relative;
-	left:-50px;
-	
-}
-}
-
-@media screen and (max-width:768px){
-	body{
-		overflow-x: hidden;
-	}
-	.nav-links{
-		position: fixed;
-		right: 0px;
-		height: 92vh;
-		top:8vh;
-		background-color: #009DA8;
-		display: flex;
-		flex-direction:column;
-		align-items: center;
-		width: 50%;
-		transform: translateX(100%);
-		transition: transform 0.3s ease-in;
-		
-		
-	}
-	.nav-links li {
-		opacity: 0;
-		font-size: 1.6rem;
-		
-	}
-	.burger{
-		display: block;
-	}
-}
-
-
-.nav-active{
-		transform: translateX(0%);
-	}
-
-@keyframes navLinkFade{
-	from{
-		opacity:0;
-		transform: translateX(50px);
-	}
-	to{
-		opacity:1;
-		transform: translateX(0);
-	}
-}
-
-.toggle .line1 {
-	transform: rotate(-45deg) translate(-5px, 6px);
-}
-
-.toggle .line2{
-	opacity: 0;
-}
-
-.toggle .line3{
-	transform: rotate(45deg) translate(-5px, -6px);
-}
-	.logo {
-	color: #FCFFF5;
-	font-size: 14px;
-	position: relative;
-	margin-left:-2rem;
-	
-}*/
 /* BUTTON STYLING */
 
 button{
@@ -649,8 +272,6 @@ button{
 
 .container {
 	display: grid;
-	grid-template-columns:auto;
-	grid-template-rows: repeat (5, 1fr);
 	grid-template-areas: 
 		"headhome"
 		"work"
@@ -662,15 +283,13 @@ button{
 .headhome {
 	grid-area: headhome;
 	display: grid;
-	margin-top:14vh;
-	grid-template-columns: auto ;
-	grid-template-rows: auto;
+	margin-top:10vh;
 	grid-template-areas: 
-		"coffee "
-		"hello "
-		" headbuttons"
+		"hello"
+		"headbuttons"
+		"coffee"
 		"bio";
-	
+	/*padding: 10rem 0;*/
 }
 
 .hello {
@@ -685,12 +304,10 @@ button{
 
 .headbuttons {
 	grid-area: headbuttons;
-	
-}
-.hbuttons {
 	display: inline-flex;
 	flex-direction: row;
 	margin-bottom: 2rem;
+	
 }
 
 .works {
@@ -709,7 +326,6 @@ button{
     margin-left: auto;
     margin-right: auto;
 	margin-bottom: 4rem;
-	border-radius: 4px;
 	
 }
 
@@ -717,10 +333,7 @@ button{
 	grid-area: bio;
 	font-family: Nunito;
 	color: #121F41;
-	font-size: 1.8rem;
-	line-height: 140%;
-	padding-bottom: 4rem;
-	padding-top: 4rem;
+	font-size: 1.6rem;
 }
 	
 
@@ -728,32 +341,43 @@ button{
 .work {
 	grid-area: work;
 	display: grid;
-	grid-template-columns: auto;
-	grid-template-rows: auto;
 	grid-template-areas: 
 		"whead whead"
 		"welluw welluw"
-		"wlearn . ";
+		"wlearn ."
+		"busyw busyw"
+		"busylearn . ";
+}
+
+ .wellh {
+	font-size: 2.4rem;
 }
 
 .wellph{
 	padding-bottom: 2rem;
-	}
+	padding-top: 1rem;
+}
 
 .whead{
 	grid-area: whead;
 	font-size: 2.4rem;
 }
 
-.wellh5{
-	padding-top: 5rem;
+.welluw{
+	grid-area: welluw;
+	display: grid;
+	grid-template-areas: 
+		"wellimg"
+		"wellh"
+		"wellp"
+		"wlearn";
+		
 }
 
 .wellimg{
 	grid-area: wellimg;
 	width: 95%;
 	margin-top: 4rem;
-	padding-bottom:1.5rem;
 	}
 
 .wellh{
@@ -923,9 +547,8 @@ button{
 	display: grid;
 	margin-top:4rem;
 	margin-bottom: 4rem;
-	padding-left: 3rem;
-	padding-right: 3rem;
 	
+	padding-top: 10vh;
 	grid-template-areas: 
 		"abtitle"
 		"abh"
@@ -939,7 +562,6 @@ button{
 .abtitle{
 	grid-area: abtitle;
 	padding-bottom: 1rem;
-	padding-top: 15vh;
 }
 
 .abh{
@@ -967,9 +589,6 @@ button{
 	
 }
 
-.pinstructions {
-	display: none;
-}
 
 .got{
 	grid-area:got;
@@ -1150,29 +769,14 @@ button{
 
 /* CONTACT PAGE ATTRIBUTES */
 
-/*.contactpage{
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: 1fr 1fr 1fr;
-	grid-template-areas: 
-		"hcontact"
-		"formula"
-		"footer";
-}*/
+
 .hcontact{
 	padding-top:12vh;
-	grid-area: hcon;
 	display:grid;
-	grid-template-columns: 1fr 4fr 1fr;
-	grid-column-gap: 1rem;
 	grid-template-areas: 
-		"chello chello chello"
-		". cme ."
-		"pcontact pcontact pcontact";
-}
-
-.cright{
-	grid-area: cright;
+		"chello"
+		"cme"
+		"pcontact"
 }
 
 .chello{
@@ -1181,47 +785,53 @@ button{
 
 .cme {
 	grid-area:cme;
-	margin-bottom: 4rem;
-	
 }
 
 .pcontact{
 	grid-area: pcontact; 
 }
 
-
-.formula{
-	padding-bottom: 2rem;
-}
-
-.frmcntr{
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: 2fr;
-    grid-column-gap: 10px;
-}
-
-.legend{
-	padding-top: 2rem;
-	margin-bottom: 3rem;
+.a{
+	padding-bottom: 3rem;
+	padding-top: 3rem;
 	
 }
 
-.fillname{
-	grid-column-start: 1;
-	grid-column-end: 2;
+.formula{
+	padding-bottom: 2rem;
+	margin-left: 3rem;
+	margin-right: 3rem;
 }
 
-.fillemail{
-	grid-column-start: 1;
-	grid-column-end: 2;
+.form{
+	border-color: #121F41;
+	background: linear-gradient(0deg, #FFFFFF, #FFFFFF), #DADADA;
+	box-shadow: 0px 5.33333px 26.6667px rgba(3, 69, 130, 0.25);
+	border-radius: 13.3333px;
+	display:flex;
+	flex-direction: column;
+	
+	}
+
+.formed{
+	margin-left: 4rem;
+}
+
+.legend{
+	
+	display:flex;
+	flex-direction: column;
+	font-family: nunito;
+	font-size: 1.8rem;
+	padding-top: 2rem;
+	margin-bottom: 3rem;
 }
 
 .named{
-	grid-column-start: 1;
-	grid-column-end: 2;
+	display:flex;
+	flex-direction: column;
 	font-family: nunito;
-	font-size: 2rem;
+	font-size: 1.6rem;
 	padding-bottom:0.5rem;
 	padding-top: 0.5rem;
 	
@@ -1229,56 +839,38 @@ button{
 
 .inputn{
 	
-	grid-column-start: 1;
-	grid-column-end: 2;
+	display:flex;
+	flex-direction: column;
 	border-color: #009DA8;
-	height: 3rem;
-	margin-bottom: 3rem;
-	border-radius: 4px;
-	width:100%;
+	margin-bottom: 1.5rem;
+	
 }
 
 .email{
-	grid-column-start: 1;
-	grid-column-end: 2;
+		display:flex;
+	flex-direction: column;
 	font-family: nunito;
-	font-size: 2rem;
+	font-size: 1.6rem;
 	padding-bottom:0.5rem;
 	padding-top: 0.5rem;
 }
 
 .inpute{
-	grid-column-start: 1;
-	grid-column-end: 2;
+	/*grid-area: inpute;*/
+	display:flex;
+	flex-direction: column;
 	border-color: #009DA8;
-	height: 3rem;
-	margin-bottom: 3rem;
-	border-radius: 4px;
-	width:100%;
+	margin-bottom: 1.5rem;
 	
 }
 
-.logoimg{
-	grid-column-start: 2;
-	grid-column-end: 3;
-	grid-row-start: 1;
-	width:50%;
-	padding-left:10%;
-	}
-
-
-.messcntr{
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: 3fr;
-    grid-column-gap: 10px;
-}
 
 .message{
-	grid-column-start: 1;
-	grid-row-start: 1;
+	/*grid-area: message;*/
+	display:flex;
+	flex-direction: column;
 	font-family: nunito;
-	font-size: 2rem;
+	font-size: 1.6rem;
 	padding-bottom:0.5rem;
 	padding-top: 0.5rem;
 	
@@ -1286,20 +878,21 @@ button{
 }
 
 .inputm{
-	grid-column-start: 1;
-	grid-column-end: 4;
-	grid-row-start: 2;
-	width: 100%;
+	/*grid-area: inputm;*/
+	display:flex;
+	flex-direction: column;
 	border-color: #009DA8;
 	border-radius: 4px;
 	margin-bottom: 2rem;
-	height: 20rem;
+	width:85%;
 	
 }
 
 
 
 .submit{
+	/*grid-area:submit;*/
+	
 	color:#FCFFF5;
 	background-color:#009DA8;
 	border-radius: 2px;
@@ -1308,22 +901,23 @@ button{
 	height: 40px;
 	text-align: center;
 	font-family:Cabin;
-	font-size: 2rem;
+	font-size: 1.6rem;
 	padding-bottom:0.5rem;
 	padding-top: 0.5rem;
-	margin-left:60%;
+	margin-left:45%;
 	margin-bottom:2rem;
 }
 
 .respond{
+	display:flex;
+	flex-direction: column;
 	padding-bottom:0.5rem;
 	padding-top: 0.5rem;
 	/*margin-left:20%;*/
 	margin-top:2rem;
-	grid-area: respond;
+	/*grid-area: respond;*/
 	
 }
-
 
 
 
@@ -1336,8 +930,6 @@ button{
 .containerw {
 	display: grid;
 	max-width:100%;
-	grid-template-columns: auto;
-	grid-template-rows: repeat (25, 1fr);
 	grid-template-areas: 
 		"intro"
 		"evolution"
@@ -1378,31 +970,25 @@ button{
 }
 
 .inhead {
-		display: grid;
-		grid-area: inhead;
-		grid-template-columns: auto;
-		grid-template-rows: 1fr 1fr;
-		justify-items:center;
-		align-items: center;
-		grid-template-areas: 
-			"wellh"
-			"ptopper";
-	
+		display: flex;
+		flex-direction: row;
+		margin-left:5%;
 	}
 
 .wellh{
-	
 	margin-top:2.5rem;
-	font-size:6.4rem;
+	font-size:3.6rem;
 }
 
+.topper{
+	display: flex;
+	flex-direction: column;
+}
 
 .ptopper{
-	grid-area: ptopper;
-	font-size: 1.4rem;
+	font-size: 1.2rem;
 	margin-top: 0.5rem;
 	font-style: italic;
-	margin-bottom: 2rem;
 }
 
 .welluimg{
@@ -1652,6 +1238,7 @@ button{
 .space{
 	padding-bottom: 1rem;
 }
+
 
 .card{
 	width:20rem;
@@ -2046,29 +1633,27 @@ footer {
 	background: rgba(7, 6, 37, 0.9);
 	color: #FCFFF5;
 	font-family: Cabin;
+	font-size:3.6rem;
 	grid-area: footer;
 	display: grid;
-	grid-auto-columns: 1fr;
-	grid-auto-rows: repeat (5, 1fr);
-		
+	grid-template-areas: 
+		"curious"
+		"int"
+		"touch";
 }
 
+
+
+
 .lm{
-	grid-column-start: 1;
-	grid-row-start: 3;
-	margin-top: 1.5rem;
+	margin-top: 3rem;
 	margin-bottom: 3rem;
-	font-size: 2.2rem;
-	
 }
 
 .learnicons{
-	grid-column-start: 1;
-	grid-row-start: 4;
+	padding-left:0.5rem;
 	padding-bottom: 3rem;
-	padding-top: 4rem;
 	display: grid;
-	grid-template-columns: repeat (3, 1fr);
 	grid-template-areas: 
 		"mail . . "
 		". linkd ."
@@ -2093,32 +1678,54 @@ footer {
 	color:#FCFFF5;
 }
 
+.fleft{
+	
+}
+
+.fright{
+	
+	padding-top:6.5rem;
+}
 .curious{
+	display: grid;
 	margin-top:6.5rem;
 }
 
 .int{
+	display: grid;
 	margin-top:1rem;
-	
 }
 
 .touch{
+	display: grid;
 	margin-top:1.5rem;
-	margin-bottom: 6rem;
+	margin-bottom: 3rem;
 }
 
-.copy{
-	font-size: 1.4rem;
-	padding-bottom: 3rem;
+.zc{
+	
+}
+
+
+
+.lm{
+	
 }
 
 .lifoot{
-	font-size: 2.2rem;
-	font-family: Cabin;
-	font-weight: 600;
+	font-size: 2.4rem;
 }
 
+.contact{
+	border:0.2rem #FCFFF5 solid;
+	border-radius: 2px;
+	padding:0.7rem 1.4rem 0.7rem 1.4rem;
+}
 
+.buttonspace{
+	margin-top:3rem;
+	/*margin-bottom:3rem;*/
+}
 
 
 
@@ -2140,7 +1747,7 @@ padding-left: 4px;
 /* HAMBURGER ATTRIBUTES----------- */ 
 
 
-/*nav {
+nav {
 	position: fixed;
 	top: 0;
     width: 100%;
@@ -2159,7 +1766,7 @@ padding-left: 4px;
 .logo p {
 	
 	color: #FCFFF5;
-	font-size: 1.6rem;
+	font-size: 14px;
 	position: relative;
 	font-family:Cabin;
 	
@@ -2179,10 +1786,6 @@ padding-left: 4px;
 	font-family: Cabin;
 }
 
-.nav-links li{
-	font-size: 1.6rem;
-}
-
 .burger{
 	display: none;
 }
@@ -2196,7 +1799,9 @@ padding-left: 4px;
 
 nav img {
 	max-width: 80%;
-} */
+}
+
+
 	
 
 /* FLICKITY SLIDER ATTRIBUTES */
@@ -2484,7 +2089,7 @@ nav img {
 
 .gallery-cell30 {
   width: 75%;
-  height: 32rem;
+  height: auto;
   margin-right:5rem;
 
   counter-increment: gallery-cell;
@@ -2662,7 +2267,7 @@ https://flickity.metafizzy.co
 
 /*---MEDIA QUERY SECTION ---*/
 
-	/*@media screen and (max-width:1024)	{
+	@media screen and (max-width:1024)	{
 	.nav-links{
 		width: 60%;
 		
@@ -2672,88 +2277,67 @@ https://flickity.metafizzy.co
 	font-size: 14px;
 	
 	}
-}*/
+}
 
 
 
 
-@media screen and (min-width:640px) {
+
+@media screen and (min-width:768px) {
 		
 	.page{
-		margin-left: 5rem;
-		margin-right: 5rem;
-	}
-	
-	.logoimg{
-		padding-top: 0.5rem;
-		padding-bottom:0.5rem;
+		margin-left: 7rem;
+		margin-right: 7rem;
 	}
 	
 	.logo{
-		margin-right:25%;
+		margin-right:-10rem;
 	}
 	
 	p{
-		font-size:2.2rem;
-	}
-	
-	.footer {
-		display:grid;
-		grid-auto-columns:2fr;
-		grid-auto-rows: 4fr;
-	}
-	
-	.fleft{
-		grid-column-start: 1;
-	}
-	
-	.fright{
-		grid-column-start: 2;
+		font-size:1.8rem;
 	}
 	
 
 	
-/* INDEX 640 */
-	.headhome{
-		display:grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr 1fr;
-					
-	}
-	
+/* INDEX 768 */
 	.coffee{
-		grid-column: 2/3;
-		grid-row: 1/3;
+		grid-area:coffee;
 		width:100%;
 	}
 	
 	.hello{
-		grid-column: 1/2;
-		grid-row: 1/2;
-			}
+		grid-area:hello;
+	}
 	
 	.name{
 		margin-top: 2rem;
 	}
-	
 	.bio{
-		margin-top: -12rem;
+		grid-area:bio;
+		width:80%;
+		margin-top:2rem;
 	}
 	
-	
 	.headbuttons{
-		grid-column: 1/3;
-		grid-row-start: 2;
+		grid-area:headbuttons;
+		margin-top:2rem;
+	}
+	
+	.headhome{
+		display: grid;
+		grid-template-areas: 
+			"hello coffee"
+			"headbuttons coffee"
+			"bio coffee";
 	}
 	
 	.work {
 	display: grid;
-	grid-template-columns: 1fr;
-	grid-template rows:1fr 1fr 1fr;
 	grid-template-areas: 
-		"whead whead"
-		"welluw welluw"
-		"wlearn .";
+		"whead whead whead whead "
+		"welluw welluw busyw busyw"
+		"wlearn . busylearn .";
 }
 	.busylearn{
 		grid-area: busylearn;
@@ -2785,7 +2369,7 @@ https://flickity.metafizzy.co
 		margin-top:4rem;
 	}
 	
-	.wellh5{
+	.wellh{
 		font-size:2.4rem;
 		
 	}
@@ -2802,7 +2386,6 @@ https://flickity.metafizzy.co
 	
 	.wellp{
 		width:90%;
-		font-size: 1.8rem;
 		/*margin-left:5rem;*/
 	}
 	
@@ -2821,7 +2404,6 @@ https://flickity.metafizzy.co
 	
 	.ap, .ap2 {
 		width: 80%;
-		font-size: 1.8rem;
 	}
 	
 	.ap2 {
@@ -2865,28 +2447,21 @@ https://flickity.metafizzy.co
 	}
 	
 	.theprocess{
-		display: flex;
+		display:block;
 		margin-top: 3rem;
 		width:95%;
-		height: auto;
-		transition: transform .2s;
-		transform: scale(1);
 		/*margin-left: 15%;*/
-	}
-	
-	.theprocess:hover{
-		transform: scale(1.25);
-	}
-	
-	.pinstructions {
-		display: flex;
-		float: left;
-		font-size:1.4rem;
-		padding-top:3rem;
 	}
 	
 	.pslider{
 		display: none;
+	}
+	
+	.footer{
+		grid-area: footer;
+		display: grid;
+		grid-template-areas: 
+			"fleft fright";
 	}
 	
 	/*.logo{
@@ -2899,12 +2474,6 @@ https://flickity.metafizzy.co
 		"abtitle abpic"
 		"abp abpic";
 	}
-	
-	.abpic{
-		margin-top: 15vh;
-	}
-	
-	
 	
 	.abp {
 		width:80%;
@@ -2952,14 +2521,54 @@ https://flickity.metafizzy.co
 	
 	/* CONTACT PAGE 768*/
 	
-	.submit {
-		margin-left: 70%;
+	.ctop{
+		display: flex;
+		flex-direction: column;
 	}
 	
 	.hcontact{
-	padding-top:25vh;
+		display:inline-flex;
+		flex-direction: row;
+		margin-top:7rem;
+		margin-bottom: 5rem;
 	}
 	
+	.cme{
+		width:100%;
+		height:90%;
+		margin-top:1rem;
+		
+	}
+	
+	.pcontact{
+		width:90%;
+		margin-top:4rem;
+	}
+	
+	.chello h4{
+		padding-top:2rem;
+	}
+	
+	
+	.fillin{
+		display: inline-flex;
+		flex-direction: row;
+		padding-bottom: 5rem;
+	}
+	
+	.fillemail{
+		padding-left: 8rem;
+	}
+	
+	.inpute, .inputn{
+		height: 2.5rem;
+		width:15rem;
+	}
+	
+	.legend{
+		padding-bottom: 1rem;
+		padding-top:5rem;
+	}
 
 	
 	
@@ -3071,94 +2680,17 @@ https://flickity.metafizzy.co
 	
 	
 }
-
-@media screen and (min-width:768px){
-	.wellimg{
-		max-width: 60%;
-	}
-	
-		.contactpage{
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr;
-	grid-template-areas: 
-		"hcon cright";
-		}
-	
-	.chello h1{
-		font-size:5.8rem;
-	}
-	
-	.chello h4 {
-		font-size:2.8rem;
-	}
-	
-	.formula h4 {
-		font-size:3.2rem;
-	}
-	.formula{
-		margin-top: 12vh;
-	}
-	
-}
-
-@media screen and (min-width:840px){
-	.bio{
-		max-width:65%;
-		padding-top: 6rem;
-	}
-	
-	.coffee{
-		max-width:85%;
-	}
 	
 
-	
-@media screen and (min-width:1200px){
-	.bio{
-		max-width:45%;
-		padding-top: unset;
-	}
-	
-	.headhome{
-		
-	}
-	
-	.wellimg{
-		max-width: 50%;
-	}
-	
-	
-}
 	
 @media screen and (min-width:1024px){
-	.page{
-		margin-left:10rem;
-		margin-right:10rem;
+	.page1024{
+		margin-left:3rem;
+		margin-right:3rem;
 	}
 	
 	p{
-		font-size:2.2rem;
-	}
-	
-	.logo{
-		margin-right:8rem;
-	}
-	
-	.logo p{
-		margin-left:-18rem;
-	}
-	
-	.headbuttons{
-		
-	}
-	
-	.bio{
-		margin-top:-20rem;
-	}
-	
-	.wellp{
-		max-width: 65%;
+		font-size:1.8rem;
 	}
 	
 	.abp{
@@ -3169,14 +2701,26 @@ https://flickity.metafizzy.co
 		padding-bottom: 8rem;
 	}
 	
+	.headbuttons{
+		margin-top:-10rem;
+	}
 	
+	.bio{
+		margin-top:-12rem;
+	}
 	
 	.ap, .ap2{
 	width:70%;
 }
 	
 	
+	.logo{
+		margin-right:8rem;
+	}
 	
+	.logo p{
+		margin-left:-18rem;
+	}
 	
 	.hi2{
 		margin-top:-3rem;
@@ -3240,19 +2784,61 @@ https://flickity.metafizzy.co
 	
 	
 	/* contact page */
-	
-	.chello h1{
-		font-size:6.4rem;
+	.formula{
+		padding-top:4rem;
+		padding-bottom: 6rem;
 	}
 	
-	.chello h4 {
-		font-size:3.6rem;
+	.a{
+		margin-bottom:2rem;
+		margin-left:8rem;
+	}
+	.form{
+		
+		
+		padding-top:8rem;
+		width:70rem;
+		padding-bottom:10rem;
 	}
 	
-	.formula h4 {
-		font-size:3.6rem;
+	.cme{
+		width:80%;
 	}
 	
+	.chello h4{
+		padding-top:3rem;
+	}
+	
+	.pcontact{
+		width:85%;
+	}
+	
+	.fillin{
+		display: inline-flex;
+		flex-direction: row;
+		padding-bottom: 5rem;
+	}
+	
+	.fillemail{
+		padding-left: 8rem;
+	}
+	
+	.inpute, .inputn{
+		height: 3rem;
+		width:20rem;
+	}
+	
+	.inputm{
+		width:50rem;
+	}
+	
+	.fillin,.message, .inputm, .legend{
+		margin-left: 7rem;
+	}
+	
+	.legend{
+		padding-bottom: 2rem;
+	}
 	
 	
 	/*ABOUT PAGE*/
@@ -3263,7 +2849,138 @@ https://flickity.metafizzy.co
 	
 }
 
+/* NAVIGATION */
+/* HAMBURGER ATTRIBUTES----------- */ 
 
+
+nav {
+	position: fixed;
+	top: 0;
+    width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 8vh;
+	background-color: #009DA8;
+	font-family: cabin;
+	font-size: 14px;
+	z-index:1;
+	
+		
+}
+
+.logo {
+	
+	color: #FCFFF5;
+	font-size: 14px;
+	position: relative;
+		
+}
+
+.nav-links{
+	display: flex;
+	justify-content: space-around;
+	width: 30%;
+	font-size: 14px;
+}
+
+.nav-links a{
+	font-size: 14px;
+	color: #FCFFF5;
+	font-family: Cabin;
+}
+
+.burger{
+	display: none;
+}
+.burger div{
+	width: 25px;
+	height: 3px;
+	margin: 5px;
+	background-color: #FCFFF5;
+	transition: all 0.3s ease;
+}
+
+nav img {
+	max-width: 80%;
+}
+
+@media screen and (max-width:1024px){
+	.nav-links{
+		width: 60%;
+		
+	}	
+	.logo {
+	color: #FCFFF5;
+	font-size: 14px;
+	position: relative;
+	left:-50px;
+	
+}
+}
+
+@media screen and (max-width:768px){
+	body{
+		overflow-x: hidden;
+	}
+	.nav-links{
+		position: fixed;
+		right: 0px;
+		height: 92vh;
+		top:8vh;
+		background-color: #009DA8;
+		display: flex;
+		flex-direction:column;
+		align-items: center;
+		width: 50%;
+		transform: translateX(100%);
+		transition: transform 0.3s ease-in;
+		
+		
+	}
+	.nav-links li {
+		opacity: 0;
+		
+	}
+	.burger{
+		display: block;
+	}
+}
+
+
+.nav-active{
+		transform: translateX(0%);
+	}
+
+@keyframes navLinkFade{
+	from{
+		opacity:0;
+		transform: translateX(50px);
+	}
+	to{
+		opacity:1;
+		transform: translateX(0);
+	}
+}
+
+.toggle .line1 {
+	transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2{
+	opacity: 0;
+}
+
+.toggle .line3{
+	transform: rotate(45deg) translate(-5px, -6px);
+}
+	.logo {
+	color: #FCFFF5;
+	font-size: 14px;
+	position: relative;
+	margin-left:-2rem;
+	
+}
 
 	
 

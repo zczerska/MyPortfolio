@@ -33,7 +33,7 @@
 			<img src="Images/Logo.svg" alt="personal logo">
 		</div>
 		<div class="logo">
-			<p>UX Research &amp; Design</p>
+			<p>Zosia Czerska</p>
 		</div>
 		<ul class="nav-links">
 			<li>
@@ -60,18 +60,22 @@
 	</nav>
 
 	<main class="container">
-		<header class="headhome page area">
+		<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
+		<header class="page area">
+			<div class="headhome">
 				<div class="hello">
 					<h1 class="hi">Hello.</h1>
 					<h4 class="name">My name is Zosia.</h4>
 				</div>
-				<img src="Images/Home/Coffee3.png" alt="Me in a coffeehouse" class="coffee">
+				<img src="Images/Home/Cutout3.png" alt="logo" class="coffee">
 				
 					<div class="headbuttons">
+						<div class="hbuttons">
 						<button class="filled works" onclick="document.location = 'index.html#workit'">My Work</button>
 						<button class="outline resume" onclick="window.location.href = 'files/ZC-DesignResume.pdf';">Resume</button>
+						</div>
 					</div>
-
+			</div>
 					<p class="bio">I am a UX researcher and designer based in the Washington DC Metro Area. I explore human behavior and needs in order to  create a solution. I believe the best design comes from the user.</p>
 				
 				
@@ -80,24 +84,24 @@
 			
 		</header>
 		
-		<section id="workit" class="yellow">
-			<div class="page area work">
+		<section id="workit" class="yellow work">
+			<div class="page area">
 				<div class="whead"><!--top, section heading-->
-					<h4>My Work</h4>
+					<h4 class="wellh4">My Work</h4>
 					<p class="txtcolor wellph">A few things I've been up to lately..</p>
 				</div>
 				<article class="welluw">
 					<img src="Images/Home/MacbookwScreen.png" alt="Well Universe Screen" class="wellimg cntr">
-					<h5 class="wellh">Well Universe</h5>
+					<h5 class="wellh5">Well Universe</h5>
 					<p class="wellp">A healthcare portal. Design roles: user research, information architecture, visual design, prototyping and user testing</p>
 				</article>
 				<button class="outline wlearn" onclick="document.location = 'wellu.html'">Learn More</button>
-				<article class="busyw">
+				<!--<article class="busyw">
 					<img src="Images/Home/BusyBusFinal.png" alt="BusyBus Screen" class="busyimg cntr">
 					<h5 class="busyh">BusyBus</h5>
 					<p class="busyp">A transportation iOS app. Design roles: user research, information architecture, visual design, prototyping and user testing</p>
 				</article>
-				<button class="outline busylearn" onclick="document.location = 'busybus.html'">Learn More</button>
+				<button class="outline busylearn" onclick="document.location = 'busybus.html'">Learn More</button>-->
 			</div>
 		</section>
 		<section class ="green">
@@ -124,6 +128,7 @@
 			  <div class="gallery-cell32"><img  src="Images/Home/processcol3.svg" alt="tools" ></div>
 			</div>
 			<img src="Images/Home/process.svg" alt="my process" class="theprocess">
+			<p class= "pinstructions">*tap or click on image to zoom</p>
 				<div class="pask">
 					<div class="nope">
 					<p class="extratop">Don't see</p>
@@ -143,42 +148,29 @@
 		</section>
 		<!--onclick="window.open('mailto:zosia.hello423@gmail.com');"-->
 	</main>
-	<footer class="footer">
+	<footer>
+		<div class="page area footer">
 		<div class="fleft">
-			<div class="page">
-				<h3 class="curious">Curious?</h3>
-				<h3 class="int">Interested?</h3>
-				<h3 class="touch">Let's get in touch!</h3>
-				<button class="filled" onclick="document.location = 'contact.html'">Contact Me</button>
-			</div>
+			
+				<h5 class="int">Curious?</h5>
+				<h5 class="int">Interested?</h5>
+				<h5 class="touch">Let's get in touch!</h5>
 		</div>
 		<div class="fright">
-			<div class="page">
-			<h3 class="teal">Zosia Czerska</h3>
-			<div>
-				
-				 <script src="JS/marquee.js"></script>
-				
-				<div id="marqueecontainer" onMouseover="copyspeed=pausespeed" onMouseout="copyspeed=marqueespeed">
+			<div id="marqueecontainer" onMouseover="copyspeed=pausespeed" onMouseout="copyspeed=marqueespeed">
 					<div id="vmarquee" style="position: absolute; width: 98%;">
 
 							<!--YOUR SCROLL CONTENT HERE-->
 					<ul>
-						<li class="lifoot">I am a UX Researcher</li>
-						<li class="lifoot">I am a UX Designer</li>
-						<li class="lifoot">I am for hire!</li>
+						<li class="lifoot txtcolor">I am a UX Researcher</li>
+						<li class="lifoot txtcolor">I am a UX Designer</li>
+						<li class="lifoot txtcolor">I am for hire!</li>
 					</ul>
 
 
 					</div>
-					
 				</div>
-				<script src="JS/marquee.js"></script>
-				
-				<!--marquee: https://jsfiddle.net/jonathansampson/h7SYp/-->			
-			</div>
-			
-			<h5 class="teal lm">Learn More</h5>
+			<!--<h5 class="teal lm">Learn More</h5>-->
 			<ul class="learnicons">
 				<li>
 					<a href="contact.html#form" class="mail">
@@ -196,13 +188,19 @@
 					</a>
 				</li>
 			</ul>
-		</div>
 			</div>
+			</div>
+			<div class="fcntr page">
+			<p class="copy txtwhite">&copy; Designed and coded by Zosia Czerska</p>
+		</div>
+		
+		
 	</footer>
     
     <script src="JS/flickity.js"></script>
     <script src="JS/hamburger.js"></script> 
     <script src="JS/marquee.js"></script>
+	<script src="JS/btn.js"></script>
 	
 </body>
 </html>
